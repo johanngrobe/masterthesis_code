@@ -1,0 +1,924 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"><head>
+  <title>Rats- und Bürgerinfosystem</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="author" content="more! software">
+  <meta name="publisher" content="more! software">
+  <meta name="copyright" content="more! software">
+  <meta name="description" content="Rats- und Bürgerinformationssystem">
+  <meta name="keywords" content="rubin, more software, more, sitzungsdienst, ratsinformationssystem, ratsinfo, antragsverwaltung, sitzungsgeld, sitzungsmanagement, dokumentenmanagement, beschlusskontrolle, bürgerinfo, bürgerinformationssystem, dms, ris">
+  <meta name="content-language" content="de">
+  <meta name="language" content="de">
+  <meta name="robots" content="NOINDEX,NOFOLLOW">
+  <meta name="title" content="Rats- und Bürgerinfosystem">
+  <style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><link rel="stylesheet" href="Friedrichshall_20121-Dateien/general.css" media="screen">
+  <link rel="stylesheet" href="Friedrichshall_20121-Dateien/layout.css" media="screen">
+  <link rel="stylesheet" href="Friedrichshall_20121-Dateien/layout_print.css" media="print">
+  <link rel="shortcut icon" href="https://ratsinfo-friedrichshall.more-rubin1.de/images/icon.ico">
+  <meta http-equiv="pragma" content="no-cache"><link rel="stylesheet" type="text/css" href="Friedrichshall_20121-Dateien/generalStyle.css"><script type="text/javascript" src="Friedrichshall_20121-Dateien/jQueryMin.js"></script><script>window.settings = {"900":"","902":null,"1000":0,"1010":null,"1013":null,"1014":null,"1015":null,"1016":null,"1017":null,"1018":null,"1019":null,"1020":null,"1021":"<center><b>Sie befinden sich im Rats- und B\u00fcrgerinformationssystem.<\/b><\/center><br><br><br>Sie haben hier die M\u00f6glichkeit nach Vorlagen, Sitzungen, Niederschriften und Beschl\u00fcssen zu recherchieren. Des Weiteren k\u00f6nnen Sie sich \u00fcber die Kalenderfunktion einen \u00dcberblick \u00fcber die kommenden Termine verschaffen.<br><br>Nachfolgend erhalten Sie einen \u00dcberblick \u00fcber die n\u00e4chsten Sitzungstermine.<br><br>","1027":"","1028":1,"1029":0,"1030":0,"1031":0,"1032":1,"1034":0,"1035":90,"1036":"","1037":"","1038":1,"1040":0,"1042":0,"1045":0,"1047":0,"1049":7,"1050":7,"1051":"","1052":"","1053":"https:\/\/www.more-rubin.de\/hilfe\/ris","1054":0,"1055":1,"1056":0,"1057":1,"1058":1,"1059":1,"1060":1,"1061":1,"1062":0,"1063":0,"1064":1,"1065":1,"1067":1,"1068":15,"1071":"","1072":0,"1073":0,"1074":1,"1075":0,"1076":3,"1077":3,"1078":3,"1079":3,"1080":3,"1081":1,"1082":1,"1083":0,"1084":0,"1085":0,"1086":"Vorlage ist noch nicht ver\u00f6ffentlicht worden.","1088":0,"1090":null,"1095":null,"1100":0,"1115":0,"1116":0,"1117":0,"1118":0,"1119":0,"1130":0,"1150":1,"1200":"","1201":"","1300":"","1400":"Fraktionen","1500":"","1612":"Beginn (\u00f6ffentlicher Teil)","1613":"Beginn (nicht\u00f6ffentlicher Teil)","1824":"","1900":"","2000":"Rats- und B\u00fcrgerinfosystem","2001":null,"2004":0,"2005":"","2007":"Es existieren keine Tagesordnungspunkte f\u00fcr diese Sitzung<br> oder Sie haben keine Berechtigung zur Ansicht der Tagesordnungspunkte.","2008":"","2009":"","2011":0,"2012":0,"2013":0,"2014":1,"2015":0,"2017":"35;10","2018":"1;1;1;1","2019":"0;#808080","2020":"","2021":"Arial;14;#808080;0;0;1","2022":3,"2023":0,"2024":"Arial;8;#000000;1;0;0","2025":"5;2","2026":"0;0;0;1","2027":5,"2030":0,"2032":"Arial;8;#000000;0;0;1","2033":"5;7","2034":"0;0;1;0","2035":5,"2036":"0;#000000","2037":1,"2038":"","2040":"","2041":0,"2042":3,"2043":null,"2044":null,"2045":null,"2046":null,"2047":0,"2048":0,"2049":1,"2050":1,"2051":1,"2052":"","2053":"","2054":"","2055":"","2075":0,"2080":"","2100":1,"2200":0,"2300":"","9066":null,"2400":1,"9065":null,"2451":"Die Teilnehmerliste unterliegt derzeit noch Aktualisierungen durch die Verwaltung auf Basis der definitiven Teilnahme an der Sitzung, bitte schauen Sie sp\u00e4ter noch einmal vorbei.","2452":"Die Tagesordnung unterliegt derzeit noch Aktualisierungen durch die Verwaltung in Bezug auf die Ergebnisse der stattgefundenen Sitzung, bitte schauen Sie sp\u00c3?ter noch einmal vorbei.","2453":"Tagesordnung gilt unter Vorbehalt bis zur Genehmigung des Protokolls.","2500":"","2501":0,"9063":"https:\/\/socket.gremien.info","9064":null,"2550":"","3000":null,"6820":null,"6821":null,"3500":null,"3501":null,"3502":null,"3503":null,"3505":null,"3506":null,"3507":null,"3508":null,"4000":1,"5000":30,"5500":"a","5600":1,"6015":"165;15","6016":"35;10","6017":"1;1;1;1","6018":"0;#808080","6019":"","6020":"Arial;14;#808080;0;0;1","6021":3,"6022":0,"9069":"Kalender","6023":"Arial;8;#000000;1;0;0","6024":"5;2","9070":"Recherche","9071":"Organisation","6025":"0;0;0;1","6026":5,"6027":1,"9062":null,"6028":"0;#000000","6029":"","6030":"LINKS([TITEL] + \" am \" + [DATUM]);","6031":"Arial;8;#000000;0;0;1","9067":null,"9068":0,"6032":"5;7","6033":"0;0;1;0","6034":5,"6035":"0;#000000","6036":1,"6037":"","6038":"RECHTS(\"Seite \" + [SEITENZAHL]);","6200":0,"6500":null,"6600":null,"6700":null,"6800":null,"6810":null,"7200":null,"7400":null,"8000":null,"8001":null,"8002":null,"8003":null,"8004":null,"8005":null,"8006":null,"9057":null,"9058":null,"9059":null,"9060":0,"9061":null,"8007":null,"8008":null,"9001":null,"9002":null,"9003":null,"9004":null,"9005":null,"9006":"","9007":0,"9008":0,"9009":0,"9010":0,"9011":0,"9012":0,"9013":"","9014":"","9015":"","9016":"","9017":"","9018":null,"9019":null,"9020":null,"9021":null,"9022":null,"9023":1,"9024":"[NT]","1700":0,"8009":"","9025":0,"9027":"","9028":0,"9029":null,"9030":0,"9031":"https:\/\/www.friedrichshall.de\/de\/unser-bfh\/impressum-service\/datenschutzerklaerung","9032":"https:\/\/www.friedrichshall.de\/de\/unser-bfh\/impressum-service\/impressum","9033":"","9034":"","9035":"","9036":"","9037":"","9038":"","9040":"","9041":"","9042":"","9043":"","9044":"","9045":0,"9046":0,"9048":0,"9050":1,"9051":"Mandatstr\u00e4ger","9052":0,"9053":0,"9054":15,"9055":null,"9056":null};</script><script>window.translations = {"searchForSubmissions":"Suche nach Vorlagen","organizations":"Organisationen","petitionNumber":"Vorlagennummer","organization":"Organisation","createNewProtocol":"Neues Protokoll anlegen","shortenedCreateNewProtocol":"Neuanlage Protokoll","searchForProtocols":"Suche nach Protokollen","submission":"Vorlage","newSubmissionForNumberGroup":"Neue Vorlage f\u00fcr den Nummernkreis","addSubmissionAttachment":"Anlage der Vorlage hinzuf\u00fcgen","showSubmissionDocument":"Vorlagen-PDF anzeigen","additionToSubmission":"Erg\u00e4nzung zur Vorlage","addInvolvedOrganizations":"Beteiligte Organisationen hinzuf\u00fcgen","submissionAttachments":"Anlagen zur Vorlage","attachmentsToSubmissionAndAgendaItem":"Anlagen zur Vorlage und zum TOP","meetingWasReleased":"Sitzung wurde ver\u00f6ffentlicht","protocolWasReleased":"Protokoll wurde ver\u00f6ffentlicht","statusOfMeetingPlanning":"Status Sitzungsplanung","statusOfFactionMeeting":"Status Fraktionssitzung","statusOfProtocol":"Status Protokoll","meetingPlanning":"Sitzungsplanung","protocol":"Protokoll","agendaItemListOn":"TOP-Liste am ","shortenedAgendaItemNumber":"TOP-Nr.","shortenedAgendaItemStatus":"TOP-Status","scheduledSubmissions":"terminierte Vorlagen","agendaItemFromMeeting":"Tagesordnungspunkt aus der Sitzung","addPeopleToMeeting":"Personen zur Sitzung hinzuf\u00fcgen","addPeopleToProtocol":"Personen zum Protokoll hinzuf\u00fcgen","mandate":"Mandatstr\u00e4ger","ofMandate":"des Mandatstr\u00e4gers","mandates":"Mandatstr\u00e4ger","submissions":"Vorlagen","shortenedAgendaItems":"TOPs","submissionDate":"Antragsdatum","shortenedAgendaItem":"TOP","agendaItem":"Tagesordnungspunkt","ofSubmission":"der Vorlage","agendaItemList":"TOP-Liste","theSubmission":"Die Vorlage","relatedToSubmission":"Vorlage","protocols":"Protokolle","showAgendaItemListLegend":"TOP-Legende einblenden","hideAgendaItemListLegend":"TOP-Legende ausblenden","detailsOfSubmission":"Details zur Vorlage","accordingToSubmission":"gem\u00e4ss Vorlage","authorityMembers":"Beh\u00f6rdenmitglieder","attachmentToSubmission":"Anlage zur Vorlage","attachmentToAgendaItem":"Anlage zum Tagesordnungspunkt","completeProtocol":"Protokoll gesamt","publicProtocol":"Protokoll \u00f6ffentlich","nonpublicProtocol":"Protokoll nicht\u00f6ffentlich","confidentialProtocol":"Protokoll vertraulich","attachmentToProtocol":"Anlage zum Protokoll","protocolAgendaItems":"Protokoll Tagesordnungspunkte","meetingAgendaItems":"Sitzung Tagesordnungspunkte","protocolDocuments":"Protokolldokumente","pdfSubmission":"PDF Vorlage","approved":"Freigegeben","approval":"Freigabe","taskToSubmission":"Aufgaben zur Vorlage","taskToAgendaItem":"Aufgaben zum Tagesordnungspunkt","preProtocol":"Sitzungsvorlagen","department":"Federf\u00fchrung","toSubmission":"zur Vorlage","agendaItems":"Tagesordnungspunkte"};</script><link rel="stylesheet" type="text/css" href="Friedrichshall_20121-Dateien/main.8bccc2a6.css"><script type="module" src="Friedrichshall_20121-Dateien/main.a0fdff35.js" charset="utf-8"></script>
+ <style type="text/css">
+#arrow[data-v-20b7fd4a],
+  #arrow[data-v-20b7fd4a]::before {
+    transition: background 250ms ease-in-out;
+    position: absolute;
+    width: calc(10px - var(--popper-theme-border-width, 0px));
+    height: calc(10px - var(--popper-theme-border-width, 0px));
+    box-sizing: border-box;
+    background: var(--popper-theme-background-color);
+}
+#arrow[data-v-20b7fd4a] {
+    visibility: hidden;
+}
+#arrow[data-v-20b7fd4a]::before {
+    visibility: visible;
+    content: "";
+    transform: rotate(45deg);
+}
+
+  /* Top arrow */
+.popper[data-popper-placement^="top"] > #arrow[data-v-20b7fd4a] {
+    bottom: -5px;
+}
+.popper[data-popper-placement^="top"] > #arrow[data-v-20b7fd4a]::before {
+    border-right: var(--popper-theme-border-width)
+      var(--popper-theme-border-style) var(--popper-theme-border-color);
+    border-bottom: var(--popper-theme-border-width)
+      var(--popper-theme-border-style) var(--popper-theme-border-color);
+}
+
+  /* Bottom arrow */
+.popper[data-popper-placement^="bottom"] > #arrow[data-v-20b7fd4a] {
+    top: -5px;
+}
+.popper[data-popper-placement^="bottom"] > #arrow[data-v-20b7fd4a]::before {
+    border-left: var(--popper-theme-border-width)
+      var(--popper-theme-border-style) var(--popper-theme-border-color);
+    border-top: var(--popper-theme-border-width)
+      var(--popper-theme-border-style) var(--popper-theme-border-color);
+}
+
+  /* Left arrow */
+.popper[data-popper-placement^="left"] > #arrow[data-v-20b7fd4a] {
+    right: -5px;
+}
+.popper[data-popper-placement^="left"] > #arrow[data-v-20b7fd4a]::before {
+    border-right: var(--popper-theme-border-width)
+      var(--popper-theme-border-style) var(--popper-theme-border-color);
+    border-top: var(--popper-theme-border-width)
+      var(--popper-theme-border-style) var(--popper-theme-border-color);
+}
+
+  /* Right arrow */
+.popper[data-popper-placement^="right"] > #arrow[data-v-20b7fd4a] {
+    left: -5px;
+}
+</style><style type="text/css">
+.inline-block[data-v-5784ed69] {
+    display: inline-block;
+}
+.popper[data-v-5784ed69] {
+    transition: background 250ms ease-in-out;
+    background: var(--popper-theme-background-color);
+    padding: var(--popper-theme-padding);
+    color: var(--popper-theme-text-color);
+    border-radius: var(--popper-theme-border-radius);
+    border-width: var(--popper-theme-border-width);
+    border-style: var(--popper-theme-border-style);
+    border-color: var(--popper-theme-border-color);
+    box-shadow: var(--popper-theme-box-shadow);
+    z-index: var(--c81fc0a4);
+}
+.popper[data-v-5784ed69]:hover,
+  .popper:hover > #arrow[data-v-5784ed69]::before {
+    background: var(--popper-theme-background-color-hover);
+}
+.inline-block[data-v-5784ed69] {
+    display: inline-block;
+}
+.fade-enter-active[data-v-5784ed69],
+  .fade-leave-active[data-v-5784ed69] {
+    transition: opacity 0.2s ease;
+}
+.fade-enter-from[data-v-5784ed69],
+  .fade-leave-to[data-v-5784ed69] {
+    opacity: 0;
+}
+</style><link rel="modulepreload" as="script" crossorigin="" href="https://ratsinfo-friedrichshall.more-rubin1.de/includes/js/dist/assets/Calendar.de7afd1d.js"><link rel="stylesheet" href="Friedrichshall_20121-Dateien/Calendar.156ec5f0.css"><link rel="modulepreload" as="script" crossorigin="" href="https://ratsinfo-friedrichshall.more-rubin1.de/includes/js/dist/assets/publicStatus.c3a5c1c3.js"><link rel="modulepreload" as="script" crossorigin="" href="https://ratsinfo-friedrichshall.more-rubin1.de/includes/js/dist/assets/SnapToElement.f9b2846c.js"><link rel="stylesheet" href="Friedrichshall_20121-Dateien/SnapToElement.391a32b3.css"><link rel="modulepreload" as="script" crossorigin="" href="https://ratsinfo-friedrichshall.more-rubin1.de/includes/js/dist/assets/index.2d75de33.js"></head>
+<body>
+  <div id="app" data-v-app=""><div id="main"><!----><div data-v-04071f81=""><!----></div><!----><div class="snackbar-manager" data-v-ddb4d54e=""></div><div class="file-viewer-modal-wrapper global-file-viewer-modal" data-v-03f2e122=""><!----></div></div></div>
+  <!-- Hidden Anchors -->
+  <ol id="skip">
+   <li><a href="#navigation" title="zur Navigation springen">zur Navigation</a></li>
+   <li><a href="#content" title="zum Inhalt springen">zum Inhalt</a></li>
+  </ol>
+
+
+
+<div id="top">
+
+	<div id="header">
+		<div id="headerbox"></div>
+		<div id="headerbox2"></div>
+	</div>
+
+	<div id="navigation">
+		<ol id="vertical"><li><a href="https://ratsinfo-friedrichshall.more-rubin1.de/index.php" title="Startseite">Startseite</a></li>
+<li><strong class="activated">Kalender</strong></li>
+<li><a href="https://ratsinfo-friedrichshall.more-rubin1.de/recherche/index.php" title="Recherche">Recherche</a></li>
+<li><a href="https://ratsinfo-friedrichshall.more-rubin1.de/bodies.php" title="Organisation">Organisation</a></li>
+<li><a href="https://ratsinfo-friedrichshall.more-rubin1.de/mandate.php" title="Mandatsträger">Mandatsträger</a></li>
+<li><a target="_blank" title="Hilfe" href="https://www.more-rubin.de/hilfe/ris">Hilfe</a></li>
+<li><a href="https://ratsinfo-friedrichshall.more-rubin1.de/legende.php" title="Legende">Legende</a></li>
+<li><a href="https://www.friedrichshall.de/de/unser-bfh/impressum-service/datenschutzerklaerung" title="Datenschutzerklärung">Datenschutzerklärung</a></li>
+<li><a href="https://www.friedrichshall.de/de/unser-bfh/impressum-service/impressum" title="Impressum">Impressum</a></li>
+</ol>
+		<div class="anmeldung">
+	<form method="post" action="index.php" name="loginform" data-bitwarden-watching="1"><input type="hidden" name="pass" value="">
+<input type="hidden" name="name" value="">
+<label><input type="hidden" name="referenz" value="/calendar.php"></label>
+				<div class="login_kennung_ueberschrift">ANMELDEN<hr class="hr"></div>
+				<div class="login_kennung_name">Kennung</div>
+				<div class="login_kennung_eingabe"><label><input type="text" name="name" maxlength="40" class="Kleine_Eingabezeile" style="width:85px"></label></div>
+				<br>
+				<div class="login_passwort_name">Passwort</div>
+				<div class="login_passwort_eingabe"><label><input type="password" name="pass" maxlength="40" class="Kleine_Eingabezeile" style="width:85px"></label></div>
+                <br>
+                <div class="login_button"><input type="submit" name="anmeldung" value="Anmelden" style="width:85px" class="Knopf"></div>
+		</form></div>
+		<div class="aktualisierung">Letzte Aktualisierung am:<br>16.02.2023, 14:31</div>
+		<div class="counter"><b>196545</b> Besucher</div>
+		<div class="version">v1.42.1</div>
+	</div>
+
+	<div id="content">
+		<div component="Calendar__cc39560" data-v-app=""><div class="calendar-page" data-v-7838f1b7=""><div class="calendar-page-main" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 48px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 0px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-header" data-v-7838f1b7=""><div class="calendar-page-body-select" data-v-7838f1b7=""><!----></div><div class="calendar-page-header-month-control" data-v-7838f1b7=""><div class="button-wrapper" data-v-61eaa5d4="" data-v-7838f1b7=""><div class="" data-v-61eaa5d4=""><!----><div class="fab-and-text-wrapper" data-v-61eaa5d4=""><button class="fab button-inline" data-v-61eaa5d4="" style="position: relative;"><svg class="svg-inline--fa fa-angles-left fab-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angles-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-v-61eaa5d4=""><path class="" fill="currentColor" d="M77.25 256l137.4-137.4c12.5-12.5 12.5-32.75 0-45.25s-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25l160 160C175.6 444.9 183.8 448 192 448s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L77.25 256zM269.3 256l137.4-137.4c12.5-12.5 12.5-32.75 0-45.25s-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25l160 160C367.6 444.9 375.8 448 384 448s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L269.3 256z"></path></svg></button><!----></div></div></div><div class="button-wrapper" data-v-61eaa5d4="" data-v-7838f1b7=""><div class="" data-v-61eaa5d4=""><!----><div class="fab-and-text-wrapper" data-v-61eaa5d4=""><button class="fab button-inline" data-v-61eaa5d4=""><svg class="svg-inline--fa fa-angle-left fab-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-v-61eaa5d4=""><path class="" fill="currentColor" d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"></path></svg></button><!----></div></div></div><div class="calendar-page-readable-interval" data-v-7838f1b7="">1. Halbjahr 2012</div><div class="button-wrapper" data-v-61eaa5d4="" data-v-7838f1b7=""><div class="" data-v-61eaa5d4=""><!----><div class="fab-and-text-wrapper" data-v-61eaa5d4=""><button class="fab button-inline" data-v-61eaa5d4="" style=""><svg class="svg-inline--fa fa-angle-right fab-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-v-61eaa5d4=""><path class="" fill="currentColor" d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"></path></svg></button><!----></div></div></div><div class="button-wrapper" data-v-61eaa5d4="" data-v-7838f1b7=""><div class="" data-v-61eaa5d4=""><!----><div class="fab-and-text-wrapper" data-v-61eaa5d4=""><button class="fab button-inline" data-v-61eaa5d4="" style="position: relative;"><svg class="svg-inline--fa fa-angles-right fab-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angles-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-v-61eaa5d4=""><path class="" fill="currentColor" d="M246.6 233.4l-160-160c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25L178.8 256l-137.4 137.4c-12.5 12.5-12.5 32.75 0 45.25C47.63 444.9 55.81 448 64 448s16.38-3.125 22.62-9.375l160-160C259.1 266.1 259.1 245.9 246.6 233.4zM438.6 233.4l-160-160c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25L370.8 256l-137.4 137.4c-12.5 12.5-12.5 32.75 0 45.25C239.6 444.9 247.8 448 256 448s16.38-3.125 22.62-9.375l160-160C451.1 266.1 451.1 245.9 438.6 233.4z"></path></svg></button><!----></div></div></div></div><div class="calendar-page-header-right-side-wrapper" data-v-7838f1b7=""><!----><div class="select-wrapper select-filled small" data-v-62b5a506="" data-v-7838f1b7=""><!----><div class="inline-block select-wrapper-popper" style="border: 6px solid transparent; margin: -6px; --c81fc0a4: 9999;" data-v-5784ed69="" data-v-62b5a506=""><div data-v-5784ed69=""><div data-v-62b5a506="" data-v-5784ed69-s=""><div id="_20sapthdo" class="select" data-v-62b5a506="" data-v-5784ed69-s=""><div data-v-62b5a506="" data-v-5784ed69-s=""><div class="select-selected-item" data-v-62b5a506="" data-v-5784ed69-s="">Halbjahr</div></div><div data-v-62b5a506="" data-v-5784ed69-s=""><svg class="svg-inline--fa fa-caret-down icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-v-62b5a506="" data-v-5784ed69-s=""><path class="" fill="currentColor" d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path></svg></div></div><!----></div></div><div class="popper" data-v-5784ed69="" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(-1px, 28px, 0px); display: none;" data-popper-placement="bottom"><div class="options" data-v-62b5a506="" data-v-5784ed69-s=""><div class="option" data-v-62b5a506="" data-v-5784ed69-s="">Monat</div><div class="option" data-v-62b5a506="" data-v-5784ed69-s="">Quartal</div><div class="option option-selected" data-v-62b5a506="" data-v-5784ed69-s="">Halbjahr</div></div><!----></div></div></div></div></div></div></div></div><div class="calendar-page-days calendar-page-days--list-view" data-v-7838f1b7="" style="height: auto;"><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">SO 1. Januar</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Neujahr</div></div></div><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">FR 6. Januar</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Hl. Drei Könige</div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 17. Januar</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-4" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-VWA-17" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">1. Sitzung des Verwaltungsausschusses</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich/nichtöffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 24. Januar</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-4" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-BUA-14" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">1. Sitzung des Bau- und Umweltausschusses</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich/nichtöffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 31. Januar</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-4" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-GR-16" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">1. Sitzung des Gemeinderates</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich/nichtöffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 7. Februar</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-4" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-VWA-18" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">2. Sitzung des Verwaltungsausschusses</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich/nichtöffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 14. Februar</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-1" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-BUA-15" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">2. Sitzung des Bau- und Umweltausschusses</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DO 16. Februar</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Weiberfastnacht</div></div></div><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">MO 20. Februar</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Rosenmontag</div></div></div><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 21. Februar</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Fastnachtsdienstag</div></div></div><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">MI 22. Februar</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Aschermittwoch</div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 28. Februar</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-1" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">16:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-GA-1" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">1. Sitzung des gemeinsamen Ausschusses der Vereinbarten Verwaltungsgemeinschaft Bad Friedrichshall/Oedheim/Offenau</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-4" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-GR-20" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">3. Sitzung des Gemeinderates</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich/nichtöffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 6. März</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-4" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-VWA-19" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">3. Sitzung des Verwaltungsausschusses</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich/nichtöffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 13. März</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-4" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-BUA-16" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">3. Sitzung des Bau- und Umweltausschusses</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich/nichtöffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 20. März</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-4" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-GR-21" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">4. Sitzung des Gemeinderates</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich/nichtöffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 27. März</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-1" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-VWA-20" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">4. Sitzung des Verwaltungsausschusses</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DO 5. April</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Gründonnerstag</div></div></div><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">FR 6. April</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Karfreitag</div></div></div><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">SO 8. April</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Ostersonntag</div></div></div><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">MO 9. April</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Ostermontag</div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 17. April</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-1" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-BUA-17" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">4. Sitzung des Bau- und Umweltausschusses</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DO 19. April</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-1" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">16:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-GA-2" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">2. Sitzung des gemeinsamen Ausschusses der Vereinbarten Verwaltungsgemeinschaft Bad Friedrichshall/Oedheim/Offenau</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Kleiner Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 24. April</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-4" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">19:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-GR-23" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">6. Sitzung des Gemeinderates</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich/nichtöffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 1. Mai</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Maifeiertag</div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 8. Mai</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-4" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-VWA-21" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">5. Sitzung des Verwaltungsausschusses</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich/nichtöffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-4" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">19:25 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-WA-6" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">2. Sitzung des Werksausschusses der Stadtwerke Bad Friedrichshall</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich/nichtöffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 15. Mai</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-1" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-BUA-18" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">5. Sitzung des Bau- und Umweltausschusses</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-1" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:30 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-BA-5" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">2. Sitzung des Betriebsausschusses Stadtentwässerung</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DO 17. Mai</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Christi Himmelfahrt</div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 22. Mai</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-4" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-GR-24" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">7. Sitzung des Gemeinderates</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich/nichtöffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">SO 27. Mai</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Pfingstsonntag</div></div></div><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">MO 28. Mai</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Pfingstmontag</div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 29. Mai</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-1" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-GR-27" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">8. Sitzung des Gemeinderates</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Aula der Otto-Klenert-Realschule</div></div></div></div></div></div></div><!----><div class="calendar-page-day calendar-page-day--weekend" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DO 7. Juni</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div class="calendar-page-day-holiday" data-v-7838f1b7="">Fronleichnam</div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 12. Juni</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-4" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-VWA-22" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">6. Sitzung des Verwaltungsausschusses</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich/nichtöffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 19. Juni</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-1" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-BUA-19" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">6. Sitzung des Bau- und Umweltausschusses</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-1" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">19:40 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-BA-6" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">3. Sitzung des Betriebsausschusses Stadtentwässerung</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div><!----><div class="calendar-page-day" data-v-7838f1b7=""><div class="snap-wrapper" style="height: 17px; width: auto;" data-v-5d65d8bf="" data-v-7838f1b7=""><div class="snap-content-wrapper" style="top: 48px; width: auto;" data-v-5d65d8bf=""><div class="snap-content" data-v-5d65d8bf=""><div class="calendar-page-day-name" data-v-7838f1b7="">DI 26. Juni</div></div></div></div><!----><div class="calendar-page-day-content" data-v-7838f1b7=""><div data-v-7838f1b7=""><div class="calendar-page-day-meeting-wrapper" data-v-7838f1b7=""><div class="calendar-page-day-meeting-public-status calendar-page-day-meeting-public-status-4" data-v-7838f1b7=""></div><div class="calendar-page-day-meeting" data-v-7838f1b7=""><div class="calendar-page-day-meeting-time" data-v-7838f1b7="">18:00 Uhr</div><a href="https://ratsinfo-friedrichshall.more-rubin1.de/meeting.php?id=ni_2012-GR-28" data-v-7838f1b7=""><div class="calendar-page-day-meeting-title" data-v-7838f1b7="">9. Sitzung des Gemeinderates</div><div class="calendar-page-day-meeting-status" data-v-7838f1b7="">(öffentlich/nichtöffentlich)</div></a><div class="calendar-page-day-info" data-v-7838f1b7=""><svg class="svg-inline--fa fa-location-dot" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7838f1b7=""><path class="" fill="currentColor" d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"></path></svg><div data-v-7838f1b7="">Großer Sitzungssaal</div></div></div></div></div></div></div></div><!----></div><div class="webcalendar-wrapper" data-v-7838f1b7=""><div class="webcalendar-headline" data-v-7838f1b7="">Öffentlichen Webkalender im iCal-Format abonnieren</div><div class="webcalendar-buttons" data-v-7838f1b7=""><a href="webcal://ratsinfo-friedrichshall.more-rubin1.de/webkalender/webkalender.php?appleversion" data-v-7838f1b7=""><div class="button-wrapper" data-v-61eaa5d4="" data-v-7838f1b7=""><button class="button button-outlined" type="button" data-v-61eaa5d4=""><div class="button-icon-wrapper" data-v-61eaa5d4=""><svg class="svg-inline--fa fa-apple button-icon" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-61eaa5d4=""><path class="" fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg></div><div class="button-text" data-v-61eaa5d4="">Auf iOS abonnieren</div></button></div></a><div class="button-wrapper" data-v-61eaa5d4="" data-v-7838f1b7=""><button class="button button-outlined" type="button" data-v-61eaa5d4=""><div class="button-icon-wrapper" data-v-61eaa5d4=""><svg class="svg-inline--fa fa-desktop button-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="desktop" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-v-61eaa5d4=""><path class="" fill="currentColor" d="M528 0h-480C21.5 0 0 21.5 0 48v320C0 394.5 21.5 416 48 416h192L224 464H152C138.8 464 128 474.8 128 488S138.8 512 152 512h272c13.25 0 24-10.75 24-24s-10.75-24-24-24H352L336 416h192c26.5 0 48-21.5 48-48v-320C576 21.5 554.5 0 528 0zM512 288H64V64h448V288z"></path></svg></div><div class="button-text" data-v-61eaa5d4="">Link für PC-Version kopieren</div></button></div></div></div></div></div><script>
+            if (window.components == undefined) {
+                window.components = {};
+            }
+
+            window.components["Calendar__cc39560"] = {
+                props: {"initial-meetings":[{"nummer":"2023-VWA-143","nummer_si":"","fraktionssitzung":"0","datum":"2023-01-31","titel":"2. Sitzung des Verwaltungsausschusses","status":"4","niederschrift_status":"0","gremium_1":"VWA","gremium_2":"","gremium_3":"","gremium_4":"","gremium_5":"","raum":"GrSiSa","beginn":"18:00:00","beginn_oef":"00:00:00","beginn_noef":"00:00:00","ende":"00:00:00","is_draft":"0","fullUrl":"https:\/\/ratsinfo-friedrichshall.more-rubin1.de\/meeting.php?id=2023-VWA-143","room":{"Kuerzel":"GrSiSa","Bezeichnung":"Gro\u00dfer Sitzungssaal","Strasse":"Rathausplatz 1","PLZ":"74177","Ort":"Bad Friedrichshall","Ortsteil":"","Telefon":"","Fax":"","id":"GrSiSa","name":"Gro\u00dfer Sitzungssaal","address":{"street":"Rathausplatz 1","zip_code":"74177","location":"Bad Friedrichshall","district":""},"phone_number":"","fax_number":""}},{"nummer":"2023-WA-84","nummer_si":"","fraktionssitzung":"0","datum":"2023-01-31","titel":"2. Sitzung des Werksausschusses der Stadtwerke Bad Friedrichshall","status":"1","niederschrift_status":"0","gremium_1":"WA","gremium_2":"","gremium_3":"","gremium_4":"","gremium_5":"","raum":"GrSiSa","beginn":"18:00:00","beginn_oef":"18:00:00","beginn_noef":"00:00:00","ende":"00:00:00","is_draft":"0","fullUrl":"https:\/\/ratsinfo-friedrichshall.more-rubin1.de\/meeting.php?id=2023-WA-84","room":{"Kuerzel":"GrSiSa","Bezeichnung":"Gro\u00dfer Sitzungssaal","Strasse":"Rathausplatz 1","PLZ":"74177","Ort":"Bad Friedrichshall","Ortsteil":"","Telefon":"","Fax":"","id":"GrSiSa","name":"Gro\u00dfer Sitzungssaal","address":{"street":"Rathausplatz 1","zip_code":"74177","location":"Bad Friedrichshall","district":""},"phone_number":"","fax_number":""}},{"nummer":"2023-OR_Dutt-6","nummer_si":"","fraktionssitzung":"0","datum":"2023-02-06","titel":"1. Sitzung des Ortschaftsrates Duttenberg","status":"4","niederschrift_status":"0","gremium_1":"OR_Dutt","gremium_2":"","gremium_3":"","gremium_4":"","gremium_5":"","raum":"KelterDu","beginn":"19:00:00","beginn_oef":"00:00:00","beginn_noef":"00:00:00","ende":"00:00:00","is_draft":"0","fullUrl":"https:\/\/ratsinfo-friedrichshall.more-rubin1.de\/meeting.php?id=2023-OR_Dutt-6","room":{"Kuerzel":"KelterDu","Bezeichnung":"Keltersaal Duttenberg","Strasse":"Zehentgasse 6","PLZ":"74177","Ort":"Bad Friedrichshall","Ortsteil":"","Telefon":"","Fax":"","id":"KelterDu","name":"Keltersaal Duttenberg","address":{"street":"Zehentgasse 6","zip_code":"74177","location":"Bad Friedrichshall","district":""},"phone_number":"","fax_number":""}},{"nummer":"2023-BUA-145","nummer_si":"","fraktionssitzung":"0","datum":"2023-02-07","titel":"2. Sitzung des Bau- und Umweltausschusses","status":"4","niederschrift_status":"0","gremium_1":"BUA","gremium_2":"","gremium_3":"","gremium_4":"","gremium_5":"","raum":"GrSiSa","beginn":"18:00:00","beginn_oef":"00:00:00","beginn_noef":"00:00:00","ende":"00:00:00","is_draft":"0","fullUrl":"https:\/\/ratsinfo-friedrichshall.more-rubin1.de\/meeting.php?id=2023-BUA-145","room":{"Kuerzel":"GrSiSa","Bezeichnung":"Gro\u00dfer Sitzungssaal","Strasse":"Rathausplatz 1","PLZ":"74177","Ort":"Bad Friedrichshall","Ortsteil":"","Telefon":"","Fax":"","id":"GrSiSa","name":"Gro\u00dfer Sitzungssaal","address":{"street":"Rathausplatz 1","zip_code":"74177","location":"Bad Friedrichshall","district":""},"phone_number":"","fax_number":""}},{"nummer":"2023-BA-45","nummer_si":"","fraktionssitzung":"0","datum":"2023-02-07","titel":"1. Sitzung des Betriebsausschusses Stadtentw\u00e4sserung","status":"1","niederschrift_status":"0","gremium_1":"BA","gremium_2":"","gremium_3":"","gremium_4":"","gremium_5":"","raum":"GrSiSa","beginn":"18:00:00","beginn_oef":"00:00:00","beginn_noef":"00:00:00","ende":"00:00:00","is_draft":"0","fullUrl":"https:\/\/ratsinfo-friedrichshall.more-rubin1.de\/meeting.php?id=2023-BA-45","room":{"Kuerzel":"GrSiSa","Bezeichnung":"Gro\u00dfer Sitzungssaal","Strasse":"Rathausplatz 1","PLZ":"74177","Ort":"Bad Friedrichshall","Ortsteil":"","Telefon":"","Fax":"","id":"GrSiSa","name":"Gro\u00dfer Sitzungssaal","address":{"street":"Rathausplatz 1","zip_code":"74177","location":"Bad Friedrichshall","district":""},"phone_number":"","fax_number":""}},{"nummer":"2023-GR-219","nummer_si":"","fraktionssitzung":"0","datum":"2023-02-14","titel":"2. Sitzung des Gemeinderates","status":"1","niederschrift_status":"0","gremium_1":"GR","gremium_2":"","gremium_3":"","gremium_4":"","gremium_5":"","raum":"GrSiSa","beginn":"18:00:00","beginn_oef":"00:00:00","beginn_noef":"00:00:00","ende":"00:00:00","is_draft":"0","fullUrl":"https:\/\/ratsinfo-friedrichshall.more-rubin1.de\/meeting.php?id=2023-GR-219","room":{"Kuerzel":"GrSiSa","Bezeichnung":"Gro\u00dfer Sitzungssaal","Strasse":"Rathausplatz 1","PLZ":"74177","Ort":"Bad Friedrichshall","Ortsteil":"","Telefon":"","Fax":"","id":"GrSiSa","name":"Gro\u00dfer Sitzungssaal","address":{"street":"Rathausplatz 1","zip_code":"74177","location":"Bad Friedrichshall","district":""},"phone_number":"","fax_number":""}},{"nummer":"2023-VWA-144","nummer_si":"","fraktionssitzung":"0","datum":"2023-02-28","titel":"3. Sitzung des Verwaltungsausschusses","status":"4","niederschrift_status":"0","gremium_1":"VWA","gremium_2":"","gremium_3":"","gremium_4":"","gremium_5":"","raum":"GrSiSa","beginn":"18:00:00","beginn_oef":"00:00:00","beginn_noef":"00:00:00","ende":"00:00:00","is_draft":"0","fullUrl":"https:\/\/ratsinfo-friedrichshall.more-rubin1.de\/meeting.php?id=2023-VWA-144","room":{"Kuerzel":"GrSiSa","Bezeichnung":"Gro\u00dfer Sitzungssaal","Strasse":"Rathausplatz 1","PLZ":"74177","Ort":"Bad Friedrichshall","Ortsteil":"","Telefon":"","Fax":"","id":"GrSiSa","name":"Gro\u00dfer Sitzungssaal","address":{"street":"Rathausplatz 1","zip_code":"74177","location":"Bad Friedrichshall","district":""},"phone_number":"","fax_number":""}},{"nummer":"2023-WA-85","nummer_si":"","fraktionssitzung":"0","datum":"2023-02-28","titel":"3. Sitzung des Werksausschusses der Stadtwerke Bad Friedrichshall","status":"1","niederschrift_status":"0","gremium_1":"WA","gremium_2":"","gremium_3":"","gremium_4":"","gremium_5":"","raum":"GrSiSa","beginn":"18:00:00","beginn_oef":"00:00:00","beginn_noef":"00:00:00","ende":"00:00:00","is_draft":"0","fullUrl":"https:\/\/ratsinfo-friedrichshall.more-rubin1.de\/meeting.php?id=2023-WA-85","room":{"Kuerzel":"GrSiSa","Bezeichnung":"Gro\u00dfer Sitzungssaal","Strasse":"Rathausplatz 1","PLZ":"74177","Ort":"Bad Friedrichshall","Ortsteil":"","Telefon":"","Fax":"","id":"GrSiSa","name":"Gro\u00dfer Sitzungssaal","address":{"street":"Rathausplatz 1","zip_code":"74177","location":"Bad Friedrichshall","district":""},"phone_number":"","fax_number":""}}],"initial-first-day":"2023-01-30","initial-last-day":"2023-03-05","initial-holidays":[{"date":"2023-01-01","name":"Neujahr"},{"date":"2023-01-06","name":"Hl. Drei K\u00f6nige"},{"date":"2023-05-01","name":"Maifeiertag"},{"date":"2023-02-16","name":"Weiberfastnacht"},{"date":"2023-02-20","name":"Rosenmontag"},{"date":"2023-02-21","name":"Fastnachtsdienstag"},{"date":"2023-02-22","name":"Aschermittwoch"},{"date":"2023-04-06","name":"Gr\u00fcndonnerstag"},{"date":"2023-04-07","name":"Karfreitag"},{"date":"2023-04-09","name":"Ostersonntag"},{"date":"2023-04-10","name":"Ostermontag"},{"date":"2023-05-18","name":"Christi Himmelfahrt"},{"date":"2023-05-28","name":"Pfingstsonntag"},{"date":"2023-05-29","name":"Pfingstmontag"},{"date":"2023-06-08","name":"Fronleichnam"},{"date":"2023-08-15","name":"Mari\u00e4 Himmelfahrt"},{"date":"2023-10-03","name":"Tag der dt. Einheit"},{"date":"2023-10-31","name":"Reformationstag"},{"date":"2023-11-01","name":"Allerheiligen"},{"date":"2023-11-22","name":"Buss- und Bettag"},{"date":"2023-12-25","name":"1. Weihnachtstag"},{"date":"2023-12-26","name":"2. Weihnachtstag"},{"date":"2023-12-31","name":"Silvester"}],"initial-room-events":[],"bodies":[{"id_koerperschaft":"BFH","koerperschaft_strasse":"Rathausplatz 1","koerperschaft_plz":"74177","koerperschaft_ort":"Bad Friedrichshall","koerperschaft_ortsteil":"","koerperschaft_telefon":"07136\/832-0","koerperschaft_fax":"07136\/832-888","koerperschaft_email":"info@friedrichshall.de","koerperschaft_internet":"www.friedrichshall.de","hauptgremienkuerzel":"GR","bildinhalt":"","bildtyp":"","koerperschaft_bezeichnung":"Stadt Bad Friedrichshall"}]},
+                store: [],
+            };
+        </script>
+		<p class="up"><a href="#top" title="zum Seitenanfang dieser Seite springen">zum Seitenanfang</a></p>
+	</div>
+
+	<div id="more"><a href="http://www.more-rubin.de/" title="more! software GmbH &amp; Co. KG[Link führt zu externer Seite]">www.more-rubin.de</a></div>
+
+</div>
+
+
+
+<div data-v-app=""></div></body></html>

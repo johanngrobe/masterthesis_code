@@ -1,0 +1,52 @@
+fieldset {
+}
+
+fieldset .fieldset_table { width:100%; }
+
+fieldset .fieldset_group {
+    width:100%;
+}
+
+fieldset .fuerhungstext {
+  width:120px;
+}
+
+fieldset .fieldset_element {
+}
+
+.Auswahlmenu {
+  width:100%;
+}
+
+.Knopf {
+	position:relative;
+}
+
+.Ungerade_Zeile_Tabelle b.suche {
+	background-color:yellow;
+}
+
+table td .Ungerade_Zeile_Tabelle div {
+	vertical-align: top;
+	float:left;
+}
+
+.ImgSort {
+	height:16px;
+	float:left;
+	font-weight:bold;
+}
+
+.ImgSortAcomp {
+	height:16px;
+	float:left;
+	font-weight:bold;
+}
+
+.recherche_form {
+	display:none;
+}
+
+.Clickable {
+	cursor:pointer;
+}

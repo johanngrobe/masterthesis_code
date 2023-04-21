@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html class="whatinput-types-initial ng-scope xlarge-only-mq xlarge-up-mq large-up-mq medium-up-mq small-up-mq whatinput-types-mouse whatinput-types-keyboard" data-ng-app="metropolisApp" data-ng-controller="appController" data-whatinput="mouse" data-whatintent="mouse" lang="de"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  	<title>Sitzungen - SD.NET RIM 4</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="index, nofollow">
+	<meta name="keywords" content="Politik, Mandatsträger, Bürgerinformationssystem, Bürgerinfo, Ratsinformationsmanagement, RIM, Ratsinformationssystem, Ratsinformation, Ratsinfosystem, Ratsinfo, RIS">	<meta name="rights" content="">
+	<meta name="language" content="de-DE">
+	<meta name="generator" content="SD.NET RIM 4 - Ratsinfomanagement">
+
+	<link href="https://oberursel.ratsinfomanagement.net/templates/oberursel-2018/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="Oberursel_2015-Dateien/module-view.css">
+	
+	<script type="text/javascript" src="Oberursel_2015-Dateien/jquery.min.js"></script>
+	<!-- <script type='text/javascript' src='/templates/oberursel-2018/js/main.min.js'></script> -->
+	<link rel="alternate" type="application/rss+xml" title="SD.NET RIM Newsfeed" href="https://oberursel.ratsinfomanagement.net/rss/">
+	
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/all.css" type="text/css" media="screen, print">
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/main.min_002.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/termine_v4.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/main.min_003.css" type="text/css" media="print">
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/main.min.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/main.min_004.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/forms.css" type="text/css" media="screen, print">
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/icons.css" type="text/css" media="screen, print">
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/tables.css" type="text/css" media="screen, print">
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/tabs.css" type="text/css" media="screen, print">
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/general.css" type="text/css" media="screen, print">
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/termine.css" type="text/css" media="screen, print">
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/print_002.css" type="text/css" media="print">
+	<script type="text/javascript" src="Oberursel_2015-Dateien/jquery.js"></script>
+	<script type="text/javascript" src="Oberursel_2015-Dateien/sstquery.js"></script>
+	<script type="text/javascript" src="Oberursel_2015-Dateien/de.js"></script>
+	<script type="text/javascript" src="Oberursel_2015-Dateien/main.min_003.js"></script>
+	<script type="text/javascript" src="Oberursel_2015-Dateien/main.min_004.js"></script>
+	<script type="text/javascript" src="Oberursel_2015-Dateien/main.min_002.js"></script>
+	<script type="text/javascript" src="Oberursel_2015-Dateien/main.min.js"></script>
+	<script type="text/javascript" src="Oberursel_2015-Dateien/termine_v4.js"></script>
+	<script type="text/javascript" src="Oberursel_2015-Dateien/popper.min.js"></script>
+	<script type="text/javascript" src="Oberursel_2015-Dateien/tippy-headless.umd.min.js"></script>
+	<script type="text/javascript" src="Oberursel_2015-Dateien/tabcollection.js"></script>
+	
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/style-customer.css" type="text/css" media="screen">
+		
+	<!--<link rel="stylesheet" href="/templates/oberursel-2018/css/style.min.css">-->
+	<link rel="stylesheet" href="Oberursel_2015-Dateien/print.css" type="text/css" media="print">
+    <style>.accordion-item:after { content: &quot;.&quot;;     clear: both;     display: block;     visibility: hidden; }.h1 { font-size: 25px }.h2 { font-size: 20px } .h3 { font-size: 16px }</style>
+<script type="text/javascript">ionasInfo = {"brand":"cms21","context":"/sv_oberursel","root":"/sv_oberursel","session":null};</script>
+<script>
+		(function (w, d, u) {
+			// Zwei Queues für die Handler definieren
+			w.readyQ = [];
+			w.bindReadyQ = [];
+			// Einen Handler in die korrekte Queue einreihenPush a handler into the correct queue
+			function pushToQ(x, y) {
+				if (x == "ready") {
+					w.bindReadyQ.push(y);
+				} else {
+					w.readyQ.push(x);
+				}
+			}
+			// Ein Alias Objekt definieren (für später)
+			var alias = {
+				ready: pushToQ,
+				bind: pushToQ
+			};
+			// fake jQuery function definieren um  die handlers abzufangen
+			w.$ = w.jQuery = function (handler) {
+				if (handler === d || handler === u) {
+					// $(document).ready(handler), $().ready(handler)
+					// und $(document).bind("ready", handler) durch das zurückgeben eines alias Objekts mit alias
+					// Methoden für pushToQ in eine Queue einreihen
+					return alias;
+				} else {
+					// Queue $(handler)
+					pushToQ(handler);
+				}
+			}
+		})(window, document);
+		</script>
+		
+		
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">    
+    <meta content="ie=edge" http-equiv="x-ua-compatible">    
+
+  <style type="text/css">.scrollax-performance, .scrollax-performance *, .scrollax-performance *:before, .scrollax-performance *:after { pointer-events: none !important; -webkit-animation-play-state: paused !important; animation-play-state: paused !important; };</style><meta class="foundation-mq"><style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+  <body class="template-document mode-live ot-common.common.ionas.core:document" style="margin-top: 122px;">
+    <div class="sa2-search morphsearch" id="morphsearch">
+          <form class="morphsearch-form ng-pristine ng-valid" action="/recherche">
+            <input tabindex="-1" data-sa2-model="query" placeholder="Suchbegriff eingeben..." data-mobile-placeholder="Suche..." type="search" name="terms" class="morphsearch-input ng-scope">
+            <button tabindex="-1" type="submit" class="morphsearch-submit">
+            </button>
+            <!-- ngIf: sa2search.searchIsInProgress -->
+          </form>
+        </div>
+        <span class="morphsearch-close">
+        </span>
+
+    
+<script>document.body.classList.remove('no-js');</script>
+    <div class="header-wrapper">    
+      <header class="header header-offset-top-trigger" id="header">        
+        <div class="row">            
+          <div class="columns small-12 header-sections-wrapper">                
+            <div class="header-section header-section-a">    
+              <a href="http://www.oberursel.de/" title="Zurück zur Startseite" target="_blank" class="logo desktop-logo show-for-large">
+                <img sizes="(min-width: 320px) 175px, 100vw" src="Oberursel_2015-Dateien/stadt-logo.svg" alt="Zurück zur Startseite" srcset="Oberursel_2015-Dateien/stadt-logo.svg 692w" class="i4-object-scale-down complete"></a>
+              <a href="https://oberursel.ratsinfomanagement.net/sv_oberursel/de/" class="logo mobile-logo hide-for-large">
+                <img sizes="(min-width: 320px) 150px, 100vw" src="Oberursel_2015-Dateien/stadt-logo.svg" alt="Zurück zur Startseite" srcset="Oberursel_2015-Dateien/stadt-logo.svg 692w" class="i4-object-scale-down complete"></a>    
+              <!--<div id="weather">
+              </div>-->
+            </div>                
+            <div class="header-section header-section-b">    
+
+              <button class="header-menu-toggle-button-outer hide-for-medium" data-toggle="mobile-menu-alpha" aria-controls="mobile-menu-alpha">    
+                <div class="header-menu-toggle-button">        
+                  <div class="header-menu-toggle-button-inner">
+                  </div>    
+                </div>
+              </button>
+              <div class="mobile-menu-alpha show-for-small-only" data-mobile-menu-alpha="" data-toggler="is-open" id="mobile-menu-alpha" aria-expanded="false">    
+                <nav class="mobile-menu-alpha-inner">        
+                 
+				
+				 				<ul class="sub-menu mobilrimmenu">
+									<li class="menurim">
+										<h2 class="leveltitle"><a href="https://oberursel.ratsinfomanagement.net/startseite" title="zur Startseite">Kommunale Bürgerinfo</a></h2>
+										<ul class="sdnetrim-menu-ul sdnetrim-menu-ul-level0 aktiv">
+	<li class="sdnetrim-menu-li sdnetrim-menu-li-level0 gremien">
+                        <a class="a-level-0" href="https://oberursel.ratsinfomanagement.net/gremien">Gremien</a></li>
+<li class="sdnetrim-menu-li sdnetrim-menu-li-level0 fraktionen">
+                        <a class="a-level-0" href="https://oberursel.ratsinfomanagement.net/fraktionen">Fraktionen / Partei</a></li>
+<li class="sdnetrim-menu-li sdnetrim-menu-li-level0 personen">
+                        <a class="a-level-0" href="https://oberursel.ratsinfomanagement.net/personen">Personen</a></li>
+<li class="sdnetrim-menu-li sdnetrim-menu-li-level0 vorlagen">
+                        <a class="a-level-0" href="https://oberursel.ratsinfomanagement.net/vorlagen">Vorlagen</a></li>
+<li class="sdnetrim-menu-li sdnetrim-menu-li-level0 termine aktiv">
+                        <a class="a-level-0 aktiv" href="https://oberursel.ratsinfomanagement.net/termine">Sitzungen</a></li>
+<li class="sdnetrim-menu-li sdnetrim-menu-li-level0 recherche">
+                        <a class="a-level-0" href="https://oberursel.ratsinfomanagement.net/recherche">Recherche</a></li>
+<li class="sdnetrim-menu-li sdnetrim-menu-li-level0 https---oberursel-ratsinfomanagement-net-intranet">
+                        <a class="a-level-0" href="https://oberursel.ratsinfomanagement.net/intranet">Login Intranet</a></li>
+</ul>
+									</li>
+
+									
+									
+																		<li class="container-login">
+																			</li>
+								</ul>
+				 
+				</nav>
+              </div>
+            </div>                
+            <div class="header-section header-section-c">    
+
+            </div>            
+          </div>        
+        </div>    
+      </header>    
+      <div class="stage-outer" data-scrollax-parent="true">        
+        <div class="stage" data-scrollax="properties: {'translateY': '50%'}" style="transform: translateZ(0px) translateY(48.0313%);">
+          <div>
+            <div class="component component-stageStaticHeader">
+              <div class="stage-static-image stage-area ">
+                <figure class="stage-static-image__figure">
+                  <img data-src="h/templates/oberursel-2018/images/rathaus-01.jpg?cid=1x.10j&amp;resize=46be54:1440x400c" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8KCwkMEQ8SEhEPERATFhwXExQaFRARGCEYGhwdHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAEAAQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAeEAACAQMFAAAAAAAAAAAAAAAAAQIDBCEiMUFSYf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/AJa4soQqJKpLZN6Yc56+gALQ1//Z" alt="Rathaus" class="stage-static-image__picture id-image complete" sizes="(min-width: 1920px) 1920px, (min-width: 1600px) 1919px, (min-width: 1440px) 1599px, (min-width: 1200px) 1439px, (min-width: 992px) 1199px, (min-width: 768px) 991px, (min-width: 640px) 768px, (min-width: 480px) 640px, (min-width: 320px) 480px, 100vw" srcset="Oberursel_2015-Dateien/rathaus-01_011.jpg 480w, Oberursel_2015-Dateien/rathaus-01_004.jpg 640w, Oberursel_2015-Dateien/rathaus-01_017.jpg 720w, Oberursel_2015-Dateien/rathaus-01_005.jpg 768w, Oberursel_2015-Dateien/rathaus-01_009.jpg 960w, Oberursel_2015-Dateien/rathaus-01_006.jpg 1024w, Oberursel_2015-Dateien/rathaus-01_013.jpg 1152w, Oberursel_2015-Dateien/rathaus-01_019.jpg 1200w, Oberursel_2015-Dateien/rathaus-01_008.jpg 1280w, Oberursel_2015-Dateien/rathaus-01_002.jpg 1440w, Oberursel_2015-Dateien/rathaus-01_007.jpg 1536w, Oberursel_2015-Dateien/rathaus-01_020.jpg 1600w, Oberursel_2015-Dateien/rathaus-01_010.jpg 1800w, Oberursel_2015-Dateien/rathaus-01_018.jpg 1920w, Oberursel_2015-Dateien/rathaus-01_014.jpg 2048w, Oberursel_2015-Dateien/rathaus-01.jpg 2160w, Oberursel_2015-Dateien/rathaus-01_016.jpg 2400w, Oberursel_2015-Dateien/rathaus-01_003.jpg 2880w, Oberursel_2015-Dateien/rathaus-01_012.jpg 3200w, Oberursel_2015-Dateien/rathaus-01_015.jpg 3840w" width="1920" height="533">
+                </figure>
+                <div class="stage-static-image__caption stage-text i4-inherit">
+                  <h3 class="stage-static-image__headline id-headline">Kommunale Bürgerinfo<br></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </div>
+    <div id="main-outer" data-mutate="4r961v-sticky" data-events="mutate">    
+      <div class="main-top">
+        <div data-sticky-container="" class="sticky-container" style="height: 33.6px;"><nav class="subnav is-multilanguage is-cheesy sticky initialized is-at-top is-stuck" data-subnav="" data-resize="4r961v-sticky" data-mutate="4r961v-sticky" data-sticky="1i6jh5-sticky" style="max-width: 1440px; margin-top: 5.07143em; bottom: auto; top: 0px;" data-events="mutate">    
+          <div class="subnav__top-bar">        
+            <div class="subnav__top-bar-inner row">            
+              <div class="subnav__top-bar-inner-2 columns small-12">                
+               
+
+<ul id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemscope="" itemtype="http://schema.org/Thing" itemprop="item" target="_blank" href="https://www.oberursel.de/de/rathaus/politik/kommunale-buergerinfo">
+							<span itemprop="name">Kommunale Bürgerinfo</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<span itemprop="name">Sitzungen</span>
+						<meta itemprop="position" content="2">
+					</li>
+				</ul>
+                              
+                <div class="subnav__top-bar-hidden-items subnav__hidden-items" data-greedy-hidden-items-options="{&quot;ulClass&quot; : &quot;subnav__top-bar-hidden-items-menu subnav__hidden-items-menu&quot;, &quot;liClass&quot;: &quot;subnav__hidden-items-item&quot;, &quot;linkClass&quot;: &quot;subnav__hidden-items-link&quot;}" data-greedy-hidden-items-target-id="subnav__top-bar-menu">                    
+                  <button class="subnav__top-bar-hidden-items-button subnav__hidden-items-button" data-greedy-active-selector="[data-is-active='true']" data-greedy-hidden-items-toggle="">Mehr                     
+                  </button>                
+                </div>            
+              </div>        
+            </div>    
+          </div>    
+          <div class="subnav__bottom-bar">        
+            <div class="subnav__bottom-bar-inner row">            
+              <div class="subnav__bottom-bar-inner-2 columns small-12">                                 
+                <div class="subnav__bottom-bar-hidden-items subnav__hidden-items" data-greedy-hidden-items-options="{&quot;ulClass&quot; : &quot;subnav__bottom-bar-hidden-items-menu  subnav__hidden-items-menu&quot;, &quot;liClass&quot;: &quot;subnav__hidden-items-item&quot;, &quot;linkClass&quot;: &quot;subnav__hidden-items-link&quot;}" data-greedy-hidden-items-target-id="subnav__bottom-bar-menu">       <button class="subnav__bottom-bar-hidden-items-button subnav__hidden-items-button" data-greedy-active-selector="[data-is-active='true']" data-greedy-hidden-items-toggle="">Mehr                     
+                  </button>                
+                </div>            
+              </div>        
+            </div>    
+          </div>
+        </nav></div>
+
+
+      </div>    
+      <main>
+        <div class=" id-repeat">
+          <div class="row-instance">
+            <div class="component component-gridBuilder">
+              <div class="row has-main-column-headline">
+                <div class="columns small-12 medium-6 xlarge-8 big-column main-column main-column__outward column--align-left--medium column--unstacked--medium">
+                  <div class="main-column__wrapper">
+                    <div class="main-column__headline h1 id-columnHeadline">Kommunalpolitisches Bürgerinfosystem
+                      <br>
+                    </div>
+                    <div class="column__content-wrapper main-column__content-wrapper main-column--background-color-gray    ">
+                      <div class="id-content-first-column id-content">
+                     
+					 
+					 <div id="rimcontent">
+					<div class="schrift">
+												
+						<div id="rimcontent">
+																												
+							
+<div id="div-content" class="termine" style="position:relative;">
+
+
+<h1 class="heading">Sitzungen</h1>
+    <p class="description">Diese Übersicht enthält alle terminierten 
+Gremiensitzungen. Die führenden Symbole verweisen auf vorhandene 
+Tagesordnungen mit Einladungen bzw. Niederschriften.</p>
+
+<span class="export terminefilter_abstand"><a role="button" href="" onclick="javascript:showTermineform();return false;" aria-label="Termine abonnieren" title="Termine abonnieren"><span aria-hidden="true" class="fa-icon fa-sst-medium ical"></span><span class="hide-text">Termine abonnieren</span></a><a role="button" href="https://oberursel.ratsinfomanagement.net/termine/ics/?__=UGhVM0hpd2NXNFdFcExjZYqa7wbmS-o8CCQrK_79YUfDHcQSBHWWSwZJvve6kSh38uMkXxheKpKnYufKEy_S4yFgfVnAGiKuC0lRfEFMvZs" id="exportIcs" title="Die aktuelle Ansicht in einen lokalen Kalender exportieren" aria-label="Die aktuelle Ansicht in einen lokalen Kalender exportieren"><span aria-hidden="true" class="fa-icon fa-sst-medium outlook"></span><span class="hide-text">Die aktuelle Ansicht in einen lokalen Kalender exportieren</span></a></span>    <button id="terminefilter-btn" aria-pressed="false" aria-label="Terminfilter öffnen oder schließen" type="button" class="terminefilter_abstand     sstfc-button sstfc-button-primary" onclick="return toggleTerminefilter();">Terminfilter</button>
+            <span class="terminefilter-indikator">(aktiv)</span>    <div id="terminefilter" class="displaynone">
+
+        <div id="tabcollection-terminefilter"><ul class="tablist single-entry" role="tablist" id="alert-label"><li><a role="tab" id="a-tablink-gremienfilter" class="active" href="https://oberursel.ratsinfomanagement.net/termine/?__=UGhVM0hpd2NXNFdFcExjZUeuWlOeCBm3ejVPu0-VE2RiNRLC5UNo2oYQJwdCEm5R_aDKxB4Lct5ZO4FPsioqNl08OpCYl6a8jE4mI03Zqg0" aria-selected="true">Gremien</a></li></ul><hr class="cr-left hidden"><div role="tabpanel" id="div-tabbody-gremienfilter" class="active" aria-labelledby="a-tablink-gremienfilter"><ul><li><span class="gremiumcoloricon sstfc-event-dot"></span><input id="gremium-all" type="checkbox" name="all" onclick="handleCalendarCheckboxes( 'gremienfilter', checked)" aria-label="alle"><label for="gremium-all">Alle</label></li><li><span class="gremiumcoloricon sstfc-event-dot"></span><input id="gremium-25" type="checkbox" value="25" checked="checked" class="filteritem" aria-label="Stadtverordnetenversammlung"><label for="gremium-25">Stadtverordnetenversammlung</label></li><li><span class="gremiumcoloricon sstfc-event-dot" style="background-color: ;"></span><input id="gremium-53" type="checkbox" value="53" class="filteritem" aria-label="Bürgerversammlung"><label for="gremium-53">Bürgerversammlung</label></li><li><span class="gremiumcoloricon sstfc-event-dot" style="background-color: #F79646;"></span><input id="gremium-7" type="checkbox" value="7" checked="checked" class="filteritem" aria-label="Bau-, Umwelt- und Klimaschutzausschuss"><label for="gremium-7">Bau-, Umwelt- und Klimaschutzausschuss</label></li><li><span class="gremiumcoloricon sstfc-event-dot" style="background-color: #92D050;"></span><input id="gremium-10" type="checkbox" value="10" class="filteritem" aria-label="Haupt-, Finanz- und Digitalisierungsausschuss"><label for="gremium-10">Haupt-, Finanz- und Digitalisierungsausschuss</label></li><li><span class="gremiumcoloricon sstfc-event-dot" style="background-color: #FFFF00;"></span><input id="gremium-23" type="checkbox" value="23" class="filteritem" aria-label="Sozial-, Bildungs- und Kulturausschuss"><label for="gremium-23">Sozial-, Bildungs- und Kulturausschuss</label></li><li><span class="gremiumcoloricon sstfc-event-dot" style="background-color: ;"></span><input id="gremium-78" type="checkbox" value="78" class="filteritem" aria-label="Ortsbeirat Bommersheim"><label for="gremium-78">Ortsbeirat Bommersheim</label></li><li><span class="gremiumcoloricon sstfc-event-dot" style="background-color: ;"></span><input id="gremium-17" type="checkbox" value="17" class="filteritem" aria-label="Ortsbeirat Oberstedten"><label for="gremium-17">Ortsbeirat Oberstedten</label></li><li><span class="gremiumcoloricon sstfc-event-dot" style="background-color: ;"></span><input id="gremium-77" type="checkbox" value="77" class="filteritem" aria-label="Ortsbeirat Oberursel-Mitte"><label for="gremium-77">Ortsbeirat Oberursel-Mitte</label></li><li><span class="gremiumcoloricon sstfc-event-dot" style="background-color: ;"></span><input id="gremium-76" type="checkbox" value="76" class="filteritem" aria-label="Ortsbeirat Oberursel-Nord"><label for="gremium-76">Ortsbeirat Oberursel-Nord</label></li><li><span class="gremiumcoloricon sstfc-event-dot" style="background-color: ;"></span><input id="gremium-18" type="checkbox" value="18" checked="checked" class="filteritem" aria-label="Ortsbeirat Stierstadt"><label for="gremium-18">Ortsbeirat Stierstadt</label></li><li><span class="gremiumcoloricon sstfc-event-dot" style="background-color: ;"></span><input id="gremium-19" type="checkbox" value="19" class="filteritem" aria-label="Ortsbeirat Weißkirchen"><label for="gremium-19">Ortsbeirat Weißkirchen</label></li><li><span class="gremiumcoloricon sstfc-event-dot" style="background-color: ;"></span><input id="gremium-1" type="checkbox" value="1" class="filteritem" aria-label="Ausländerbeirat"><label for="gremium-1">Ausländerbeirat</label></li><li><span class="gremiumcoloricon sstfc-event-dot" style="background-color: ;"></span><input id="gremium-5" type="checkbox" value="5" class="filteritem" aria-label="bis 31.03.2021: Beirat Bommersheim"><label for="gremium-5">bis 31.03.2021: Beirat Bommersheim</label></li></ul></div></div><script>sessionStorage.setItem('csrfToken', '159c3c9ba1afa79d9d89383077ccec89eca9f9458ea8322ed505c9da611e3300');</script><button class="sstfc-button sstfc-button-primary" onclick="reloadTermine( 'https://oberursel.ratsinfomanagement.net/ajax/termine/', 'https://oberursel.ratsinfomanagement.net/termine/' );">Filter anwenden</button> <button class="sstfc-button sstfc-button-primary" onclick="javascript:window.location.href='https://oberursel.ratsinfomanagement.net/termine/'">Filter aufheben</button>        </div>
+    
+    <div id="loading-animation" style="display: none;">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+    <div id="sst-calendar" role="application" class="sstfc sstfc-ltr sstfc-unthemed" style=""><div class="sstfc-toolbar sstfc-header-toolbar" role="navigation"><div class="sstfc-left"><div class="sstfc-button-group"><button type="button" class="sstfc-dayGridMonth-button sstfc-button sstfc-button-primary" aria-pressed="false" aria-label="Zur Monatsansicht wechseln">Monat</button><button type="button" class="sstfc-timeGridWeek-button sstfc-button sstfc-button-primary" aria-pressed="false" aria-label="Zur Wochenansicht wechseln">Woche</button><button type="button" class="sstfc-timeGridDay-button sstfc-button sstfc-button-primary" aria-pressed="false" aria-label="Zur Tagesansicht wechseln">Tag</button><button type="button" class="sstfc-listMonth-button sstfc-button sstfc-button-primary" aria-pressed="false" aria-label="Zur Monatsliste wechseln">Monatsliste</button><button type="button" class="sstfc-listYear-button sstfc-button sstfc-button-primary sstfc-button-active" aria-pressed="true" aria-label="Zur Jahresliste wechseln">Jahresliste</button></div></div><div class="sstfc-center"><div class="sstfc-button-group"><button type="button" class="sstfc-prev-button sstfc-button sstfc-button-primary" aria-label="vorheriges Jahr" aria-pressed="false"><span class="sstfc-icon sstfc-icon-chevron-left"></span></button><button type="button" class="sstfc-today-button sstfc-button sstfc-button-primary" aria-pressed="false" aria-label="Zum aktuellen Jahr springen">Heute</button><button type="button" class="sstfc-next-button sstfc-button sstfc-button-primary" aria-label="nächstes Jahr" aria-pressed="false"><span class="sstfc-icon sstfc-icon-chevron-right"></span></button></div><div class="sstfc-button-group sstfc-selection"><select class="sstfc-button sstfc-button-primary" id="sstfc-button-month" aria-label="zu Monat springen" aria-pressed="false" disabled="disabled" style="display: none;"><option>Januar</option><option>Februar</option><option>März</option><option>April</option><option>Mai</option><option>Juni</option><option>Juli</option><option>August</option><option>September</option><option>Oktober</option><option>November</option><option>Dezember</option></select><select class="sstfc-button sstfc-button-primary" id="sstfc-button-year" aria-label="zu Jahr springen" aria-pressed="false"><option>2023</option><option>2022</option><option>2021</option><option>2020</option><option>2019</option><option>2018</option><option>2017</option><option>2016</option><option selected="selected">2015</option><option>2014</option></select></div></div><div class="sstfc-right"><h2>2015</h2></div></div><div class="sstfc-view-container" style=""><div class="sstfc-view sstfc-listYear-view sstfc-list-view sstfc-widget-content"><div class="sstfc-scroller" style="overflow: hidden auto; height: auto;"><table class="sstfc-list-table "><tbody><tr class="sstfc-list-seperator sstfc-list-heading"><td colspan="3" class="sstfc-widget-header">Januar</td></tr><tr class="sstfc-list-heading" data-date="2015-01-21"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Mittwoch, 21. Januar 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content" style="background-color: rgb(247, 150, 70);"></td><td class="sstfc-list-item-time sstfc-widget-content">19:10 - 21:42 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mi., 21.1.2015, 19:10 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZbxwzeW6YYHXemNZBJMskkI" aria-label="Sitzung am Mittwoch, 21.01.2015 19:10 des Gremiums Bau-, Umwelt- und Klimaschutzausschuss 59. Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Bau-, Umwelt- und Klimaschutzausschuss, 59. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-01-26"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Montag, 26. Januar 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">20:15 - 21:15 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mo., 26.1.2015, 20:15 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZWAnZ7HClLjljPBYLeFkBrY" aria-label="Sitzung am Montag, 26.01.2015 20:15 des Gremiums Ortsbeirat Stierstadt 32. Sitzung
+Rathaus Stierstadt
+61440 Oberursel (Taunus)
+Sitzungssaal des ehemaligen Rathauses Stierstadt">Ortsbeirat Stierstadt, 32. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Stierstadt<br>61440 Oberursel (Taunus)<br>Sitzungssaal des ehemaligen Rathauses Stierstadt</div></div></td></tr><tr class="sstfc-list-seperator sstfc-list-heading"><td colspan="3" class="sstfc-widget-header">Februar</td></tr><tr class="sstfc-list-heading" data-date="2015-02-05"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Donnerstag, 5. Februar 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">19:40 - 23:15 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Do., 5.2.2015, 19:40 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZWn2Sjum9q1P8w2W9dBP-94" aria-label="Sitzung am Donnerstag, 05.02.2015 19:40 des Gremiums Stadtverordnetenversammlung 35. öffentliche Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Stadtverordnetenversammlung, 35. öffentliche Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-seperator sstfc-list-heading"><td colspan="3" class="sstfc-widget-header">März</td></tr><tr class="sstfc-list-heading" data-date="2015-03-11"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Mittwoch, 11. März 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content" style="background-color: rgb(247, 150, 70);"></td><td class="sstfc-list-item-time sstfc-widget-content">19:53 - 22:10 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mi., 11.3.2015, 19:53 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZQijpAIG612RWlcBCOMCcxM" aria-label="Sitzung am Mittwoch, 11.03.2015 19:53 des Gremiums Bau-, Umwelt- und Klimaschutzausschuss 60. Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Bau-, Umwelt- und Klimaschutzausschuss, 60. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-03-16"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Montag, 16. März 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">20:00 - 22:15 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mo., 16.3.2015, 20:00 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZWiccuCu8gj30Wl1die-zEA" aria-label="Sitzung am Montag, 16.03.2015 20:00 des Gremiums Ortsbeirat Stierstadt 33. Sitzung
+Rathaus Stierstadt
+61440 Oberursel (Taunus)
+Sitzungssaal des ehemaligen Rathauses Stierstadt">Ortsbeirat Stierstadt, 33. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Stierstadt<br>61440 Oberursel (Taunus)<br>Sitzungssaal des ehemaligen Rathauses Stierstadt</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-03-26"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Donnerstag, 26. März 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content" style="background-color: rgb(247, 150, 70);"></td><td class="sstfc-list-item-time sstfc-widget-content">18:22 - 18:55 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Do., 26.3.2015, 18:22 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZQ5Z6giI5DfQ04iOrdiRT1I" aria-label="Sitzung am Donnerstag, 26.03.2015 18:22 des Gremiums Bau-, Umwelt- und Klimaschutzausschuss 61. Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Bau-, Umwelt- und Klimaschutzausschuss, 61. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">19:30 - 23:20 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Do., 26.3.2015, 19:30 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZegJLY8KTOLWm3KgstdrLbM" aria-label="Sitzung am Donnerstag, 26.03.2015 19:30 des Gremiums Stadtverordnetenversammlung 36. öffentliche Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Stadtverordnetenversammlung, 36. öffentliche Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-seperator sstfc-list-heading"><td colspan="3" class="sstfc-widget-header">April</td></tr><tr class="sstfc-list-heading" data-date="2015-04-15"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Mittwoch, 15. April 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content" style="background-color: rgb(247, 150, 70);"></td><td class="sstfc-list-item-time sstfc-widget-content">19:10 - 21:10 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mi., 15.4.2015, 19:10 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZUZDVeas-Yuk8b_pf0GOWLI" aria-label="Sitzung am Mittwoch, 15.04.2015 19:10 des Gremiums Bau-, Umwelt- und Klimaschutzausschuss 62. Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Bau-, Umwelt- und Klimaschutzausschuss, 62. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-04-28"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Dienstag, 28. April 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">19:30 - 22:25 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Di., 28.4.2015, 19:30 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZXv4JTXLCuh8LTVjFMFpiqU" aria-label="Sitzung am Dienstag, 28.04.2015 19:30 des Gremiums Stadtverordnetenversammlung 37. öffentliche Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Stadtverordnetenversammlung, 37. öffentliche Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-04-30"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Donnerstag, 30. April 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">19:40 - 22:30 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Do., 30.4.2015, 19:40 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZZHR48cl92OUE_wT4Si4gzM" aria-label="Sitzung am Donnerstag, 30.04.2015 19:40 des Gremiums Stadtverordnetenversammlung 38. öffentliche Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Stadtverordnetenversammlung, 38. öffentliche Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-seperator sstfc-list-heading"><td colspan="3" class="sstfc-widget-header">Mai</td></tr><tr class="sstfc-list-heading" data-date="2015-05-06"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Mittwoch, 6. Mai 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content" style="background-color: rgb(247, 150, 70);"></td><td class="sstfc-list-item-time sstfc-widget-content">19:53 - 20:30 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mi., 6.5.2015, 19:53 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZY9ley7Pt95HUJrcF7zI9mc" aria-label="Sitzung am Mittwoch, 06.05.2015 19:53 des Gremiums Bau-, Umwelt- und Klimaschutzausschuss 63. Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Bau-, Umwelt- und Klimaschutzausschuss, 63. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-05-11"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Montag, 11. Mai 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">20:00 - 21:20 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mo., 11.5.2015, 20:00 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZRbE3UbaBQnvpElAEk1qEp4" aria-label="Sitzung am Montag, 11.05.2015 20:00 des Gremiums Ortsbeirat Stierstadt 34. Sitzung
+Rathaus Stierstadt
+61440 Oberursel (Taunus)
+Sitzungssaal des ehemaligen Rathauses Stierstadt">Ortsbeirat Stierstadt, 34. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Stierstadt<br>61440 Oberursel (Taunus)<br>Sitzungssaal des ehemaligen Rathauses Stierstadt</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-05-21"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Donnerstag, 21. Mai 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">19:30 - 22:40 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Do., 21.5.2015, 19:30 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZZrQuCWt2FlJUxn7uy8rEec" aria-label="Sitzung am Donnerstag, 21.05.2015 19:30 des Gremiums Stadtverordnetenversammlung 39. öffentliche Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Stadtverordnetenversammlung, 39. öffentliche Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-seperator sstfc-list-heading"><td colspan="3" class="sstfc-widget-header">Juni</td></tr><tr class="sstfc-list-heading" data-date="2015-06-10"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Mittwoch, 10. Juni 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content" style="background-color: rgb(247, 150, 70);"></td><td class="sstfc-list-item-time sstfc-widget-content">19:10 - 22:00 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mi., 10.6.2015, 19:10 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZQTT2S1-mfKt1RnlltKdeDQ" aria-label="Sitzung am Mittwoch, 10.06.2015 19:10 des Gremiums Bau-, Umwelt- und Klimaschutzausschuss 64. Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Bau-, Umwelt- und Klimaschutzausschuss, 64. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-06-22"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Montag, 22. Juni 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">20:00 - 20:45 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mo., 22.6.2015, 20:00 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZT0i7eKFaD0UknQnOUqc5EY" aria-label="Sitzung am Montag, 22.06.2015 20:00 des Gremiums Ortsbeirat Stierstadt 35. Sitzung
+Rathaus Stierstadt
+61440 Oberursel (Taunus)
+Sitzungssaal des ehemaligen Rathauses Stierstadt">Ortsbeirat Stierstadt, 35. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Stierstadt<br>61440 Oberursel (Taunus)<br>Sitzungssaal des ehemaligen Rathauses Stierstadt</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-06-25"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Donnerstag, 25. Juni 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">19:30 - 22:20 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Do., 25.6.2015, 19:30 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZYWvVi8LpWhrAdvBgrBhREE" aria-label="Sitzung am Donnerstag, 25.06.2015 19:30 des Gremiums Stadtverordnetenversammlung 40. öffentliche Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Stadtverordnetenversammlung, 40. öffentliche Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-seperator sstfc-list-heading"><td colspan="3" class="sstfc-widget-header">Juli</td></tr><tr class="sstfc-list-heading" data-date="2015-07-08"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Mittwoch, 8. Juli 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content" style="background-color: rgb(247, 150, 70);"></td><td class="sstfc-list-item-time sstfc-widget-content">17:45 - 22:40 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mi., 8.7.2015, 17:45 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZXXVxvbozdXBHGNur_UNAk0" aria-label="Sitzung am Mittwoch, 08.07.2015 17:45 des Gremiums Bau-, Umwelt- und Klimaschutzausschuss 65. Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Bau-, Umwelt- und Klimaschutzausschuss, 65. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-07-20"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Montag, 20. Juli 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">20:00 - 21:15 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mo., 20.7.2015, 20:00 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZSJ42BWPGhwBuhvSGdOwCTY" aria-label="Sitzung am Montag, 20.07.2015 20:00 des Gremiums Ortsbeirat Stierstadt 36. Sitzung
+Rathaus Stierstadt
+61440 Oberursel (Taunus)
+Sitzungssaal des ehemaligen Rathauses Stierstadt">Ortsbeirat Stierstadt, 36. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Stierstadt<br>61440 Oberursel (Taunus)<br>Sitzungssaal des ehemaligen Rathauses Stierstadt</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-07-23"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Donnerstag, 23. Juli 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">19:45 - 21:55 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Do., 23.7.2015, 19:45 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZaPgOH0vDCI5GgnG9RVd38g" aria-label="Sitzung am Donnerstag, 23.07.2015 19:45 des Gremiums Stadtverordnetenversammlung 41. öffentliche Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Stadtverordnetenversammlung, 41. öffentliche Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-seperator sstfc-list-heading"><td colspan="3" class="sstfc-widget-header">September</td></tr><tr class="sstfc-list-heading" data-date="2015-09-23"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Mittwoch, 23. September 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content" style="background-color: rgb(247, 150, 70);"></td><td class="sstfc-list-item-time sstfc-widget-content">19:10 - 21:35 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mi., 23.9.2015, 19:10 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZVntJFfz8xKvPii7UniAt2Y" aria-label="Sitzung am Mittwoch, 23.09.2015 19:10 des Gremiums Bau-, Umwelt- und Klimaschutzausschuss 66. Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Bau-, Umwelt- und Klimaschutzausschuss, 66. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-09-28"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Montag, 28. September 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">20:00 - 21:30 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mo., 28.9.2015, 20:00 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZdgoMrDHxZpdhvflBsXPBNA" aria-label="Sitzung am Montag, 28.09.2015 20:00 des Gremiums Ortsbeirat Stierstadt 37. Sitzung
+Rathaus Stierstadt
+61440 Oberursel (Taunus)
+Sitzungssaal des ehemaligen Rathauses Stierstadt">Ortsbeirat Stierstadt, 37. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Stierstadt<br>61440 Oberursel (Taunus)<br>Sitzungssaal des ehemaligen Rathauses Stierstadt</div></div></td></tr><tr class="sstfc-list-seperator sstfc-list-heading"><td colspan="3" class="sstfc-widget-header">Oktober</td></tr><tr class="sstfc-list-heading" data-date="2015-10-08"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Donnerstag, 8. Oktober 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">19:30 - 22:40 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Do., 8.10.2015, 19:30 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZTniT3MSjq6x5se3B2hyq1c" aria-label="Sitzung am Donnerstag, 08.10.2015 19:30 des Gremiums Stadtverordnetenversammlung 42. öffentliche Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Stadtverordnetenversammlung, 42. öffentliche Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-seperator sstfc-list-heading"><td colspan="3" class="sstfc-widget-header">November</td></tr><tr class="sstfc-list-heading" data-date="2015-11-02"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Montag, 2. November 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">20:00 - 21:15 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mo., 2.11.2015, 20:00 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZVTUKrbMoiOA4An5wfMiWGI" aria-label="Sitzung am Montag, 02.11.2015 20:00 des Gremiums Ortsbeirat Stierstadt 38. Sitzung
+IGS Stierstadt, Hauptgebäude
+61440 Oberursel (Taunus)
+IGS Stierstadt, Hauptgebäude, Lehrerzimmer 2, EG, Kiesweg 17-19">Ortsbeirat Stierstadt, 38. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">IGS Stierstadt, Hauptgebäude<br>61440 Oberursel (Taunus)<br>IGS Stierstadt, Hauptgebäude, Lehrerzimmer 2, EG, Kiesweg 17-19</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-11-04"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Mittwoch, 4. November 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content" style="background-color: rgb(247, 150, 70);"></td><td class="sstfc-list-item-time sstfc-widget-content">17:45 - 22:25 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mi., 4.11.2015, 17:45 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZUI2Z4IRGqKrdwzpNLMwuVk" aria-label="Sitzung am Mittwoch, 04.11.2015 17:45 des Gremiums Bau-, Umwelt- und Klimaschutzausschuss 67. Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Bau-, Umwelt- und Klimaschutzausschuss, 67. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-11-19"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Donnerstag, 19. November 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">19:30 - 22:50 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Do., 19.11.2015, 19:30 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZYSCY4q7zNy9b9uER3uGlbo" aria-label="Sitzung am Donnerstag, 19.11.2015 19:30 des Gremiums Stadtverordnetenversammlung 43. öffentliche Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Stadtverordnetenversammlung, 43. öffentliche Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-seperator sstfc-list-heading"><td colspan="3" class="sstfc-widget-header">Dezember</td></tr><tr class="sstfc-list-heading" data-date="2015-12-02"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Mittwoch, 2. Dezember 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content" style="background-color: rgb(247, 150, 70);"></td><td class="sstfc-list-item-time sstfc-widget-content">17:45 - 21:50 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mi., 2.12.2015, 17:45 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZY3PuKOXE2U22UmENE7EPLk" aria-label="Sitzung am Mittwoch, 02.12.2015 17:45 des Gremiums Bau-, Umwelt- und Klimaschutzausschuss 68. Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Bau-, Umwelt- und Klimaschutzausschuss, 68. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-12-09"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Mittwoch, 9. Dezember 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">20:00 - 22:00 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Mi., 9.12.2015, 20:00 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZRNZSp9LBSU59E4mWUfr-0Y" aria-label="Sitzung am Mittwoch, 09.12.2015 20:00 des Gremiums Ortsbeirat Stierstadt 39. Sitzung
+Rathaus Stierstadt
+61440 Oberursel (Taunus)
+Sitzungssaal des ehemaligen Rathauses Stierstadt">Ortsbeirat Stierstadt, 39. Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Stierstadt<br>61440 Oberursel (Taunus)<br>Sitzungssaal des ehemaligen Rathauses Stierstadt</div></div></td></tr><tr class="sstfc-list-heading" data-date="2015-12-17"><td class="sstfc-widget-header" colspan="3"><span class="sstfc-list-heading-main">Donnerstag, 17. Dezember 2015</span></td></tr><tr class="sstfc-list-item sstfc-has-url"><td class="sstfc-list-item-marker sstfc-widget-content"></td><td class="sstfc-list-item-time sstfc-widget-content">19:30 - 22:50 Uhr<br><span class="fa-icon tops-link tops-ns-link fa-sst-file" title="Niederschrift vom Do., 17.12.2015, 19:30 Uhr" aria-hidden="true"><i aria-hidden="true" class="letter_inside"></i></span></td><td class="sstfc-list-item-title sstfc-widget-content"><div class="sstfc-flexContainer"><div class="sstfc-titleHint-display"><a href="https://oberursel.ratsinfomanagement.net/tops/?__=UGhVM0hpd2NXNFdFcExjZSYwZhSJx4qiPb0m3Xr89Zs" aria-label="Sitzung am Donnerstag, 17.12.2015 19:30 des Gremiums Stadtverordnetenversammlung 44. öffentliche Sitzung
+Rathaus Oberursel
+61440 Oberursel (Taunus)
+- Großer Sitzungssaal -">Stadtverordnetenversammlung, 44. öffentliche Sitzung</a><div class="span_hinweis"></div></div><div class="sstfc-event-place">Rathaus Oberursel<br>61440 Oberursel (Taunus)<br>- Großer Sitzungssaal -</div></div></td></tr></tbody></table></div></div></div><div class="sstfc-placeholder sstfc-toolbar sstfc-header-toolbar" style="height: 82.6px;"></div></div>
+
+    
+<script type="text/javascript">
+
+/* ++++++++++ FullCalendar v4 2019 ++++++++++ */
+
+
+        $SST(function() {
+        // Dropdownmenüs erzeugen
+        var yearDropdown = document.createElement('select');
+        yearDropdown.className = 'sstfc-button sstfc-button-primary';
+        yearDropdown.id = 'sstfc-button-year';
+        yearDropdown.setAttribute('aria-label', 'zu Jahr springen');
+        var years = ["2023","2022","2021","2020","2019","2018","2017","2016","2015","2014"];
+        years.forEach(function(entry) {
+            var option = document.createElement('option');
+            option.innerText = entry;
+            yearDropdown.appendChild(option);
+        });
+        var monthDropdown = document.createElement('select');
+        monthDropdown.className = 'sstfc-button sstfc-button-primary';
+        monthDropdown.id = 'sstfc-button-month';
+        monthDropdown.setAttribute('aria-label', 'zu Monat springen');
+        var months = ["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"];
+        months.forEach(function(entry) {
+            var option = document.createElement('option');
+            option.innerText = entry;
+            monthDropdown.appendChild(option);
+        });
+
+        setVariables(
+            false,
+            true,
+            yearDropdown,
+            monthDropdown,
+            'Niederschrift',
+            'Einladung',
+            'Sitzungstermin'
+        );
+
+        // Kalender erzeugen
+        var calendarEl = $SST('#sst-calendar')[0];
+        var calendar = new SSTFullCalendar.Calendar(calendarEl, {
+            locale: 'de',
+            plugins: [ 'dayGrid', 'timeGrid', 'list' ],
+            header: {
+                left: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth,listYear',
+                center: 'prev,today,next',
+                right: 'title'
+            },
+            views: {
+                listMonth: {
+                    buttonText: 'Monatsliste',
+                },
+                listYear: {
+                    buttonText: 'Jahresliste',
+                },
+                timeGridWeek: {
+                    displayEventEnd: false,
+                },
+                timeGridDay: {
+                    displayEventEnd: false,
+                }
+            },
+            listDayFormat: {
+                weekday: 'long',
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            },
+            listDayAltFormat: false,
+            defaultDate: new Date( 1675255708000 ),
+            defaultView: 'dayGridMonth',
+            scrollTime: '08:00:00',
+            lazyFetching: false,
+            eventOverlap: false,
+            slotEventOverlap: false,
+                        validRange: {
+                start: '2014-01-01',
+                end: '2024-01-01'
+            },
+            allDayMaintainDuration: true,
+            eventTimeFormat: {
+                hour: 'numeric',
+                minute: '2-digit',
+                omitZeroMinute: false
+            },
+            events: function(info, successCallback, failureCallback) {
+                $SST.ajax({
+                    url: 'https://oberursel.ratsinfomanagement.net/termine/json/Sitzungstermine/?__=UGhVM0hpd2NXNFdFcExjZUeuWlOeCBm3ejVPu0-VE2RlXKOvBftRdNf155goEeWi',
+                    type: 'GET',
+                    data: {
+                        start: info.startStr,
+                        end: info.endStr
+                    },
+                    headers: {
+                        'X-CSRF-Token': '159c3c9ba1afa79d9d89383077ccec89eca9f9458ea8322ed505c9da611e3300'
+                    }, success: function (response) {
+                            successCallback(response.events);
+                            $SST('#exportIcs').attr('href', response.exportUrl);
+                    }
+                });
+            },
+            loading: loading,
+                        viewSkeletonRender: function(info) {
+                // Platzhalter nur einmal in der passenden Ansicht erstellen
+                if (info.view.type == 'listYear' || info.view.type == 'listMonth') {
+                    if ($SST(calendar.el).children('div.sstfc-placeholder').length == 0) {
+                        var placeHolder = $SST('<div class="sstfc-placeholder sstfc-toolbar sstfc-header-toolbar"></div>');
+                        placeHolder.height($SST(calendar.el).children('.sstfc-header-toolbar').height());
+                        $SST(calendar.el).append(placeHolder);
+                    }
+                } else {
+                    if ($SST(calendar.el).children('div.sstfc-placeholder').length > 0) {
+                        $SST(calendar.el).children('div.sstfc-placeholder').remove();
+                    }
+                }
+            },
+                        datesRender: datesRender,
+            eventRender: eventRender,
+            eventPositioned: eventPositioned
+        });
+
+        // EventListener für die Dropdownmenüs. Müssen hier sein, um auf den bereits instanziierten Kalender zugreifen zu können
+        yearDropdown.addEventListener('change', function() {
+            calendar.gotoDate(yearDropdown.value +
+            '-' + ((calendar.state.currentDate.getMonth() + 1) < 10 ? '0' + (calendar.state.currentDate.getMonth() + 1) : (calendar.state.currentDate.getMonth() + 1)) +
+            '-' + (calendar.state.currentDate.getDate() < 10 ? '0' + calendar.state.currentDate.getDate() : calendar.state.currentDate.getDate()));
+        });
+        monthDropdown.addEventListener('change', function() {
+            calendar.gotoDate(calendar.state.currentDate.getFullYear() +
+            '-' + ((months.indexOf(monthDropdown.value) + 1) < 10 ? '0' + (months.indexOf(monthDropdown.value) + 1) : (months.indexOf(monthDropdown.value) + 1)) +
+            '-' + (calendar.state.currentDate.getDate() < 10 ? '0' + calendar.state.currentDate.getDate() : calendar.state.currentDate.getDate()));
+        });
+        calendar.render();
+
+        // Dropdownmenüs dem gerendertem Kalender hinzufügen
+        var buttonGroup = document.createElement('div');
+        buttonGroup.className = 'sstfc-button-group sstfc-selection';
+                buttonGroup.appendChild(monthDropdown);
+                        buttonGroup.appendChild(yearDropdown);
+                $SST('.sstfc-center').append(buttonGroup);
+
+        // Navigation des Kalenders bei Listenansichten nach unten schieben, wenn man runterscrollt
+                    var navMoved = false;
+            var lock = false;
+            $SST(window).on('scroll', function() {
+                if ((calendar.state.viewType == 'listMonth' || calendar.state.viewType == 'listYear') &&
+                $SST(document).scrollTop() - $SST(calendar.el).find('.sstfc-list-view').offset().top > 0) {
+                    if (!navMoved && !lock) {
+                        lock = true;
+                        $SST(calendar.el).append($SST(calendar.el).children('.sstfc-header-toolbar').addClass('sstfc-toolbar-notitle'));
+                        $SST(calendar.el).prepend($SST(calendar.el).children('div.sstfc-placeholder').height($SST(calendar.el).children('.sstfc-header-toolbar').height()));
+                        navMoved = true;
+                        lock = false;
+                    }
+                } else {
+                    if (navMoved && !lock) {
+                        lock = true;
+                        $SST(calendar.el).prepend($SST(calendar.el).children('.sstfc-header-toolbar').removeClass('sstfc-toolbar-notitle'));
+                        $SST(calendar.el).append($SST(calendar.el).children('div.sstfc-placeholder').height($SST(calendar.el).children('.sstfc-header-toolbar:last').height()));
+                        navMoved = false;
+                        lock = false;
+                    }
+                }
+            });
+            });
+    
+
+
+/* ++++++++++ ENDE FullCalendar v4 2019 ++++++++++ */
+
+
+/* ++++++++++ FullCalendar v5 2022 ++++++++++ */
+
+
+
+    function setPlaceholderCalendar(viewType) {
+                    if (viewType == 'listYear' || viewType == 'listMonth') {
+                $SST('#sst-calendar').children('div.sstfc-placeholder').remove();
+                var placeHolder = $SST('<div class="sstfc-placeholder sstfc-toolbar sstfc-header-toolbar"></div>');
+                placeHolder.height($SST('#sst-calendar').children('.sstfc-header-toolbar').height());
+                $SST('#sst-calendar').append(placeHolder);
+            } else {
+                $SST('#sst-calendar').children('div.sstfc-placeholder').remove();
+            }
+            }
+
+    function setToolbarPosition(viewType) {
+                if ((viewType == 'listMonth' || viewType == 'listYear') && $SST(document).scrollTop() - $SST('#sst-calendar').find('.sstfc-list').offset().top > 0) {
+            if (!navMoved && !lock) {
+                lock = true;
+                $SST('#sst-calendar').append($SST('#sst-calendar').children('.sstfc-header-toolbar').addClass('sstfc-toolbar-notitle'));
+                $SST('#sst-calendar').prepend($SST('#sst-calendar').children('div.sstfc-placeholder').height($SST('#sst-calendar').children('.sstfc-header-toolbar').height()));
+                navMoved = true;
+                lock = false;
+            }
+        } else {
+            if (navMoved && !lock) {
+                lock = true;
+                $SST('#sst-calendar').prepend($SST('#sst-calendar').children('.sstfc-header-toolbar').removeClass('sstfc-toolbar-notitle'));
+                $SST('#sst-calendar').append($SST('#sst-calendar').children('div.sstfc-placeholder').height($SST('#sst-calendar').children('.sstfc-header-toolbar:last').height()));
+                navMoved = false;
+                lock = false;
+            }
+        }
+            }
+
+/* ++++++++++ ENDE FullCalendar v5 2022 ++++++++++ */
+
+function showTermineform() {
+        showDialog('<h2>Termine Export</h2>', '<form method="get" id="termine-form">' +
+                '<p class="link-desc">Verwenden Sie die folgende Adresse, um über andere Anwendungen auf den Sitzungskalender zuzugreifen. Sie können diese Adresse kopieren und in jeden Kalender einfügen, der das iCal-Format unterstützt.</p>' +
+                '<p id="p-export-link"><a href="" title="Termine abonnieren" id="export-link" onclick="return false"></a><span id="span-hinweis"></span></p>' +
+                                '</form>');
+        getExportLink();
+    }
+
+function releaseTermineform() {
+    $SST( '#termine-form-frame' ).css( { 'display' :'none' } );
+    document.body.style.overflow = 'visible';
+}
+
+
+    function getExportLink() {
+        var link =  'https://oberursel.ratsinfomanagement.net/termine/ics/SD.NET_RIM.ics';
+
+        $SST( '#export-link' ).text( link );
+        $SST( '#export-link' ).attr( 'href', link );
+        $SST( '#span-hinweis' ).text( '' );
+        $SST( '#export-link' ).show();
+    }
+
+</script>
+</div>						</div><!-- end content -->
+					</div>
+				</div>
+					 
+					 
+					 
+					 
+					 
+					 
+					 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="columns small-12 medium-6 xlarge-4 small-column main-column main-column__outward column--align-right--medium column--unstacked--medium">
+                  <div class="main-column__wrapper">
+                    <div class="main-column__headline h1 id-columnHeadline"><br></div>
+                    <div class="column__content-wrapper main-column__content-wrapper main-column--background-color-gray    ">
+                      <div class="id-content-second-column id-content">
+                        <div class="xhtmlcomponent component-departments">
+                          <div data-disable-moreresults="true" data-bim-result-page="department-list.html?i4xpath=O3%2FF%3CyS%2CU%27Nark%40%5EH%25q)E%3EK*(y%40%40V%3DS%3F%40Hdb3bP%40Rp%2Fafsma%40CO%22n%3AztVY%2FV%403n_%24%3D4NKjirn%3ANK8Lybx-1ZeE%26N3*PKQ9OGARlU%2F%3Ah2%5C&amp;filter={filter}&amp;query={query}&amp;offset={offset}" data-limit="10" id="8210b1648f9f8e23baf61fc6a818cf1a" class="ng-scope">
+                            <div id="8210b1648f9f8e23baf61fc6a818cf1a-result" class="bim-department--list bim-department--card-layout bim-card-list integration-card-list bim-card-list">
+                            </div>
+                     
+					 					<div id="navileft_menu">
+						<div class="menurim">
+							<h2 class="leveltitle"><a href="https://oberursel.ratsinfomanagement.net/startseite" title="zur Startseite">Kommunale Bürgerinfo</a></h2>
+							<ul class="sdnetrim-menu-ul sdnetrim-menu-ul-level0 aktiv">
+	<li class="sdnetrim-menu-li sdnetrim-menu-li-level0 gremien">
+                        <a class="a-level-0" href="https://oberursel.ratsinfomanagement.net/gremien">Gremien</a></li>
+<li class="sdnetrim-menu-li sdnetrim-menu-li-level0 fraktionen">
+                        <a class="a-level-0" href="https://oberursel.ratsinfomanagement.net/fraktionen">Fraktionen / Partei</a></li>
+<li class="sdnetrim-menu-li sdnetrim-menu-li-level0 personen">
+                        <a class="a-level-0" href="https://oberursel.ratsinfomanagement.net/personen">Personen</a></li>
+<li class="sdnetrim-menu-li sdnetrim-menu-li-level0 vorlagen">
+                        <a class="a-level-0" href="https://oberursel.ratsinfomanagement.net/vorlagen">Vorlagen</a></li>
+<li class="sdnetrim-menu-li sdnetrim-menu-li-level0 termine aktiv">
+                        <a class="a-level-0 aktiv" href="https://oberursel.ratsinfomanagement.net/termine">Sitzungen</a></li>
+<li class="sdnetrim-menu-li sdnetrim-menu-li-level0 recherche">
+                        <a class="a-level-0" href="https://oberursel.ratsinfomanagement.net/recherche">Recherche</a></li>
+<li class="sdnetrim-menu-li sdnetrim-menu-li-level0 https---oberursel-ratsinfomanagement-net-intranet">
+                        <a class="a-level-0" href="https://oberursel.ratsinfomanagement.net/intranet">Login Intranet</a></li>
+</ul>
+						</div>
+
+						
+						
+						
+												
+						
+						<div id="gremienkontakt">
+						<h2>Kontakt</h2>
+						<p>
+						Büro der Gremien<br>
+						<a href="https://www.google.de/maps/place/Rathausplatz%201%20%20%20%20%20%20%20%20%20%2061440%20Oberursel%20(Taunus)%2C%20Stadt" target="_blank">
+						<span data-ionas4-class="id-postalAddress-icon" title="Auf der Karte anzeigen" class="id-postalAddress-icon sf sf-map-location"></span>
+						&nbsp;&nbsp;Rathausplatz 1, 61440 Oberursel (Taunus)</a><br>
+						<span data-ionas4-class="id-telephone-icon" class="id-telephone-icon sf sf-phone-3"></span>&nbsp;&nbsp;06171 502-360<br>
+						<span data-ionas4-class="id-fax-icon" class="id-fax-icon sf sf-fax"></span>&nbsp;&nbsp;06171 502-7454<br>
+						<a href="mailto:gremienbuero@oberursel.de"><span data-ionas4-class="id-email-icon" class="id-email-icon sf sf-mail-2"></span>&nbsp;&nbsp;gremienbuero@oberursel.de</a>
+						</p>
+						</div>
+
+						<div>
+							<h2 style="color:#004788 !important; margin-top:50px;">Hinweis</h2><p><a href="https://oberursel.ratsinfomanagement.net/templates/oberursel-2018/files/2022_04_04_FAQ_StVV_(002).pdf" target="ext">Häufig gestellte Fragen im Zusammenhang mit der Stadtverordnetenversammlung (FAQ)</a></p>
+						</div>
+						
+						
+						
+					</div>
+
+					 
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>    
+      <div class="main-bottom">
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="background-dark centered--small-only id-repeat">
+        <div>
+          <div class="component component-gridBuilder">
+            <div class="row">
+              <div class="columns small-12 medium-12 xlarge-12 footer-column">
+                <div class="column__content-wrapper footer-column__content-wrapper">
+                  <div class="id-content-first-column id-content">
+                    <div class="paragraph h1">Anschrift &amp; Kontakt</div>
+                    <p class="paragraph"><b>Stadtverwaltung Oberursel (Taunus) &nbsp;|&nbsp;Rathausplatz 1 &nbsp;|&nbsp;61440 Oberursel (Taunus)&nbsp;|&nbsp;
+                    Telefon: 06171 502-0 | E-mail: <b>info@oberursel.de</b>
+                      | Internet: <b>www.oberursel.de</b>
+                    </b></p><b>
+                  </b></div><b>
+                </b></div><b>
+              </b></div><b>
+          </b></div><b>
+        </b></div><b>
+      </b></div><b>
+    </b></div></footer><b>
+    <div class="morphsearch-overlay">
+    </div>
+    <!--<div class="cookies-disclaimer-wrapper">
+      <div class="row">
+        <div class="cookies-disclaimer">
+          <span class="cookies-disclaimer__text">Cookies optimieren die Bereitstellung unserer Dienste. Mit der Nutzung unserer Dienste erklären Sie sich damit einverstanden, dass wir Cookies verwenden.
+          </span>
+          <div class="cookies-disclaimer__buttons">
+            <a onclick="checkDisclaimer()" class="cookies-disclaimer__accept" href="">OK</a>
+          </div>
+        </div>
+      </div>
+    </div>-->
+<script src="Oberursel_2015-Dateien/module-view.de.js"></script>
+<script>
+	// Container für Recherche-Hilfe im DOM verschieben
+	$SST(document).ready(function() {
+		// Container für Recherche-Hilfe im DOM verschieben
+		$SST('#recherche-help-frame').appendTo('body');
+		$SST('#termine-form-frame').appendTo('body');
+
+		$SST(document).on("dialogOnLoad", function(e) {
+			if (e.target) {
+				e.target.appendTo($SST('body'));
+			}
+		});
+	});
+</script>
+<script>
+			(function ($, doc) {
+				$.each(readyQ, function (index, handler) {
+					$(handler);
+				});
+				$.each(bindReadyQ, function (index, handler) {
+					$(doc).bind("ready", handler);
+				});
+			})(jQuery, document);
+			</script>
+
+</b></body></html>

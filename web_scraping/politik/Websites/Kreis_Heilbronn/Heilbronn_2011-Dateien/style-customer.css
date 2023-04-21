@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+.überschrift {
+    line-height: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.subnavi h4::before {
+    content: "";
+    display: inline-block;
+    font-family: lkhn;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+    width: 1em;
+}
+
+.subnavi ul li a.aktiv::before {
+    content: "";
+    font-family: lkhn;
+	margin-left: -17px;
+	color: #e60003;
+}
+
+.subnavi ul li a.aktiv{
+	color: #e60003;
+}
+
+.subnavi ul li a:hover{
+	text-decoration: underline;
+}
+
+.moduletable_menu ul li a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    clear: none;
+    color: #cecece;
+    display: inline-block;
+    width: 100%;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+    width: 1em;
+}
+
+
+/****  Login ****/
+
+.subnavi .div_login h4{
+	background-color: transparent !important;
+	background: none !important;
+	border: none !important;
+	display: inline-block !important;
+    padding: 0 !important;
+    position: none;
+	color: #000;
+	text-align: left !important;
+	margin-left: 5px !important; 
+	margin-bottom: 0px !important; 
+	padding-top: 0 !important;
+	padding-left: 0;
+	float: none;
+}
+
+.subnavi .div_login{
+	display: block;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+.login-kennwort-vergessen a{
+	background: none !important;
+	border: none !important;
+	text-decoration: underline !important;
+	padding: 0 !important;
+	color: #000 !important;
+}
+
+#form-login {
+	margin: 0px;
+}
+
+.subnavi .input{
+	border: none;
+	margin-left: 0px;
+	margin-top: 0px;
+	padding-left: 10px;
+	padding-top: 4px;
+}
+
+p#form-login-username input {
+	width: 130px !important;
+}
+
+p#form-login-username {
+	margin-bottom: 0px;
+}
+
+p#form-login-password  input{
+	width: 130px !important;
+}
+
+p#form-login-password {
+	margin-top: 3px;
+	margin-bottom: 0px;
+}
+
+#form-login-loggedin {
+	margin: .3em;
+}
+
+.div_login label {
+	display: block;
+	margin-bottom: 2px;
+	font-weight: normal;
+}
+
+.subnavi .button {
+    font-size: 1em;
+    margin-top: .6em;
+}
+
+.rim-menu-mobile .div_login > h4 {
+	display: none;
+}
+
+/****  Main  ****/
+
+#exakt {
+    margin-bottom: 0.8em;
+}
+
+.kontakt label.form-contact {
+    display: block;
+    padding-top: 3px;
+    text-align: justify;
+    width: 17em;
+}
+
+.paging .paging-icon {
+   height: 16px;
+}
+
+h3.personen-details {
+    font-weight: bold;
+}
+
+#recherche-help-inner p, #recherche-help-inner ul{
+	margin: 0;
+	padding: 0;
+}
+
+span.pointer {
+    margin-bottom: 0;
+}
+
+ul.tablist li a.active, ul.tablist li a.active:hover {
+    height: 28px;
+	padding-top: 3px;
+}
+
+ul.tablist li a, ul.tablist li a.inactive {
+    height: 24px;
+	padding: 0 0.4em;
+}
+
+.kennwort-form label.form {
+    width: 15em;
+}
+#rimcontent.content-3col {
+	margin-right: 310px ;
+}
+
+#right {
+    width: 270px;
+	float: right;
+	height: auto;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+#right h3{
+	color: #171615;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+	margin-top: 25px;
+}
+
+#right h4 {
+	color: #171615;
+    text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.div_news_item {
+	margin-bottom: .9em;
+}
+
+.table-aemter th, .table-aemter td, .fraktion-details-table-nenndaten th, #div-tabbody-freigaben .table-details th {
+    white-space: normal;
+}
+
+.sdnetrim-member-picture {
+    width: 25%;
+}
+
+.vorlagen-form label.form {
+    width: 14em;
+}
+
+.vorlagen-form .vorlagen-number-info {
+    padding-left: 14em;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	div#sst-calendar .fc-header td {
+    display: block;
+    text-align: center;
+    width: auto;
+}
+#right {
+    float: none !important;
+	width: auto  !important;
+}
+
+#rimcontent.content-3col {
+	margin-right: 0 ;
+}
+
+}
+@media only screen and (max-width: 479px) {
+	div#sst-calendar .fc-header td {
+    display: block;
+    text-align: center;
+    width: auto;
+}
+#right {
+    float: none !important;
+	width: auto  !important;
+}
+#rimcontent.content-3col {
+	margin-right: 0 ;
+}
+}
+
+.menuboxes img {
+	width: 200px;
+}
+
+.recherche-form label.form {
+    width: 15em;
+}
+.head2 .logo {
+    margin-bottom: 18px;
+}
+
+#select-years {
+    width: 68px;
+}
+
+#fc-tooltip {
+	font-size: 14px;
+}
+
+input, button, select, textarea {
+    color: #000;
+}
+
+.navi_normal {
+	  background-color: transparent !important;
+}
+
+legend { width:auto !important; }
+form#loginForm,
+form#loginForm input { width:auto !important; }
+
+.caption {
+    font-size: 1.7rem !important;
+}

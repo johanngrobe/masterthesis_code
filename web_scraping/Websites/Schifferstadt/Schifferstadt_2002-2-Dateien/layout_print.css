@@ -1,0 +1,354 @@
+/*
+-----------------------------------------------------------------------------
++ MAIN
+-----------------------------------------------------------------------------
+*/
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#top {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 0;
+  width: 96%;
+}
+
+#header {
+  display:none;
+  clear: both;
+}
+
+/*
+-----------------------------------------------------------------------------
++ NAVIGATION
+-----------------------------------------------------------------------------
+*/
+
+#navigation {
+  display:none;
+  width: 0%;
+}
+
+ol#vertical {
+  display:none;
+  list-style: none;
+}
+
+/*
+-----------------------------------------------------------------------------
++ NAVI-ZUSATZ
+-----------------------------------------------------------------------------
+*/
+
+.anmeldung,
+.aktualisierung,
+.counter,
+.version			{margin:0 0 0 0;background-color: #c2cbd0;padding:10px;}
+
+.login_kennung_ueberschrift	{font-size:9pt;}
+
+.login_kennung_name,
+.login_passwort_name		{font-size:9pt;float:left;}
+
+.login_kennung_eingabe,
+.login_passwort_eingabe		{float:right;}
+.login_button			{text-align:right;clear:both;}
+
+.abmelde_button_normal	{border:1px outset white;color:#000000;background-color:#cccccc;font-size:8pt;width:60px;height:15px;line-height:15px;padding-left:3px;cursor:pointer;}
+.abmelde_button_hover	{border:1px inset white; color:#000000;background-color:#cccccc;font-size:8pt;width:60px;height:15px;line-height:15px;padding-left:3px;cursor:pointer;}
+
+/*
+-----------------------------------------------------------------------------
++ SUBNAVIGATION
+-----------------------------------------------------------------------------
+*/
+
+.copyright {
+  display:none;
+}
+
+ol#horizontal {
+  display:none;
+  list-style: none;
+}
+
+
+/*
+-----------------------------------------------------------------------------
++ INHALT
+-----------------------------------------------------------------------------
+*/
+
+#content {
+  width: 96%;
+}
+
+#content h1 {
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin: 0 .3em;
+  padding: .2em .3em;
+}
+
+#content h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin: .4em .4em 0 .4em;
+  padding: 0;
+}
+
+#content p {
+  margin: 0;
+}
+
+#content p.up {
+  display:none;
+}
+
+/*
+-----------------------------------------------------------------------------
++ SETTINGS
+-----------------------------------------------------------------------------
+*/
+
+.setting_table			{font-size:9pt;border-collapse:collapse; border-spacing:0px;width:100%;}
+.setting_tr			{vertical-align: top;}
+.setting_td			{padding-left:10px;padding-top:10px;padding-bottom:10px;border-bottom:1px solid #cccccc;}
+.setting_tr_gruppe_1		{background-color:#cccccc;}
+.setting_tr_gruppe_2		{background-color:#E5E5E5;}
+.setting_td_gruppe		{font-weight:bold;font-size:10pt;border-top:2px solid #cccccc;}
+.setting_tr_gruppe_color	{color:#000000;}
+
+/*
+-----------------------------------------------------------------------------
++ KALENDER
+-----------------------------------------------------------------------------
+*/
+
+.SKContainer		{border:0px solid black;width:auto;overflow:hidden;}
+.SKZeitraum 		{border:1px solid blue;margin:0px;padding:0px;}
+.SKMonat 		{border:0px solid red;}
+.SKUeberschrift 	{padding-top:5px;padding-bottom:5px;text-align:center;color:white;font-weight:bold;background-color:#2d4e84;}
+.SKMenuMainContainer	{border: 0px solid #cccccc;text-align:center;vertical-align:middle;width:100%;margin-top:8px;}
+.SKMenuButtons		{border: 0px solid #cccccc;height:20px;line-height:20px;vertical-align:middle;}
+.SKMenuData		{border: 1px solid #cccccc;border-bottom: none;height:15px;line-height:15px;vertical-align:middle; padding: 0 2px;}
+.SKMenuDataText		{font-size:11px;color:#333333;display:block;}
+.SKMenuDataTextSelected	{font-size:12px;color:#333333;text-decoration: underline;}
+.SKMenuHiddenInput      {display:none;}
+.SKMenuSubContainer	{}
+
+.table_sk		{color:black;font-size:12px;border-collapse:collapse; border-spacing:0px;width:100%;margin-top:10px;}
+
+.monat_tr		{background-color:#aaaaaa;color:white;font-size:17px;font-weight:bold;letter-spacing:2px;}
+.monat_td		{text-align:center;}
+
+#SK_Calendar.SKTag1_tr,
+#SK_List.SKTag1_tr	{background-color:#ffffff;}
+#SK_Calendar.SKTag2_tr,
+#SK_List.SKTag2_tr	{background-color:#eeeeee;}
+#SK_Calendar.SKTag3_tr,
+#SK_List.SKTag3_tr	{background-color:#FFF2E5;}
+
+.SKTermineFeiertag_tr	{background-color:#FFF0E9;color:#ff6666;}
+
+.SKWochentag_td,
+.SKTageszahl_td		{width:20px;}
+.SKTerminZeit_td,
+.SKTerminZeitF_td	{width:100px;text-align:right;}
+.SKTerminLink_td,
+.SKTerminLinkF_td	{width:30px; text-align:center;}
+.SKTerminTitel_td	{font-size:12px;color:black;}
+.SKTermin_tr,
+.SKTerminRaum_td,
+.SKTerminRaumF_td,
+.SKTerminOutlookF_td	{}
+.SKTerminOutlook_td	{text-align:right;}
+.SKTerminTitelF_td	{font-size:12px;font-weight:bold;}
+
+.menue_td		{text-align:center;}
+.kalenderbutton		{border:0; background: transparent; cursor:pointer;font-size:8pt;text-decoration:underline;}
+.zeitraumauswahl	{width:200px; font-size:7pt; color:#151515; float:left; }
+.kalenderintervall	{width:300px; font-size:7pt; color:#151515; float:right; text-align:right; font-weight:normal;}
+
+/*
+-----------------------------------------------------------------------------
++ STARTSEITE (eingelogt)
+-----------------------------------------------------------------------------
+*/
+
+.BoxZu,
+.BoxAuf,
+.BoxZu:hover,
+.BoxAuf:hover			{}
+.PCContainer		{font-weight:bold;}
+.PCHeadTermine,
+.PCHeadUnterlagen,
+.PCHeadChronik		{background-color:#f7f1e6;border:1px solid #cccccc;-moz-border-radius: 4px 4px 4px 4px;padding:3px;}
+
+.PCTermine,
+.PCUnterlagen		{color:black;}
+
+#menu3			{border: 0px solid #ccc;margin: 10px;}
+#menu3 ul		{list-style: none;margin: 0;padding: 0;font-family: Verdana, Arial, Helvetica, sans-serif;margin: 0;font-size: 80%;font-weight: bold;}
+#menu3 li a 		{text-decoration: none;}
+#menu3 li a:link,
+#menu3 li a:visited	{color: #888888;display: block;padding: 0;border: 1px solid #ccc;}
+#menu3 li a:hover,
+#menu3 li #current,
+#menu3 li a:active	{color: #283A50;padding: 0;border: 1px solid #cccccc;}
+
+/*
+-----------------------------------------------------------------------------
++ BEREICHSFELDER
+-----------------------------------------------------------------------------
+*/
+
+.Textverweis		{color:#000000; }
+.Kleine_Schrift		{font-size:8pt; }
+.Normale_Schrift	{font-size:9pt; }
+.Ungerade_Zeile		{font-size:9pt;color:#000000;background-color:#eeeeee;padding:3px;}
+.Ungerade_Zeile_Tabelle	{font-size:8pt;color:#000000;background-color:#eeeeee;padding:3px; border:1px solid #c2cbd0;}
+.Ungerade_Zeile_Notiz	{color:#555555;}
+.InfoBlock		{background-color:#eeeeee; padding-bottom:10px; }
+
+.InfoBox {
+  top:auto;
+  clear:both;
+  margin-left:150px;
+  position:fixed;
+  width:650px;
+  height:500px;
+  background-color:#ffffff;
+  border:2px solid black;
+  padding:25px;
+  display:none;
+}
+
+.Gerade_Zeile		{font-size:9pt;background-color:#FFFFFF;padding:3px; }
+.Markierte_Zeile	{font-size:9pt;font-weight:normal;color:#000000;background-color:#66b0d7;padding:3px; }
+.Trennungs_Zeile	{font-size:9pt;font-weight:normal;color:#000000;background-color:#a1c8e7;padding:3px; }
+.Ueberschrift		{font-weight:bold;font-size:10pt; }
+fieldset legend,
+.Suchueberschrift	{font-weight:bold;font-size:12pt;padding-left:0px;}
+.Zwischenueberschrift	{font-size:9pt;font-weight:bold;color:#000000; }
+.Seitenzahlen		{font-size:8pt;font-weight:normal;color:#000000; }
+.Kleine_Eingabezeile	{font-size:8pt;background-color:#EEEEEE;width:85px; }
+.Normale_Eingabezeile,
+.Ankreuzfeld,
+.Auswahlmenu		{font-size:8pt;background-color:#EEEEEE; }
+.Textfeld,
+.Knopf			{font-size:9pt;background-color:#EEEEEE; }
+.Trennlinie		{height:1px;color:#000000; }
+.datum			{line-height:0px; font-size:9pt;}
+.hr			{color:#eeeeee;margin-right:0px;}
+.clear			{clear:both;}
+.LinkLikeLupe		{font-size:9pt;color:black;}
+.LinkAufWeis		{color:#000000;font-size:12pt;}
+.LinkAufWeis:hover	{color:#cccccc;text-decoration:none;}
+
+.tabelle,
+.tabellen_navi		{width:100%;}
+.tabelleninhalt,
+.tabellenrahmen		{border-collapse:collapse; border-spacing:0px; width:100%;}
+
+#searchform		{height:150px;  display:none;}
+
+.Anlagen		{font-family:Arial,Helvetica,sans-serif; font-size:9pt; color:#3a3a3a; vertical-align:middle; }
+
+/*
+-----------------------------------------------------------------------------
++ IMAGES
+-----------------------------------------------------------------------------
+*/
+
+img {
+  border:none;
+  vertical-align:middle;
+}
+
+.ImgSort ,
+.ImgSort:link ,
+.ImgSort:visited {background-image: url('../images/pfeil_off.gif'); text-decoration:none; background-repeat:no-repeat; padding-left: 15px; color: #3a3a3a; font-weight:bold;}
+.ImgSort:hover   {background-image: url('../images/pfeil_on.gif');  text-decoration:none; background-repeat:no-repeat; padding-left: 15px; color: #3a3a3a; font-weight:bold;}
+
+img#button_sort{
+	background-image: url('../images/buttons/pfeil_off.gif');
+	background-repeat: no-repeat;
+	border: 0px;
+	padding-right: 3px;
+	text-align: left;
+}
+
+img#button_sort:HOVER  {background-image: url('../images/buttons/pfeil_on.gif');}
+
+/*
+-----------------------------------------------------------------------------
++ LINKS
+-----------------------------------------------------------------------------
+*/
+
+a:link ,
+a:visited{
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+/*
+-----------------------------------------------------------------------------
++ HIDDEN ANKER
+-----------------------------------------------------------------------------
+*/
+
+ol#skip {
+  margin: 0;
+  padding: 0;
+}
+
+ol#skip li {
+  display: inline;
+  list-style: none;
+}
+
+ol#skip a:link,
+ol#skip a:visited,
+ol#skip a:hover {
+  left: -400em;
+  position: absolute;
+}
+
+ol#skip a:active,
+ol#skip a:focus {
+  left: 0;
+  text-align: center;
+  width: 20em;
+}
+
+/*
+-----------------------------------------------------------------------------
++ CLEARFIX
+-----------------------------------------------------------------------------
+*/
+
+* html .clearfix {height:1%;}
+.clearfix {display:block; background-color:#e8f5fb; }
+.clearfix:after {content:''; display:block; clear:both; }

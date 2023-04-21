@@ -1,0 +1,25 @@
+*.pkl
+*.csv
+*.CSV
+*.txt
+*.xlsx
+*.parquet
+/text-mining/*.parquet
+/text-mining/*.pkl
+# !/text-mining/2023-04-03_gesamt_rhein_neckar.parquet
+__pycache__
+/Lib
+/share
+/Scripts
+/.vscode
+/etc
+/include
+/Py-DS-ML-Bootcamp-master
+/Py-DS-ML-Bootcamp-master.zip
+/pyvenv.cfg
+/Pipfile.lock
+/Pipfile
+/web_scraping/data_export
+/web_scraping/.ipynb_checkpoints
+/web_scraping/__pycache__
+/web_scraping/Dateien

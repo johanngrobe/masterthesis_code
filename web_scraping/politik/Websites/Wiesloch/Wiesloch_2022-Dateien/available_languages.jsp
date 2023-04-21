@@ -1,0 +1,2 @@
+/*1573510928000*/
+AUI.add("portal-available-languages",function(A){var available={};var direction={};available["de_DE"]="Deutsch (Deutschland)";direction["de_DE"]="ltr";Liferay.Language.available=available;Liferay.Language.direction=direction},"",{requires:["liferay-language"]});

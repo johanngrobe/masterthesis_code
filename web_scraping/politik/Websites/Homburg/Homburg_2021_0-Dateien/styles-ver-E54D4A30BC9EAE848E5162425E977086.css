@@ -1,0 +1,24 @@
+/*  
+Theme Name: corpgreen
+Theme URI: http://www.blogohblog.com
+Description: This is the green variation of the <a href="http://www.blogohblog.com/wordpress-theme-corptheme" title="Free WordPress themes">Corp WordPress theme</a> with 3-columns, Widget-Ready, Dropdown Menu, Categories/Archives Dropdowns, Small Icons, Separate Comments/Trackbacks. The theme falls under a Creative Commons License developed by <a href="http://www.blogohblog.com" title="WordPress themes">Free WordPress Themes</a>. You can download the other three variations of this theme (Corpblue, Corpred, Corpblack) by going <a href="http://www.blogohblog.com/wordpress-theme-corptheme" title="Free WordPress templates">here</a>. &Uuml;bersetzung von <a href="http://www.themebox.de/" title="Wordpress Themes auf Deutsch">themebox.de</a>.
+Version: 1.0
+Author: Jai Nischal Verma
+Author URI: http://www.blogohblog.com
+
+ACHTUNG import-Anweisungen müssen immer ganz am Anfang stehen.
+*/
+
+@import "normalize.css";
+
+/* Menu-CSS laden */
+@import "dropdown.css";
+
+/* Responsive Tabelle laden */
+@import "tablesaw.css";
+
+/* Defaults laden */
+@import "default.css";
+
+/* Anpassungen laden */
+@import "_styles.css";

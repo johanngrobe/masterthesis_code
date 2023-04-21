@@ -1,0 +1,814 @@
+@charset "utf-8";
+
+#gremienkontakt h2{color: #004788;margin-top:50px;}
+
+.main-column__outward .column__content-wrapper::after {
+
+    width: 490px;
+}
+.main-column__outward .column__content-wrapper::before {
+
+    width: 890px;
+
+}
+
+#recherche-help-outer,#recherche-help-frame,#recherche-help-inner{
+	z-index:100 !important;
+}
+
+.mobilrimmenu{background-color:#fff}
+
+#breadcrumbs li{padding: 0.4em 0;}
+
+#breadcrumbs li,#breadcrumbs li a{color:#fff;}
+
+.sdnetrim-menu-li {list-style:none;background-color:#fff;margin-bottom:1px;}
+.sdnetrim-menu-li a:hover{background-color:#004788;color:#fff}
+.sdnetrim-menu-li a{border:0px solid #000;display:block;padding:10px;}
+
+
+.button-follow {
+display: inline-block;
+vertical-align: middle;
+background-color: #00529e;
+color: #fff;
+border-style: none;
+padding: 0.85em 1em;
+margin: 1em 0 1rem 0;
+}
+
+caption{padding:0 !important;}
+#captcha{width: 4em;}
+.sdnetrim-menu-li a:after{
+    
+	content:"";
+	font-family:streamline-30px-filled-in !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+	position: absolute;
+	right: 10px;
+	
+}
+
+.fc table {
+    table-layout: auto;
+
+}
+
+table, textarea, input {
+	font-size: 14px !important;
+}
+
+.leveltitle, .div_login h3, #navileft h3, html body main div.outer-container.backcolor-none div.container.bottom-margin div#navileft div#navileft_menu div.menurim h2.leveltitle a
+	{
+	font-size: 20px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	color: #333333;
+}
+
+@media only screen and ( min-width: 800px ) {
+	html body main div.outer-container.breadcrumb-container div.container p#breadcrumbs,
+		html body main div.outer-container.backcolor-none div.container.bottom-margin div#navileft div#navileft_menu
+		{
+		margin-left: 15px;
+	}
+}
+
+.bottom-margin {
+	height: auto;
+	margin: auto;
+	min-height: 200px;
+	padding: 0;
+}
+
+#content {
+	float: right;
+	padding: 0;
+	width: calc(100% - 288px);
+}
+
+#navileft {
+	float: left;
+	width: 200px;
+}
+
+#navileft ul {
+	display: block;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#navileft h2 {
+	margin-bottom: 0;
+}
+
+#navileft ul li a {
+	padding-left: 10px;
+	color: #333333;
+}
+
+#navileft ul li ul li a {
+	padding-left: 20px;
+	display: block;
+}
+
+#breadcrumbs {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#breadcrumbs li:first-child:before {
+	/*visibility: hidden;*/
+	padding-right: 0;
+	display: none;
+}
+
+#breadcrumbs li {
+	/*display: inline-block;*/
+	float: left;
+	/*padding-left: 0.5em;*/
+	padding-left: 15px;
+}
+
+@media only screen and ( max-width: 799px ) {
+	#breadcrumbs li {
+		padding-left: 0px;
+		padding-right: 10px;
+	}
+}
+
+#breadcrumbs li:before {
+	content: "•";
+	padding-right: 0.5em;
+}
+
+.menurim, .container-login {
+	padding: 0 !important;
+}
+
+.div_login {
+	margin-top: 20px;
+	display: block;
+	line-height: normal;
+}
+
+.div_login .button {
+	margin: 0;
+}
+
+.div_login label {
+	display: block;
+}
+
+html body main div.outer-container.breadcrumb-container div.container {
+	padding: 0;
+}
+
+html body header.menu-visible nav.navbar.navbar-default div.container div.hidden-sm.hidden-md.hidden-lg div.navbar-collapse.navbar-main-collapse.collapse.in ul#menu-hauptmenue.nav.navbar-nav.navbar-right li#menu-item-14.menu-item.menu-item-type-post_type.menu-item-object-page.current-menu-item.page_item.page-item-8.current_page_item.menu-item-has-children.menu-item-14 ul.sub-menu div.div_login
+	{
+	color: #86bc24;
+}
+
+.paging .paging-icon {
+	height: 16px;
+	margin-top: 3px;
+}
+
+h3.personen-details {
+	color: #777777;
+	font-weight: bold;
+	font-size: 16.8px;
+}
+
+ul.tablist li a.active, ul.tablist li a.active:hover {
+	height: 29px;
+}
+
+#loginForm {
+	margin: 0;
+}
+
+#exakt {
+	margin-bottom: 0.9em;
+}
+
+#rimcontent.content-3col ul li {
+	margin-left: 10px;
+}
+
+.vorlagen-number-info {
+	padding-left: 12em;
+}
+
+span.pointer {
+	margin-bottom: 0;
+}
+
+ul.tablist li a.active, ul.tablist li a.active:hover {
+	padding-top: 5px;
+	background-color: #fff;
+}
+
+ul.tablist li a, ul.tablist li a.inactive {
+	height: 23px;
+	padding: 1px 0.4em 0;
+}
+
+.sdnetrim-member-picture {
+	width: 25%;
+}
+
+#rimcontent.content-3col {
+	display: block;
+	margin-right: 220px;
+}
+
+#right {
+	width: 200px;
+	float: right;
+	height: auto;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+#right h3 {
+	font-size: 1.5em;
+	margin-top: 0;
+	margin-bottom: .8em;
+}
+
+#right h4 {
+	font-size: 1em;
+	font-weight: 600;
+	margin-top: 0px;
+}
+
+.div_news_item {
+	margin-bottom: .9em;
+}
+
+#recherche-help-inner p, #recherche-help-inner ul {
+	margin: 0;
+	padding: 0;
+}
+
+#recherche-help-inner {
+	font-size: 13px;
+}
+
+.paging-pagesize select {
+	width: 80px;
+}
+
+#rimcontent th, #rimcontent td {
+	border-color: #CCC !important;
+}
+
+td.column-leiter, .gremien-details-table-nenndaten th {
+	white-space: normal;
+}
+
+@media only screen and ( max-width: 1023px ) {
+	#personen-privat-freigaben th, #personen-dienstlich-freigaben th {
+		white-space: normal;
+	}
+}
+
+/*
+ul.tablist li a.active, ul.tablist li a.active:hover {
+	background-color: #F1F1F1;
+}
+*/
+div#sst-calendar .fc-header-center .fc-header-title h2 {
+	display: block;
+	font-size: 1em;
+}
+
+.news-header {
+	margin-bottom: 0 !important;
+}
+
+h2, .h2 {
+	font-size: 25px;
+}
+
+.span-filter a, span.personen-letters {
+	width: 1.2em;
+	padding: .1em 0em;
+}
+
+.span-filter {
+	margin-bottom: 0.2em;
+}
+
+.column-dokument {
+	min-width: 80px;
+}
+
+.table-top .column-dokumente {
+	min-width: 125px;
+}
+
+#export-link {
+	white-space:normal;
+}
+
+#p-export-link {
+	word-wrap:break-word;
+}
+
+.fc-button {
+	height: 30px !important;
+	padding: 0 10px;
+}
+
+.profil-editor p {
+	margin: 0;
+}
+
+@media only screen and ( max-width: 920px ) and ( min-width: 768px ) {
+	.fc-button {
+		padding: 0 5px;
+	}
+}
+
+@media only screen and ( max-width: 640px ) and ( min-width: 571px ) {
+	.fc-button {
+		padding: 0 5px;
+	}
+}
+
+/* +++++++ Akte / Fraktionsarbeit +++++++ */
+.sst-jstree, .sst-jstr, .jstree-contextmenu, #akten-group-members,
+	#akten-all-members {
+	font-size: 13px;
+}
+
+#akten-group-members, #akten-all-members {
+	width: 250px;
+}
+
+@media only screen and ( max-width: 580px ) {
+	.append-size {
+		display: none;
+	}
+	.append-size-resp {
+		display: inline-block;
+	}
+	.jstree-append .append-date {
+		margin-left: 5px;
+	}
+}
+
+@media only screen and ( max-width: 480px ) {
+	.append-size, .append-date {
+		display: none;
+	}
+	.append-size-resp, .append-date-resp {
+		display: inline-block;
+	}
+	.jstree-append .append-groups, .jstree-append .append-name {
+		margin-left: 0px;
+	}
+}
+
+@media only screen and ( max-width: 995px ) {
+	/* +++++++ HEADER +++++++++ */
+	#header {
+		margin: 0 10px;
+	}
+	#headerinner {
+		border-right: 0px solid #fff;
+		margin-left: -10px;
+	}
+	#head960px {
+		position: relative;
+		width: 100%;
+	}
+	#logo {
+		margin-left: 10px;
+	}
+	#suche {
+		margin-right: 10px;
+	}
+	#navitop {
+		margin-right: 10px;
+	}
+
+	/* +++++++ MITTE ++++++++ */
+	.bottom-margin {
+		margin: 0 10px;
+	}
+}
+
+@media only screen and ( max-width: 910px ) {
+	#navitop {
+		float: right;
+		padding: 0;
+	}
+	#navitop_navi {
+		float: left;
+	}
+	#headerimage {
+		overflow: hidden;
+	}
+}
+
+@media only screen and ( max-width: 800px ) {
+	#content {
+		width: 100%;
+		margin-left: 0;
+	}
+	#navileft h2:hover, .div_login h3:hover {
+		cursor: pointer;
+	}
+	ul.subnavigation {
+		width: 100%;
+	}
+	.form-login .button {
+		margin: 0;
+	}
+	#bread {
+		margin-bottom: 9px;
+	}
+}
+
+@media only screen and ( max-width: 767px ) {
+	#navileft {
+		display: none;
+	}
+}
+
+@media only screen and ( max-width: 635px ) {
+	div#navileft_menu {
+		width: 100%;
+	}
+}
+
+@media only screen and ( max-width: 600px ) {
+	#headerimage>img {
+		top: 50px;
+	}
+}
+
+@media only screen and ( max-width: 910px ) and ( min-width: 541px ) {
+	#headerinner {
+		height: 143px;
+		top: 0;
+	}
+	#navitop {
+		clear: both;
+	}
+}
+
+@media only screen and ( max-width: 815px ) {
+	#netviewer {
+		display: none;
+		visibility: hidden;
+	}
+	#footergrau {
+		text-align: left;
+	}
+	#right {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+@media only screen and ( max-width: 800px ) {
+	#headerimage {
+		height: 143px;
+		top: 0;
+		visibility: hidden;
+	}
+}
+
+@media only screen and ( max-width: 600px ) {
+	#suche>div>form>p:first-child>input {
+		width: 130px;
+	}
+}
+
+@media only screen and ( max-width: 540px ) {
+	ul#navi {
+		display: none;
+		background-color: #fff;
+		position: absolute;
+		width: 210px;
+		right: 0;
+		left: 10px;
+		overflow: hidden;
+	}
+	ul#navi li {
+		width: 90px;
+	}
+	#navitop_navi {
+		height: 47px;
+	}
+	#navitop_navix {
+		display: none;
+	}
+	#headerimage {
+		height: 143px;
+		visibility: hidden;
+	}
+	#headerinner {
+		height: 143px;
+		top: 0;
+	}
+	#suche {
+		clear: both;
+		margin-top: 0;
+	}
+	#navitop {
+		clear: none;
+	}
+	#logo {
+		float: none;
+	}
+}
+
+@media only screen and ( max-width: 479px ) {
+	#right {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+	}
+	#rimcontent.content-3col {
+		margin-right: 0;
+	}
+	div#startseite-right {
+		float: none;
+		width: 100%;
+	}
+	div#startseite-left {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+.input-einstellungen {
+	width: 40em;
+}
+
+@media only screen and ( max-width: 980px ) {
+	.input-einstellungen {
+		width: 28em;
+	}
+}
+
+/*  spez. RIM-Layout */
+@media only screen and ( max-width: 985px ) and ( min-width: 801px ) {
+	form#kontaktForm input[type=text], form#kontaktForm textarea {
+		width: 250px;
+	}
+	#right {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+	}
+	
+	#rimcontent.content-3col {
+		margin-right: 0;
+	}
+}
+
+@media only screen and ( max-width: 985px ) {
+	#right h3 {
+		margin-top: 30px;
+	}
+}
+
+@media only screen and ( max-width: 930px ) {
+	#einstellungenEditForm #bezeichnung, #einstellungenEditForm  #einstellung {
+		width: 28em;
+	}
+}
+
+@media only screen and ( max-width: 930px ) and ( min-width: 801px ) {
+	form#einstellungenSearchForm input#terms_einstellungen {
+		width: 200px;
+	}
+	
+	#terms {
+		width: 24em;
+	}
+}
+
+@media only screen and ( max-width: 860px ) and ( min-width: 801px ) {
+	form#rechercheForm input[type=text], form#rechercheForm select, form#vorlagenForm input[type=text],
+		form#vorlagenForm select {
+		max-width: 250px;
+	}
+}
+
+@media only screen and ( max-width: 815px ) and ( min-width: 768px ) {
+	#vorlagenForm label.form, #bakForm label.form {
+		float: none;
+	}
+	
+	label.form[for=exakt] {
+		float: left;
+	}
+	
+	.vorlagen-number-info, .bak-nummer-info {
+		padding-left: 0;
+	}
+}
+
+@media only screen and ( max-width: 700px ) {
+	div#div-tabbody-einstellungen input[type=text], span#einstellung-profil_container table.mceLayout
+		{
+		width: 300px !important;
+	}
+	form#einstellungenSearchForm input#terms_einstellungen {
+		width: 225px;
+	}
+}
+
+@media only screen and ( max-width: 600px ) {
+	form#kontaktForm input[type=text], form#kontaktForm textarea {
+		width: 250px;
+	}
+}
+
+@media only screen and ( max-width: 600px ) and ( min-width: 571px ) {
+	#terms {
+		width: 22em;
+	}
+}
+
+@media only screen and ( max-width: 570px ) {
+	.vorlagen-number-info, .bak-nummer-info {
+		padding-left: 0;
+	}
+	#rechercheForm label.form, #vorlagenForm label.form, #bakForm label.form
+		{
+		float: none;
+	}
+	#rechercheForm label.form[for=exakt], #vorlagenForm label.form[for=exakt]
+		{
+		float: left;
+	}
+	label.baktyp, #rechercheForm label.doktyp {
+		height: auto;
+	}
+	div#sst-calendar .fc-header td {
+		display: block;
+		width: auto;
+		text-align: center;
+	}
+}
+
+@media only screen and ( max-width: 520px ) {
+	form#einstellungenSearchForm label[for=terms_einstellungen] {
+		float: none;
+	}
+	form#einstellungenSearchForm .einstellunen-suche-checkboxen {
+		margin-left: 0;
+	}
+	form#searchForm input#terms_anmeldestatistik {
+		width: 300px;
+	}
+}
+
+@media only screen and ( max-width: 460px ) {
+	div#recherche-help-inner {
+		top: 110px;
+		width: 75%;
+		left: 7%;
+	}
+	div.sst-dialog-inner {
+		width: 95%;
+		min-width: 350px;
+		max-width: 460px;
+	}
+}
+
+@media only screen and ( max-width: 460px ) {
+	input, textarea, select {
+		max-width: 250px;
+	}
+	div#div-tabbody-einstellungen input[type=text], span#einstellung-profil_container table.mceLayout
+		{
+		width: 150px !important;
+	}
+	div#div-tabbody-einstellungen label[for=einstellung-profil] {
+		display: block;
+		height: auto;
+	}
+	div.div-einstellung-ir {
+		margin: 0;
+	}
+}
+
+@media only screen and ( max-width: 400px ) {	
+	#personen-privat.image-shown, #personen-dienstlich.image-shown, #personen-aktionen.image-shown {
+		width: 100%;
+	}
+
+	form#einstellungenSearchForm input#terms_einstellungen {
+		display: block !important;
+		float: none !important;
+	}
+	form#searchForm input#terms_anmeldestatistik {
+		width: 250px;
+	}
+}
+
+@media only screen and ( max-width: 340px ) {
+	input#terms {
+		max-width: 225px;
+	}
+}
+
+@media only screen and ( max-width: 910px ) and ( min-width: 541px ) {
+	#headerinner {
+		height: 143px;
+		top: 0;
+	}
+	#navitop {
+		clear: both;
+	}
+}
+
+@media only screen and ( max-width: 810px ) and ( min-width: 768px ) {
+	#content {
+		width: 500px;
+	}
+}
+
+@media only screen and ( max-width: 920px ) and ( min-width: 811px ) {
+	#content {
+		width: 550px;
+	}
+}
+
+@media only screen and ( max-width: 980px ) and ( min-width: 921px ) {
+	#content {
+		width: 650px;
+	}
+}
+
+@media only screen and ( max-width: 1020px ) and ( min-width: 981px ) {
+	#content {
+		width: 600px;
+	}
+}
+
+@media only screen and ( max-width: 1024px ) and ( min-width: 981px ) {
+	#content {
+		width: 700px;
+	}
+}
+
+@media only screen and ( max-width: 1124px ) and ( min-width: 1025px ) {
+	#content {
+		width: 750px;
+	}
+}
+
+@media only screen and ( max-width: 1200px ) and ( min-width: 1125px ) {
+	#content {
+		width: 770px;
+	}
+}
+
+@media only screen and ( max-width: 990px ) {
+	#rimcontent.content-3col {
+		margin-right: 0px;
+	}
+	html body main div.outer-container.breadcrumb-container div.container {
+		padding-left: 10px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	#content {
+		float: left;
+	}
+}
+
+h3.personen-details {
+	color: #777777;
+	font-size: 14px;
+}
+
+label.form {
+	margin-bottom: 0.2em;
+}
+
+#sst-dialog .button {
+	margin-left: 0;
+}
+
+.sst-dialog-frame {
+	z-index: 999999;
+}

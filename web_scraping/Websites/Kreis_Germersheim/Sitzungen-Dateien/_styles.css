@@ -1,0 +1,688 @@
+/*	_styles.css	Externe CSS2-Styles für ALLRIS net					*/
+
+/*	History:										*/
+/*	081120	3.8.2	Includes für Layout und Links, thematisch geordnet			*/
+/*	071126	3.8.0	Einheitliches Aussehen der Buttons und Icons in Linklisten		*/
+/*	030623	3.7.1SP2	Neu: calMarkC, calMark, input.notiz, .zl16, .zl1m		*/
+/*	020911	3.7.1	input.ib1 für z.B. Einladung, Bekanntmachung, Pressemitteilung angepaßt	*/
+/*	020522	3.7.1	CSS2-kompatibel, keine Unterscheidung zwischen Browsertypen mehr	*/
+/*	010611	3.6.1										*/
+/*	010411	3.5.3	SP2 PreRelease Neuer Kalender Monatsauswahl				*/
+
+/*	Falls Sie diese Datei ändern möchten, empfehlen wir die Änderungen zu kommentieren.
+	Nutzen Sie dazu die Kommentare für Styles, so wie hier gezeigt (z.B. auch mehrzeilig).	*/
+
+/*	Hinweis zu Styles, die auf eine URL (z.B. image) verweisen:
+	Die URL muß relativ zur Stylesheetdatei (nicht realtiv zur Seiten-URL) gewählt werden!
+	(Beachten Sie die Beispiele für eine Image-URL in .re1 und .re2)			*/
+
+
+/* ============================================================================ */
+/*	Wichtiger Hinweis zur Einhaltung von Normen:				*/
+/*	Die gewünschte Anzeige wird mit um so größerer Wahrscheinlichkeit	*/
+/*	unabhängig vom Browsertyp beim Benutzer sein, je genauer die Standards	*/
+/*	für Styles								*/
+/*		- von der Webapplikation					*/
+/*		- vom Browser (Typ und Version)					*/
+/*	eingehalten werden.							*/
+/*	Mit der Auslieferung von ALLRIS net entspricht die vorliegende Datei	*/
+/*	dem CSS2-Standard des W3C. Falls Sie an dieser Datei Änderungen		*/
+/*	vornehmen, sollten Sie abschließend prüfen lassen, ob die Datei auch	*/
+/*	mit den eingebrachten Änderungen weiterhin diesen Normen genügt.	*/
+/*	Nutzen Sie dazu den Validierungsservice des W3C:			*/
+/*		http://jigsaw.w3.org/css-validator/validator-upload.html	*/
+/* ============================================================================ */
+
+
+/*
+	Die Auswahl von Farben sollte aus einer Palette erfolgen.
+	Beispiel (hier als Vorschlag genutzt):
+	http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines#Color
+	(Die Sättigungen low/medium/high entstammen der Tango-Palette.
+	Die Sättigungen 6%, 15%, 25% und 50% wurden hier zusätzlich eingeführt,
+	um zur Palette kompatible Pastelltöne abbilden zu können.)
+	
+					Saturation
+						ALLRIS Pastell				Original Tango
+                  6%     15%     25%     50%     low    medium   high
+
+	Butter        -     fcf8d5  fcf5bd  fcee7e  fce94f  edd400  c4a000
+	Orange		  -       -     fce2bd  fcc97e  fcaf3e  f57900  ce5c00
+	Chocolate	fcf6ed	e9dbc5  e9d2af  e9d1ac  e9b96e  c17d11  8f5902
+	Chameleon	  -       -     c6e2aa  a9e271  8ae234  73d216  4e9a06
+	Sky Blue	  -     b0bfcf  9bb4cf    -     729fcf  3465a4  204a87
+	Plum		  -       -       -       -     ad7fa8  75507b  5c3566
+	Scarlet Red	  -       -     efb3b3  ef7878  ef2929  cc0000  a40000
+	Aluminium	  -     eeeeec  d3d7cf  babdb6  888a85  555753  2e3436
+
+			(Zum Ansehen s.a. images/skin/tangocolors.htm)
+			
+	Alternative Palette: http://wiki.kde.org/tiki-index.php?page=Colors			
+
+
+	Da Farben teilweise auch über Konfigurationsvariablen gesteuert werden,
+	sollten diese in conf/_standards.asp an die gewählte Palette angepaßt
+	werden. Vorschlag für Tango:
+	
+	' TOP 
+	TOP_Info_Beginn = " <span style=""color: #888a85"" title=""Zusatzinfo"">(" ' Anzeige der Zusatzinfo für einen TOP	
+	
+	' Sitzung
+	SI_farbe_NG = "#8ae234"			' Nachtrags-TOP kennzeichnen
+
+	' Textrecherche
+	TR_farbe_suchwort= "#fce94f"		' Suchwort/Verweis farbig hervorheben
+	TR_farbe_undwort = "#8ae234"
+	TR_farbe_oderwort= "#efb3b3"
+	TR_farbe_notiz = "#fce94f"			
+	TR_farbe_news = "#efb3b3"
+
+	' VO-Client
+	VOCL_farbe_mandatory = "#fce94f"	' Farbe für Pflichtfelder
+
+	' Farbkodierung für Status
+	STATE_col_red = "#cc0000"
+	STATE_col_yellow = "#edd400"
+	STATE_col_green = "#73d216"
+	STATE_col_white = "#ffffff"
+	STATE_col_gray = "#babdb6"
+	STATE_col_black = "#2e3436"
+
+	' Farbkodierung für Beratungsfolgestatus (bfstat) 
+	BFST_col_Unknown = STATE_col_white	' Unbekannt = weiß 
+	BFST_col_Done = STATE_col_white		' Erledigt(typisch: Beschluß) - nichts mehr zu tun = weiß 
+	BFST_col_Scheduled = STATE_col_green	' Bereit, beraten zu werden und einer TO zugeordnet = grün 
+	BFST_col_Ready = STATE_col_yellow	' Bereit, beraten zu werden aber noch nicht auf einer TO = gelb (BHB: grün) 
+	BFST_col_Waiting = STATE_col_red	' Wartet auf noch nicht erledigte vorgelagerte bfnum = rot 
+	BFST_col_Interrupting = STATE_col_gray	' Automatischer Ablauf nach diesem Schritt unterbrochen. Bedienereingriff erforderlich = grau (BHB: rot) 
+	BFST_col_Interrupted = STATE_col_gray	' Automatischer Ablauf durch einen vorherigen BF-Schritt mit STBF_Interrupting unterbrochen. Bedienereingriff erforderlich = grau (BHB: rot) 
+	BFST_col_Stopping = STATE_col_white	' BF soll auf unbegrenzte Zeit (i.d.R. für immer) nach diesem Schritt stehenbleiben. = weiß 
+	BFST_col_Stopped = STATE_col_black	' BF-Schritt ist durch einen vorherigen BF-Schritt mit STBF_Stopping blockiert = schwarz
+	
+ */
+
+/* ============================================================================ */
+/*	1. Positionsbezogene Styles						*/
+/*		- beziehen sich auf anzuzeigende Datengruppierung		*/
+/*		- sind frei benennbar						*/
+/*		- sind hier zu erkennen am vorangestellten Punkt		*/
+/*		  z.B.	hier	.text1						*/
+/*			für	<td class="text1">	im Text der HTML-Seite	*/
+/*		- Anwendung kann auf bestimmte Tags beschränkt werden		*/
+/*		  z.B.	hier	td.start	bedeutet			*/
+/*			Style 	.start		nur für <td> - Tags		*/
+/*		- Der Kontext für einen Style kann definiert sein		*/
+/*		  z.B.	hier	.zk1 th		bedeutet			*/
+/*			Style für ein <th>, das in einem Element enthalten ist,	*/
+/*			das mit .zk1 formatiert ist				*/
+/* ============================================================================ */
+
+
+/* ==================================================================== */
+/*	Grundsätzlicher Seitenaufbau					*/
+/* ==================================================================== */
+@import "_styles_layout.css";
+
+
+/* ==================================================================== */
+/*	Navigation							*/
+/* ==================================================================== */
+@import "_styles_navi.css";
+
+
+/* ==================================================================== */
+/*	Grundsätzlicher Seitenaufbau					*/
+/* ==================================================================== */
+
+/*	Beachte auch #rislogo, #rishead	(_styles.layout.css)		*/
+.topLogo,
+.topHeadline	{
+	padding-top: 12px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.topLogo 	{
+	font-weight: bold;
+	color: #204a87;
+}
+
+.topHeadline 	{
+	text-transform: uppercase;
+	color: #ffffff;
+	letter-spacing:6px;
+}
+
+/*	Beachte auch #risvari (_styles.layout.css)			*/
+.topLeft 	{
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 4px;
+}
+
+
+/* ============================================================================ */
+/*	Tag-bezogene Styles							*/
+/* ============================================================================ */
+
+body		{
+	/*	Es sollte eine für die gesamte Website einheitliche Schriftart
+		genutzt werden. U.g. Schriftarten wurde mit ALLRIS net erprobt	*/
+	/*	font-family: Verdana;	*/
+	/*	font-family: Arial;	*/
+	font-family: Verdana;
+	font-size: 12px;
+	background-color: #ffffff;
+	color: #2e3436;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5	{
+	text-align: left;
+	color: #204a87
+}
+
+h1	{
+	font-size: 18px;
+}
+
+h2	{
+	font-size: 16px;
+}
+
+h3	{
+	font-size: 14px;
+}
+
+h4	{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+h5	{
+	font-size: 11px;
+	font-weight: normal;
+}
+
+hr	{
+	color: #2e3436;
+}
+
+img	{
+	border: 0px
+}
+
+th	{
+	font-size: 13px;
+	font-weight: bold;
+	text-align: left;
+	color: #204a87;
+	}
+	
+
+td	{
+	font-size: 11px;
+}
+
+p		{
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+form	{
+	margin: 0;
+}
+
+
+
+
+/* ==================================================================== */
+/*	Allgemeine Gestaltungselemente 					*/
+/* ==================================================================== */
+
+input,
+button,
+select,
+textarea	{
+	font-family: Verdana;
+	font-size: 11px;
+	background-color: #fcf6ed;
+	border-width: 1px;
+}
+
+
+/*	Bild-Link in Auflistungsüberschrift:
+	Sortierfunktion auslösen				*/
+.iso1		{
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+/*	kb1	Bezeichner im Kopfteil von Seiten
+	(z.B. Vorlagenkopf)					*/
+/*	kb2	Bezeichner in Auswahlseiten
+	(z.B. Statistiken.Auswahl Zeitraum)			*/
+.kb1,
+.kb2	{
+	vertical-align: top;
+	text-align: left;
+	font-weight: bold;
+}
+		
+/*	Markierung "Belegung" z.B. Räume			*/
+.mark2		{
+	background-color: #8ae234;
+}
+		
+/*	Markierung "Konflikt" z.B. Räume			*/
+.mark3		{
+	background-color: #ef2929;
+}
+		
+/*	Notiz, z.B. für Aktenmappe				*/
+input.notiz	{
+	background-color: #fce94f;
+	height: 20px;
+	border: 1px solid #888a85;
+	padding-left: 4px;
+	vertical-align: middle;
+}
+
+/*	Buchstabenregister - inaktiver (ausgewählter) Buchstabe	*/
+.re1		{
+	background: URL(../images/reg4.gif) no-repeat;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #2e3436;
+}
+
+/*	Buchstabenregister - aktiver (wählbarer) Buchstabe	*/
+.re2		{
+	background: URL(../images/reg3.gif) no-repeat;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #729fcf;
+}
+
+.risdeco	{
+}
+
+/*	Select-Box für Textrecherche-Index			*/
+.searchindex 	{
+	font-size: 8pt;
+	height:166px;
+}
+
+/*	Eingabefeld für Suchworte Textrecherche			*/
+input.searchword	{
+	width:263px;
+}
+
+/*	Submit-Buttons des Web-Clients			*/
+.wcs	{
+	width:100px;
+}
+
+
+/* ==================================================================== */
+/*	Texte								*/
+/* ==================================================================== */
+		
+/*	Betreff-/Bezeichnungstext
+	(wichtiger Text in einer Auflistung oder Beschreibung)	*/
+.text1,
+.text2,
+.text3,
+.text4,
+.text8		{
+	text-align: left;
+	vertical-align: top;
+}
+
+/*	Datum/Uhrzeit und Ähnliches				*/	
+.text2		{
+}
+
+/*	Statustext (z.B. öffentlich/nichtöffentlich)		*/
+.text3		{
+}
+
+/*	Erläuterungstext (z.B. zum Amt, zu text1-Elementen)	*/
+.text4		{
+}
+
+/*	Rechtsbündige Anzeige von Zahlen
+	(z.B. in statistischen Tabellen)			*/
+.text5		{
+	text-align: right;
+	vertical-align: top;
+}
+
+/*	Programmtext (z.B. in Anmeldefenstern)			*/
+.text8		{
+}
+		
+
+/* ==================================================================== */
+/*	Tabellen							*/
+/* ==================================================================== */
+		
+/*	Kopfdatenbereich: Tabellenzelle, die Kopfteil
+	von Seiten (z.B. Vorlagenkopf) enthält			*/
+.ko1		{
+	width: 80%;
+	vertical-align: top;
+}
+
+/*	Kopfdatenbereich Zwischenraum zu me1			*/
+.ko2		{
+	width: 5%;
+}
+
+/*	Tabellenfeld für Link-Icon				*/
+td.lb1		{
+	vertical-align: top;
+}
+		
+/*	Menübereich-Tabellenzelle für Links,
+	z.B. Link zu Dokumenten					*/
+.me1		{
+	vertical-align: top;
+	width: 15%;
+}
+
+/*	Tabelle Auswahl/Anmeldung z.B. Amt auswählen		*/
+.ta1		{
+	width: 500px;
+	border: 1px;
+}  
+
+/*	Tabelle Formularfelder - um Einstellungen vorzunehmen
+	(z.B. Datumsbereich in Statistiken)			*/
+.tf1		{
+	border: 0px;
+}
+
+/*	Kopf einer Auswahl/Anmeldungsseite			*/
+.titlebar	{
+	font-weight: bold;
+       	background-color: transparent;
+	color: #204a87;
+}
+
+/*	Tabelle für Kopfdatenbereich
+	(z.B. Vorlagenkopf)					*/
+.tk1		{
+	border: 0px;
+}
+
+/*	Tabelle für Auflistungen
+	(z.B. Sitzungskalender, Tagesordnung)			*/
+.tl1		{
+	border: 0px;
+}
+
+.tl1 td		{
+	padding-right: 3px;
+}
+
+/*	Tabelle für Listen in der Auflistung
+	(z.B. TOPs in Niederschrift)				*/
+.tl2		{
+	border: 0px;
+}
+
+/*	Bei Nutzung der DECO soll der Inhalt den von der DECO-
+	Tabelle aufgespannten Raum vollständig füllen. Kommen
+	.tf1, .tk1, .tl1 außerhalb der DECO zur Anwendung, 
+	sollen sie ihrerseits nicht 100% beanspruchen, weil das
+	zu Layout-Problemen in IE 6 führt (ragt rechts heraus).
+	Kompromiß: Inhalte, die nicht die volle Breite benötigen,
+	zeichnen ihre Zeile nicht bis zum rechten Rand durch.	*/
+.risdeco .tf1,
+.risdeco .tk1,
+.risdeco .tl1	{
+	width: 100%;
+	border: 0px;
+}
+
+/*	Tabelle Monatsüberblick (z.B. Räume)			*/
+.tm1		{
+	border: 0px;
+}
+
+/*	Tabelle Print-Ansicht (z.B. Statistiken)		*/
+.tp1		{
+	width: 600px;
+	border: 1px;
+}
+
+/*	Tabelle Buchstabenregister, Eingabedialog Recherche	*/
+.tr1		{
+	border: 0px;
+	background-color: #eeeeec; 
+}
+
+/*	Tabelle Weitergabeinformationen
+	(z.B. in weitergegebener Vorlage eingeblendet)		*/
+.tw1		{
+	background-color: #FFFACD;
+	color: black;
+	border-color: #D3D3D3;
+	border-style:ridge;
+	border-width:2px;
+}
+
+/*	Zeile in Auflistungen - Kopfzeile (enthält <th>-Bereich)*/
+tr.zk1		{
+	text-align: left;
+	font-weight: bold;
+}
+
+/*	(Contextual Selector: "th in .zk1")
+.zk1 th		{
+	background-color: silver;
+	color: #204a87;
+}
+
+
+/* ==================================================================== */
+/*	Zeilen in Auflistungen (z.B. Sitzungskalender)			*/
+/* ==================================================================== */
+
+.zl11,
+.zl12,
+.zl16,
+.zl17,
+.zl1m,
+.zl21,
+.zl9		{
+	vertical-align: top;
+	color: #2e3436;
+}
+
+.zl17		{
+	vertical-align: top;
+	color: #ffffff;
+}
+
+
+/*	Erste/ungeradzahlige (i.d.R. dunklere) Zeile		*/
+.zl11		{
+	background-color: #eeeeec;
+}
+		
+/*	Alternierende/geradzahlige (i.d.R. hellere) Zeile	*/
+.zl12		{
+	background-color: #ffffff;
+}
+
+/*	Zeile in Auflistungen - andere Farbe zu zl1/2
+	 - Samstag im Kalender
+	 - Ergebnisse Textrecherche
+	   (Zwischenüberschrift Erweiterte Suche)		*/
+.zl16 		{
+	background-color: #b0bfcf;
+	/*	alternativ rot:	background-color: #efb3b3;	*/
+}
+
+/*	Zeile in Auflistungen - andere Farbe zu zl1/2
+	 - Sonntag im Kalender					*/
+.zl17		{
+	background-color: #729fcf;
+	/*	alternativ rot:	background-color: #ef7878;	*/
+}
+
+/*	Zeile in Auflistungen - andere Farbe zu zl1/2
+	(z.B. Markierte Tage im Kalender)			*/
+.zl1m		{
+	background-color: #e9d2af;
+}
+
+/*	Zeile in tl2	*/
+.zl21		{
+}
+
+/*	Zeile in Auflistung als Alternative zu zl11 und zl12	*/
+.zl9		{
+}
+		
+/*	zr1	Zeile in Wortauflistungen - Beschlussbuch	*/
+/*	zw1	Zwischenüberschrift1 in Auflistungen		*/
+/*	zw2	Zwischenüberschrift2 in Auflistungen		*/
+.zr1,
+.zw1,
+.zw2	{
+	vertical-align: top;
+	background-color: #d3d7cf;
+	font-weight: bold;
+}
+
+.zr1,
+.zw1	{
+	font-weight: bold;
+}
+		
+
+/* ==================================================================== */
+/*	Kalender zur Monatsauswahl 					*/
+/* ==================================================================== */
+
+/*	Jahreszahl oder Monatsname				*/
+/*	Dieses Jahr						*/
+.calHeaderYM	{
+	font-weight: bold;
+	background-color: #babdb6;
+	color: #ffffff;
+}
+		
+/*	Jedes zweite Jahr anders				*/
+.calHeaderYMAlternating	{
+	font-weight: bold;
+	background-color: #ffffff;
+	color: #babdb6;
+}
+		
+/*	Der heutige Monat hervorgehoben				*/
+.calHeaderYMSelected	{
+	font-weight: bold;
+	background-color: #eeeeec;
+}
+		
+/*	Präfix							*/
+/*		H:		Header				*/
+/*		(ohne):		Tag im Kalender			*/
+/*	Tage in der Woche					*/
+/*		Week:		Tag ohne Besonderheiten		*/
+/*		Sat:		Samstag				*/
+/*		Sun:		Sonntag				*/
+/*		Mark:		Markierter Tag			*/
+/*		Dim:		Kein Tag dieses Monats		*/
+/*				(ggf. vorgezogen aus Folgemonat)*/
+/*	Tage im Monat						*/
+/*		C:		Der heutige Monat		*/
+/*		(sonst):	Jeder andere Monat		*/
+
+.calHWeekC,
+.calHSatC,
+.calHSunC,
+.calHWeek,
+.calHSat,
+.calHSun,
+.calMarkC,
+.calMark	{
+	background-color: #e9d2af;
+}
+
+
+.calWeekC,
+.calWeek	{
+	background-color: #fcf5bd;
+}
+		
+.calSatC,
+.calSat		{
+	background-color: #efb3b3;
+}
+		
+.calSunC,
+.calSun		{
+	background-color: #ef7878;
+}
+		
+.calDim,
+.calDimSat,
+.calDimSun	{
+	background-color: #babdb6;
+}
+
+.calWeekC,
+.calSatC,
+.calSunC,
+.calMarkC,
+.calHWeekC	{
+	color: #2e3436;
+}
+		
+.calWeek,
+.calSat,
+.calSun,
+.calMark,
+.calHWeek	{
+	color: #555753;
+}
+
+.calDimSat,
+.calHSatC,
+.calHSat	{
+	color: #ef2929;
+}
+
+.calDimSun,
+.calHSunC,
+.calHSun	{
+	color: #cc0000;
+}
+		
+.calDim		{
+	color: #ffffff;
+}
+		
+
+/* ==================================================================== */
+/*	Nur für Entwicklung/Test (nicht für Produktion nutzen)		*/
+/* ==================================================================== */
+
+/*	Debug-Texte im Debug-Modus				*/
+.debug1		{
+	font-size: 8pt;
+	background-color: white;
+	color: #a40000;
+}
+		

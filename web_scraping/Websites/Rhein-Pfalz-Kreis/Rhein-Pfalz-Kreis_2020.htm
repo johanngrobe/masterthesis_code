@@ -1,0 +1,680 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"><head>
+  <title>Rats- und Bürgerinformationssystem</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="author" content="more! software">
+  <meta name="publisher" content="more! software">
+  <meta name="copyright" content="more! software">
+  <meta name="description" content="Rats- und Bürgerinformationssystem">
+  <meta name="keywords" content="rubin, more software, more, sitzungsdienst, ratsinformationssystem, ratsinfo, antragsverwaltung, sitzungsgeld, sitzungsmanagement, dokumentenmanagement, beschlusskontrolle, bürgerinfo, bürgerinformationssystem, dms, ris">
+  <meta name="content-language" content="de">
+  <meta name="language" content="de">
+  <meta name="robots" content="NOINDEX,NOFOLLOW">
+  <meta name="title" content="Rats- und Bürgerinformationssystem">
+  <style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link rel="stylesheet" href="Rhein-Pfalz-Kreis_2020-Dateien/general.css" media="screen">
+  <link rel="stylesheet" href="Rhein-Pfalz-Kreis_2020-Dateien/layout.css" media="screen">
+  <link rel="stylesheet" href="Rhein-Pfalz-Kreis_2020-Dateien/layout_print.css" media="print">
+  <link rel="shortcut icon" href="https://rhein-pfalz-kreis.more-rubin1.de/images/icon.ico">
+  <meta http-equiv="pragma" content="no-cache"><link rel="stylesheet" type="text/css" href="Rhein-Pfalz-Kreis_2020-Dateien/generalStyle.css"><script type="text/javascript" src="Rhein-Pfalz-Kreis_2020-Dateien/jQueryMin.js"></script><script src="Rhein-Pfalz-Kreis_2020-Dateien/insertDataPolicy.js" charset="utf-8"> </script><script src="Rhein-Pfalz-Kreis_2020-Dateien/functions.js"></script><script>window.settings = {"900":"","902":"","1000":0,"1010":"","1013":"","1014":"","1015":"","1016":"","1017":"","1018":"","1019":"","1020":"","1021":"Sie befinden sich im Gremien-Infosystem des Rhein-Pfalz-Kreises.","1027":"Sie befinden sich im Gremien-Infosystem des Rhein-Pfalz-Kreises.","1028":1,"1029":1,"1030":0,"1031":1,"1032":1,"1034":1,"1035":0,"1036":"","1037":"","1038":1,"1040":1,"1042":"","1045":1,"1047":1,"1049":0,"1050":0,"1051":"simone.riedel@kv-rpk.de","1052":"simone.riedel@kv-rpk.de","1053":"https:\/\/www.more-rubin.de\/hilfe\/ris","1054":1,"1055":1,"1056":1,"1057":1,"1058":1,"1059":0,"1060":1,"1061":1,"1062":1,"1063":1,"1064":1,"1065":1,"1067":1,"1068":20,"1071":"01.01.2004","1072":1,"1073":1,"1074":1,"1075":0,"1076":0,"1077":0,"1078":0,"1079":0,"1080":0,"1081":1,"1082":1,"1083":1,"1084":1,"1085":0,"1086":"Vorlage ist noch nicht ver\u00f6ffentlicht","1088":0,"1090":0,"1095":0,"1100":1,"1115":1,"1116":"","1117":"","1118":"","1119":"","1130":0,"1150":1,"1200":"","1201":0,"1300":"","1400":"Fraktionen","1500":"","1612":"","1613":"","1700":0,"1824":"","1900":"","2000":"","2001":"","2004":1,"2005":1,"2007":"TOP nicht vorhanden\/freigegeben!","2008":"","2009":"","2011":1,"2012":0,"2013":0,"2014":1,"2015":0,"2017":"35;10","2018":"1;1;1;1","2019":"0;#808080","2020":"","2021":"Arial;14;#808080;0;0;1","2022":3,"2023":0,"2024":"Arial;8;#000000;1;0;0","2025":"5;2","2026":"0;0;0;1","2027":5,"2030":0,"2032":"Arial;8;#000000;0;0;1","2033":"5;7","2034":"0;0;1;0","2035":5,"2036":"0;#000000","2037":1,"2038":"","2040":"","2041":0,"2042":3,"2043":3,"2044":3,"2045":3,"2046":3,"2047":0,"2048":0,"2049":1,"2050":1,"2051":1,"2052":"","2053":"","2054":"","2055":"","2075":0,"2080":30,"2100":1,"2200":0,"2300":0,"2400":1,"2451":"Die Teilnehmerliste unterliegt derzeit noch Aktualisierungen durch die Verwaltung auf Basis der definitiven Teilnahme an der Sitzung, bitte schauen Sie sp\u00c3?ter noch einmal vorbei.","2452":"Die Tagesordnung unterliegt derzeit noch Aktualisierungen durch die Verwaltung in Bezug auf die Ergebnisse der stattgefundenen Sitzung, bitte schauen Sie sp\u00c3?ter noch einmal vorbei.","2453":"Tagesordnung gilt unter Vorbehalt bis zur Genehmigung des Protokolls.","2500":"Tagesordnung gilt unter Vorbehalt bis zur Genehmigung des Protokolls.","2501":1,"2550":1,"3000":"","3500":"","3501":"","3502":"","3503":"","3505":"","3506":"","3507":"","3508":"","4000":1,"5000":30,"5500":"a","5600":1,"6015":"165;15","6016":"35;10","6017":"1;1;1;1","6018":"0;#808080","6019":"","6020":"Arial;14;#808080;0;0;1","6021":3,"6022":0,"6023":"Arial;8;#000000;1;0;0","6024":"5;2","6025":"0;0;0;1","6026":5,"6027":1,"6028":"0;#000000","6029":"","6030":"LINKS([TITEL] + \" am \" + [DATUM]);","6031":"Arial;8;#000000;0;0;1","6032":"5;7","6033":"0;0;1;0","6034":5,"6035":"0;#000000","6036":1,"6037":"","6038":"RECHTS(\"Seite \" + [SEITENZAHL]);","6200":1,"6500":"","6600":"","6700":"","6800":"","6810":"","7200":"","7400":"","8000":"","8001":"","8002":"","8003":"","8004":"","8005":"","8006":"","8007":"","8008":"","8009":"","9001":"","9002":"","9003":"","9004":"","9005":"","9006":"","9007":0,"9008":"","9009":"","9010":0,"9011":0,"9012":"","9013":"","9014":"","9015":"","9016":"","9017":"","9018":"","9019":"","9020":"","9021":"","9022":"","9023":1,"9024":"[NT]","9025":0,"9027":"","9028":0,"9029":0,"9030":0,"9031":"","9032":"","9033":"","9034":"","9035":"","9036":"","9037":"","9038":"","9040":"","9041":"","9042":"","9043":"","9044":"","9045":0,"9046":0,"9048":0,"9050":0,"9051":"Mandatstr\u00e4ger","9052":0,"9053":0,"9054":15,"9055":15,"9056":15,"9057":1,"9058":1,"9059":1,"9060":0,"9061":0};</script><script>window.translations = {"searchForSubmissions":"Suche nach Vorlagen","organizations":"Organisationen","petitionNumber":"Vorlagennummer","organization":"Organisation","createNewProtocol":"Neues Protokoll anlegen","shortenedCreateNewProtocol":"Neuanlage Protokoll","searchForProtocols":"Suche nach Protokollen","submission":"Vorlage","newSubmissionForNumberGroup":"Neue Vorlage f\u00fcr den Nummernkreis","addSubmissionAttachment":"Anlage der Vorlage hinzuf\u00fcgen","showSubmissionDocument":"Vorlagen-PDF anzeigen","additionToSubmission":"Erg\u00e4nzung zur Vorlage","addInvolvedOrganizations":"Beteiligte Organisationen hinzuf\u00fcgen","submissionAttachments":"Anlagen zur Vorlage","attachmentsToSubmissionAndAgendaItem":"Anlagen zur Vorlage und zum TOP","meetingWasReleased":"Sitzung wurde ver\u00f6ffentlicht","protocolWasReleased":"Protokoll wurde ver\u00f6ffentlicht","statusOfMeetingPlanning":"Status Sitzungsplanung","statusOfFactionMeeting":"Status Fraktionssitzung","statusOfProtocol":"Status Protokoll","meetingPlanning":"Sitzungsplanung","protocol":"Protokoll","agendaItemListOn":"TOP-Liste am ","shortenedAgendaItemNumber":"TOP-Nr.","shortenedAgendaItemStatus":"TOP-Status","scheduledSubmissions":"terminierte Vorlagen","agendaItemFromMeeting":"Tagesordnungspunkt aus der Sitzung","addPeopleToMeeting":"Personen zur Sitzung hinzuf\u00fcgen","addPeopleToProtocol":"Personen zum Protokoll hinzuf\u00fcgen","mandate":"Mandatstr\u00e4ger","ofMandate":"des Mandatstr\u00e4gers","mandates":"Mandatstr\u00e4ger","submissions":"Vorlagen","shortenedAgendaItems":"TOPs","submissionDate":"Antragsdatum","shortenedAgendaItem":"TOP","agendaItem":"Tagesordnungspunkt","ofSubmission":"der Vorlage","agendaItemList":"TOP-Liste","theSubmission":"Die Vorlage","relatedToSubmission":"Vorlage","protocols":"Protokolle","showAgendaItemListLegend":"TOP-Legende einblenden","hideAgendaItemListLegend":"TOP-Legende ausblenden","detailsOfSubmission":"Details zur Vorlage","accordingToSubmission":"gem\u00e4ss Vorlage","authorityMembers":"Beh\u00f6rdenmitglieder","attachmentToSubmission":"Anlage zur Vorlage","attachmentToAgendaItem":"Anlage zum Tagesordnungspunkt","completeProtocol":"Protokoll gesamt","publicProtocol":"Protokoll \u00f6ffentlich","nonpublicProtocol":"Protokoll nicht\u00f6ffentlich","confidentialProtocol":"Protokoll vertraulich","attachmentToProtocol":"Anlage zum Protokoll","protocolAgendaItems":"Protokoll Tagesordnungspunkte","meetingAgendaItems":"Sitzung Tagesordnungspunkte","protocolDocuments":"Protokolldokumente","pdfSubmission":"PDF Vorlage","approved":"Freigegeben","approval":"Freigabe","taskToSubmission":"Aufgaben zur Vorlage","taskToAgendaItem":"Aufgaben zum Tagesordnungspunkt","preProtocol":"Sitzungsvorlagen","department":"Federf\u00fchrung","toSubmission":"zur Vorlage","agendaItems":"Tagesordnungspunkte"};</script><script src="Rhein-Pfalz-Kreis_2020-Dateien/vendor.1fb00ae19a35b1a6529f.js" charset="utf-8"></script><script src="Rhein-Pfalz-Kreis_2020-Dateien/main.b6ee3aa8ae6361790ec9.js" charset="utf-8"></script><link rel="stylesheet" type="text/css" href="Rhein-Pfalz-Kreis_2020-Dateien/vendor.5ff472aabd08b8d5083c.css">
+ <script charset="utf-8" src="Rhein-Pfalz-Kreis_2020-Dateien/0.1481adda29b14ebabe75.js"></script><script charset="utf-8" src="Rhein-Pfalz-Kreis_2020-Dateien/1.5029a05215ec41d6d694.js"></script><link rel="stylesheet" type="text/css" href="Rhein-Pfalz-Kreis_2020-Dateien/vendor.525f9f959df94e7406f4.css"><script charset="utf-8" src="Rhein-Pfalz-Kreis_2020-Dateien/27.fc27dcdf08f866bb9d07.js"></script><script charset="utf-8" src="Rhein-Pfalz-Kreis_2020-Dateien/3.503eb834d7573b0460f5.js"></script><link rel="stylesheet" type="text/css" href="Rhein-Pfalz-Kreis_2020-Dateien/vendor.cc246f872412f664009b.css"><script charset="utf-8" src="Rhein-Pfalz-Kreis_2020-Dateien/28.2d3968fa1be58f06c5b6.js"></script><style type="text/css">.resize-observer[data-v-8859cc6c]{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;border:none;background-color:transparent;pointer-events:none;display:block;overflow:hidden;opacity:0}.resize-observer[data-v-8859cc6c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}</style><script charset="utf-8" src="Rhein-Pfalz-Kreis_2020-Dateien/2.1da4095381727d8a8b4a.js"></script><script charset="utf-8" src="Rhein-Pfalz-Kreis_2020-Dateien/5.3c4c21d69daab942d2ed.js"></script><link rel="stylesheet" type="text/css" href="Rhein-Pfalz-Kreis_2020-Dateien/vendor.4f954ee4d664d6403572.css"><script charset="utf-8" src="Rhein-Pfalz-Kreis_2020-Dateien/19.bde705c58d1d477c6dc5.js"></script></head>
+<body>
+  <div id="main"><!----> <div data-v-acfda03c="" class="snackbar-manager"><span data-v-acfda03c=""></span></div> <div data-v-37396882="" class="file-viewer-modal-wrapper global-file-viewer-modal"><!----></div></div>
+  <!-- Hidden Anchors -->
+  <ol id="skip">
+   <li><a href="#navigation" title="zur Navigation springen">zur Navigation</a></li>
+   <li><a href="#content" title="zum Inhalt springen">zum Inhalt</a></li>
+  </ol>
+
+
+
+<div id="top">
+
+	<div id="header">
+		<div><img src="Rhein-Pfalz-Kreis_2020-Dateien/stadt1.jpg" alt="Kopfbereich"></div>
+	</div>
+
+	<div id="navigation">
+		<ol id="vertical"><li><a href="https://rhein-pfalz-kreis.more-rubin1.de/index.php" title="Startseite">Startseite</a></li>
+<li><strong class="activated">Kalender</strong></li>
+<li><a href="https://rhein-pfalz-kreis.more-rubin1.de/recherche/index.php" title="Recherche">Recherche</a></li>
+<li><a href="https://rhein-pfalz-kreis.more-rubin1.de/gremien.php" title="Gremien">Gremien</a></li>
+<li><a href="https://rhein-pfalz-kreis.more-rubin1.de/mandate.php" title="Mandatsträger">Mandatsträger</a></li>
+</ol>
+		<div class="anmeldung">
+	<form method="post" action="index.php" name="loginform" data-bitwarden-watching="1"><input type="hidden" name="pass" value="">
+<input type="hidden" name="name" value="">
+<label><input type="hidden" name="referenz" value="/calendar.php"></label>
+				<div class="login_kennung_ueberschrift">ANMELDEN<hr class="hr"></div>
+				<div class="login_kennung_name">Kennung</div>
+				<div class="login_kennung_eingabe"><label><input type="text" name="name" maxlength="40" class="Kleine_Eingabezeile" style="width:85px"></label></div>
+				<br>
+				<div class="login_passwort_name">Passwort</div>
+				<div class="login_passwort_eingabe"><label><input type="password" name="pass" maxlength="40" class="Kleine_Eingabezeile" style="width:85px"></label></div>
+                <br>
+                <div class="login_button"><input type="submit" name="anmeldung" value="Anmelden" style="width:85px" class="Knopf"></div>
+		</form></div>
+		<div class="aktualisierung">Letzte Aktualisierung am:<br>16.02.2023, 14:36</div>
+		<div class="counter"><b>292331</b> Besucher</div>
+		<div class="version">V 8.1.1</div>
+		<div class="feets"><img src="Rhein-Pfalz-Kreis_2020-Dateien/feed.gif" alt="News Feeds RSS 2.0 / ATOM" title="News Feeds RSS 2.0 / ATOM">&nbsp;<a href="https://rhein-pfalz-kreis.more-rubin1.de/feeds/rss2/" title="RSS 2.0 News Feed" target="_blank">RSS 2.0</a>&nbsp;/&nbsp;<a href="https://rhein-pfalz-kreis.more-rubin1.de/feeds/atom/" title="ATOM News Feed" target="_blank">ATOM</a></div>
+	</div>
+
+	<div id="content">
+		<div data-v-0347291b="" class="calendar-page"><div data-v-0347291b="" class="calendar-page-main"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 48px; width: 742px;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 0px; width: 742px;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-header"><div data-v-0347291b="" data-v-0532423c=""><!----></div> <div data-v-0347291b="" data-v-0532423c="" class="calendar-page-header-month-control"><div data-v-b91712fa="" data-v-0347291b="" class="button-wrapper" data-v-0532423c=""><div data-v-b91712fa="" class=""><!----> <div data-v-b91712fa="" class="fab-and-text-wrapper"><button data-v-b91712fa="" class="fab button-inline"><svg data-v-b91712fa="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fab-icon svg-inline--fa fa-angle-double-left fa-w-14"><path data-v-b91712fa="" fill="currentColor" d="M223.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L319.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L393.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34zm-192 34l136 136c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9L127.9 256l96.4-96.4c9.4-9.4 9.4-24.6 0-33.9L201.7 103c-9.4-9.4-24.6-9.4-33.9 0l-136 136c-9.5 9.4-9.5 24.6-.1 34z" class=""></path></svg></button> <!----></div></div></div> <div data-v-b91712fa="" data-v-0347291b="" class="button-wrapper" data-v-0532423c=""><div data-v-b91712fa="" class=""><!----> <div data-v-b91712fa="" class="fab-and-text-wrapper"><button data-v-b91712fa="" class="fab button-inline" style="position: relative;"><svg data-v-b91712fa="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="fab-icon svg-inline--fa fa-angle-left fa-w-8"><path data-v-b91712fa="" fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" class=""></path></svg></button> <!----></div></div></div> <div data-v-0347291b="" data-v-0532423c="" class="calendar-page-readable-interval">
+            1. Halbjahr 2020
+          </div> <div data-v-b91712fa="" data-v-0347291b="" class="button-wrapper" data-v-0532423c=""><div data-v-b91712fa="" class=""><!----> <div data-v-b91712fa="" class="fab-and-text-wrapper"><button data-v-b91712fa="" class="fab button-inline" style="position: relative;"><svg data-v-b91712fa="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="fab-icon svg-inline--fa fa-angle-right fa-w-8"><path data-v-b91712fa="" fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" class=""></path></svg></button> <!----></div></div></div> <div data-v-b91712fa="" data-v-0347291b="" class="button-wrapper" data-v-0532423c=""><div data-v-b91712fa="" class=""><!----> <div data-v-b91712fa="" class="fab-and-text-wrapper"><button data-v-b91712fa="" class="fab button-inline"><svg data-v-b91712fa="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fab-icon svg-inline--fa fa-angle-double-right fa-w-14"><path data-v-b91712fa="" fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z" class=""></path></svg></button> <!----></div></div></div></div> <div data-v-0347291b="" data-v-0532423c="" class="calendar-page-header-right-side-wrapper"><!----> <div data-v-0cd96ee9="" data-v-0347291b="" class="select-wrapper select-filled" data-v-0532423c=""><!----> <div data-v-0cd96ee9="" id="_q806f5p9k" class="select"><div data-v-0cd96ee9=""><div data-v-0cd96ee9="" class="select-selected-item">
+        Halbjahr
+      </div></div> <div data-v-0cd96ee9=""><svg data-v-0cd96ee9="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon svg-inline--fa fa-caret-down fa-w-10"><path data-v-0cd96ee9="" fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" class=""></path></svg></div></div> <!----> <!----></div></div></div></div></div></div> <div data-v-0347291b="" class="calendar-page-days calendar-page-days--list-view" style="height: auto;"><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MI
+                  1. Januar
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Neujahr
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  6. Januar
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Hl. Drei Könige
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  20. Januar
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=2019-UJHA-78"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">2. Sitzung des Unterausschusses des Jugendhilfeausschusses</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">09:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 355. 3. OG</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  27. Januar
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-KA-224"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">6. Sitzung des Kreisausschusses</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">16:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 355. 3. OG</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                DI
+                  28. Januar
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-WA-100"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">4. Sitzung des Werkausschusses für den Eigenbetrieb Abfallwirtschaft</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">16:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 355. 3. OG</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                DO
+                  30. Januar
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-BauA-174"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">6. Sitzung des Ausschusses für Bau, Planung und Verkehr</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">16:06</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 355. 3. OG</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  3. Februar
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-JHA-88"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">3. Sitzung des Jugendhilfeausschusses</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">16:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 153 - 155</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  10. Februar
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-SenB-51"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">2. Sitzung des Seniorenbeirates</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">14:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 153, 1. OG</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                DO
+                  13. Februar
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-BauA-175"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">7. Sitzung des Ausschusses für Bau, Planung und Verkehr</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">16:05</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 355. 3. OG</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  17. Februar
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-VA-5"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">Sitzung des Verbandsausschusses des Kreiswohnungsverbandes</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">14:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Konferenzraum 2, UG</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                DO
+                  20. Februar
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Weiberfastnacht
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  24. Februar
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Rosenmontag
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                DI
+                  25. Februar
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Fastnachtsdienstag
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MI
+                  26. Februar
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Aschermittwoch
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  2. März
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-KA-225"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">7. Sitzung des Kreisausschusses</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">16:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 355. 3. OG</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                DO
+                  19. März
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-BauA-176"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">8. Sitzung des Ausschusses für Bau, Planung und Verkehr</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">16:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 153, 1. OG</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  23. März
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-KA-226"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">8. Sitzung des Kreisausschusses und 3. Sitzung des Ausschusses für Schule Kultur und Sport</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">15:30</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 153 - 155</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  6. April
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=2020-KT-83"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">5. Sitzung des Kreistages (ausgefallen Corona)</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">16:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 153 - 155</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                DO
+                  9. April
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Gründonnerstag
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                FR
+                  10. April
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Karfreitag
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                SO
+                  12. April
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Ostersonntag
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  13. April
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Ostermontag
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                DI
+                  28. April
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=2020-WA-101"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">5. Sitzung des Werkausschusses für den Eigenbetrieb Abfallwirtschaft (ausgefallen Corona)</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">16:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 355. 3. OG</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                FR
+                  1. Mai
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Maifeiertag
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                DO
+                  21. Mai
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Christi Himmelfahrt
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  25. Mai
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-KA-228"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">9. Sitzung des Kreisausschusses und 4. Sitzung des Ausschusses für Schule, Kultur und Sport mit Schulträgerausschuss</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">14:45</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Extern</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                SO
+                  31. Mai
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Pfingstsonntag
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  1. Juni
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Pfingstmontag
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                DO
+                  4. Juni
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-BauA-179"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">9. Sitzung des Ausschusses für Bau, Planung und Verkehr</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">16:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 355. 3. OG</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day calendar-page-day--weekend"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                DO
+                  11. Juni
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"><div data-v-0347291b="" class="calendar-page-day-holiday">
+                Fronleichnam
+              </div>  </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  15. Juni
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-KA-229"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">10. Sitzung des Kreisausschusses</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">16:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 153, 1. OG</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                DI
+                  16. Juni
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-WA-102"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">5. Sitzung des Werkausschusses für den Eigenbetrieb Abfallwirtschaft</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">16:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 355. 3. OG</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  22. Juni
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=2020-UJHA-79"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">Sitzung des Unterausschusses des Jugendhilfeausschusses</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">08:30</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 355. 3. OG</div></div></div></a></div><div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=2020-UmwA-81"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">3. Sitzung des Ausschusses für Umweltschutz, Landwirtschaft und Naherholung (ausgefallen)</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">16:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Sitzungssaal A 153, 1. OG</div></div></div></a></div> </div></div><!----> <div data-v-0347291b="" class="calendar-page-day"><div data-v-0532423c="" data-v-0347291b="" class="snap-wrapper" style="height: 18px; width: auto;"><div data-v-0532423c="" class="snap-content-wrapper" style="top: 48px; width: auto;"><div data-v-0532423c="" class="snap-content"><div data-v-0347291b="" data-v-0532423c="" class="calendar-page-day-name">
+                MO
+                  29. Juni
+                </div></div></div></div> <!----> <div data-v-0347291b="" class="calendar-page-day-content"> <div data-v-0347291b=""><a data-v-0347291b="" href="https://rhein-pfalz-kreis.more-rubin1.de/meeting.php?id=ni_2020-KT-84"><div data-v-0347291b="" class="calendar-page-day-meeting"><div data-v-0347291b="" class="calendar-page-day-meeting-title">5. Sitzung des Kreistages</div> <div data-v-0347291b="" class="calendar-page-day-meeting-status">(öffentlich/nichtöffentlich)</div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path data-v-0347291b="" fill="currentColor" d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" class=""></path></svg> <div data-v-0347291b="">16:00</div></div> <div data-v-0347291b="" class="calendar-page-day-info"><svg data-v-0347291b="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path data-v-0347291b="" fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path></svg> <div data-v-0347291b="">Extern</div></div></div></a></div> </div></div></div> <!----></div></div><script>
+            if (window.components == undefined) {
+                window.components = {};
+            }
+
+            window.components["Calendar__e5216a5"] = {
+                props: {"initial-meetings":[{"nummer":"ni_2023-KA-260","nummer_si":"2023-KA-260","fraktionssitzung":"0","datum":"2023-01-30","titel":"Sitzung des Kreisausschusses","status":"4","niederschrift_status":"1","gremium_1":"KA","gremium_2":"","gremium_3":"","gremium_4":"","gremium_5":"","raum":"A355","beginn":"15:59:00","beginn_oef":"00:00:00","beginn_noef":"00:00:00","ende":"17:15:00","updated_at":"2023-01-31 09:22:39","fullUrl":"https:\/\/rhein-pfalz-kreis.more-rubin1.de\/meeting.php?id=ni_2023-KA-260","room":{"Kuerzel":"A355","Bezeichnung":"Sitzungssaal A 355. 3. OG","Strasse":"Europaplatz 5","PLZ":"67063","Ort":"Ludwigshafen","Ortsteil":"","Telefon":"0621\/5909-355","Fax":"","id":"A355","name":"Sitzungssaal A 355. 3. OG","address":{"street":"Europaplatz 5","zip_code":"67063","location":"Ludwigshafen","district":""},"phone_number":"0621\/5909-355","fax_number":""}},{"nummer":"2023-BauA-224","nummer_si":"","fraktionssitzung":"0","datum":"2023-02-09","titel":"Sitzung des Ausschusses f\u00fcr Bau, Planung und Verkehr","status":"4","niederschrift_status":"0","gremium_1":"BauA","gremium_2":"","gremium_3":"","gremium_4":"","gremium_5":"","raum":"A153-155","beginn":"16:00:00","beginn_oef":"00:00:00","beginn_noef":"00:00:00","ende":"00:00:00","updated_at":"2022-09-15 14:58:05","fullUrl":"https:\/\/rhein-pfalz-kreis.more-rubin1.de\/meeting.php?id=2023-BauA-224","room":{"Kuerzel":"A153-155","Bezeichnung":"Sitzungssaal A 153 - 155","Strasse":"Europaplatz 5","PLZ":"67063","Ort":"Ludwigshafen","Ortsteil":"","Telefon":"0621\/5909-153 u. 155","Fax":"","id":"A153-155","name":"Sitzungssaal A 153 - 155","address":{"street":"Europaplatz 5","zip_code":"67063","location":"Ludwigshafen","district":""},"phone_number":"0621\/5909-153 u. 155","fax_number":""}},{"nummer":"2023-KA-261","nummer_si":"","fraktionssitzung":"0","datum":"2023-02-27","titel":"Sitzung des Kreisausschusses","status":"4","niederschrift_status":"0","gremium_1":"KA","gremium_2":"","gremium_3":"","gremium_4":"","gremium_5":"","raum":"A153-155","beginn":"16:00:00","beginn_oef":"00:00:00","beginn_noef":"00:00:00","ende":"00:00:00","updated_at":"2023-02-06 07:58:57","fullUrl":"https:\/\/rhein-pfalz-kreis.more-rubin1.de\/meeting.php?id=2023-KA-261","room":{"Kuerzel":"A153-155","Bezeichnung":"Sitzungssaal A 153 - 155","Strasse":"Europaplatz 5","PLZ":"67063","Ort":"Ludwigshafen","Ortsteil":"","Telefon":"0621\/5909-153 u. 155","Fax":"","id":"A153-155","name":"Sitzungssaal A 153 - 155","address":{"street":"Europaplatz 5","zip_code":"67063","location":"Ludwigshafen","district":""},"phone_number":"0621\/5909-153 u. 155","fax_number":""}}],"initial-first-day":"2023-01-30","initial-last-day":"2023-03-05","initial-holidays":[{"date":"2023-01-01","name":"Neujahr"},{"date":"2023-01-06","name":"Hl. Drei K\u00f6nige"},{"date":"2023-05-01","name":"Maifeiertag"},{"date":"2023-02-16","name":"Weiberfastnacht"},{"date":"2023-02-20","name":"Rosenmontag"},{"date":"2023-02-21","name":"Fastnachtsdienstag"},{"date":"2023-02-22","name":"Aschermittwoch"},{"date":"2023-04-06","name":"Gr\u00fcndonnerstag"},{"date":"2023-04-07","name":"Karfreitag"},{"date":"2023-04-09","name":"Ostersonntag"},{"date":"2023-04-10","name":"Ostermontag"},{"date":"2023-05-18","name":"Christi Himmelfahrt"},{"date":"2023-05-28","name":"Pfingstsonntag"},{"date":"2023-05-29","name":"Pfingstmontag"},{"date":"2023-06-08","name":"Fronleichnam"},{"date":"2023-08-15","name":"Mari\u00e4 Himmelfahrt"},{"date":"2023-10-03","name":"Tag der dt. Einheit"},{"date":"2023-10-31","name":"Reformationstag"},{"date":"2023-11-01","name":"Allerheiligen"},{"date":"2023-11-22","name":"Buss- und Bettag"},{"date":"2023-12-25","name":"1. Weihnachtstag"},{"date":"2023-12-26","name":"2. Weihnachtstag"},{"date":"2023-12-31","name":"Silvester"}],"initial-room-events":[],"bodies":[{"id_koerperschaft":"RPK","koerperschaft_strasse":"Europaplatz 5","koerperschaft_plz":"67063","koerperschaft_ort":"Ludwigshafen","koerperschaft_ortsteil":"","koerperschaft_telefon":"0621\/5909-3590","koerperschaft_fax":"4000","koerperschaft_email":"tilo.meinke@kv-rpk.de","koerperschaft_internet":"www.rhein-pfalz-kreis.de","hauptgremienkuerzel":"","bildinhalt":"","bildtyp":"","koerperschaft_bezeichnung":"Rhein-Pfalz-Kreis"}]},
+                vuex: [],
+            };
+        </script>
+		<p class="up"><a href="#top" title="zum Seitenanfang dieser Seite springen">zum Seitenanfang</a></p>
+	</div>
+
+	<div class="copyright">
+	  <ol id="horizontal">
+	    <li><a target="_blank" title="Kontakt" href="mailto:simone.riedel@kv-rpk.de">Kontakt</a></li>
+<li><a target="_blank" title="Sonstiges" href="mailto:simone.riedel@kv-rpk.de">Sonstiges</a></li>
+<li><a target="_blank" title="Hilfe" href="https://www.more-rubin.de/hilfe/ris">Hilfe</a></li>
+<li><a href="https://rhein-pfalz-kreis.more-rubin1.de/legende.php" title="Legende">Legende</a></li>
+<li><a href="https://rhein-pfalz-kreis.more-rubin1.de/dsgvo-datenschutz.php" title="Datenschutzerklärung">Datenschutzerklärung</a></li>
+<li><a href="https://rhein-pfalz-kreis.more-rubin1.de/impressum.php" title="Impressum">Impressum</a></li>
+
+	    <li><a href="http://www.more-rubin.de/" title="more! software GmbH &amp; Co. KG[Link führt zu externer Seite]">www.more-rubin.de</a></li>
+	  </ol>
+	</div>
+<div style="clear:both;"></div>
+</div>
+
+
+
+<div id="cookiebanner" class="fixbottom" style="display: none;"><div class="cookie-text"><img onclick="showModal()" src="Rhein-Pfalz-Kreis_2020-Dateien/info.svg" alt="Mehr erfahren">Diese Webseite verwendet Session-Cookies. Diese sind für Funktionalitäten wie die Anmeldung oder Recherche notwendig.<button onclick="acceptCookie('sessionCookies')">Ausblenden</button></div></div></body></html>

@@ -1,0 +1,103 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #E5E5E5;
+	font-family: arial, sans-serif;
+	padding: 10px;
+	text-align: center;
+	font-size: .8em;
+}
+
+#container {
+	border: 1px solid #ccc;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 5px;
+	width: 954px;
+	text-align: left;
+}
+
+#left {
+	width: 196px;
+	float: left;
+}
+
+#right {
+	width: 200px;
+	float: right;
+}
+
+#content {
+	float: left;
+	width: 720px;
+	margin-left: 20px;
+	height: 500px;
+	/* this is the height that IE6 and other older browsers will use */
+}
+
+#content.content-3col {
+	width: 520px;
+}
+
+/* "html>body" is preferred over other methods because it is valid CSS, it doesn't have problems with specificity that other methods have, and it is forwards compatible */
+html>body #content {
+	height: auto; /* reset the height for compliant browsers */
+	min-height: 500px;
+}
+
+#footer {
+	font-size: .8em;
+	color: #900;
+}
+
+#syndicate {
+	float: left;
+	width: 49.5%;
+}
+
+p {
+	line-height: 1.4em;
+	margin: 5px 0;
+}
+
+li {
+	margin-left: 16px;
+}
+
+/* ****** login form ****** */
+#form-login {
+	border-top: 1px solid #ccc;
+	padding: 1px 0;
+}
+
+#form-login fieldset,
+#form-login ul {
+	border: 0;
+}
+
+#form-login fieldset {
+	background-color: #eee;
+	border-bottom: 1px solid #ccc;
+	padding: 0 10px;
+}
+
+#form-login div.logged-in-name {
+	padding: 10px;
+}
+
+#form-login input {
+	width: 96%;
+}
+
+#form-login .button {
+	width: 100%;
+	border: 1px solid #ccc;
+}
+
+#form-login .button {
+	background-color: #ddd;
+	height: 26px;
+}

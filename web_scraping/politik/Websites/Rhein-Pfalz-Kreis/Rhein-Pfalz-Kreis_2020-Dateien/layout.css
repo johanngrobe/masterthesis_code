@@ -1,0 +1,539 @@
+/* page general */
+/* Seite generell */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+/* Bilder generell */
+img {
+  border:none;
+  vertical-align:middle;
+}
+
+/* page-container including header-, main- and footer-container */
+/* Seiten-Container mit Kopf-, Inhalts- und Fussbereich */
+#top {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 0;
+  max-width: 964px;
+
+}
+
+/* link general */
+/* Verweis allgemein */
+a:link {
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* visited link */
+/* Bereits besuchter Verweis */
+a:visited {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* link on mouse-over */
+/* Verweis bei Mouse-over */
+a:hover {
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+/* active or focused link */
+/* Aktiver Verweis oder Verweis mit Fokus */
+a:active,
+a:focus {
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+/* Skip-Navigation ('hidden' skip-anchors) */
+/* Skip-Navigation ('unsichtbare' Sprungmarken) */
+ol#skip {
+  margin: 0;
+  padding: 0;
+}
+
+ol#skip li {
+  display: inline;
+  list-style: none;
+}
+
+ol#skip a:link,
+ol#skip a:visited,
+ol#skip a:hover {
+  left: -400em;
+  position: absolute;
+}
+
+ol#skip a:active,
+ol#skip a:focus {
+  left: 0;
+  text-align: center;
+  width: 20em;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////			 Vertikal Angang 			////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* vertical navigation-list */
+/* Liste fuer vertikale Navigationsleiste */
+ol#vertical {
+  color: #333333;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* item in the vertical navigation-list */
+/* Einzelne Listenpunkte in der vertikalen Navigationsleiste */
+ol#vertical li {
+  background-color: #c2cbd0;
+  color: #333333;
+  padding: 0;
+  margin: 0 0 2px 0;
+  height: 25px;
+  width: 178px;
+  line-height: 25px;
+}
+
+/* active item in the vertical navigation-list */
+/* Aktiver Listenpunkt in der vertikalen Navigationsleiste */
+ol#vertical li strong.activated {
+  background-color: #e7eaed;
+  color: #333333;
+  display: block;
+  margin: 0;
+  padding: 0 0 0 25px;
+}
+
+/* link general in navigation-lists */
+/* Verweis allgemein in Navigationsleisten */
+ol#vertical li a:link {
+  color: #333333;
+  display: block;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 0 25px;
+  text-decoration: none;
+}
+
+/* visited link in navigation-lists */
+/* Bereits besuchter Verweis in Navigationsleisten */
+ol#vertical li a:visited {
+  color: #333333;
+  display: block;
+  margin: 0;
+  padding: 0 0 0 25px;
+  text-decoration: none;
+}
+
+/* link on mouse-over in navigation-lists */
+/* Verweis bei Mouse-over in Navigationsleisten */
+ol#vertical li a:hover {
+  background-color: #e7eaed;
+  color: #333333;
+  display: block;
+  margin: 0;
+  padding: 0 0 0 25px;
+}
+
+/* active or focused link in navigation-lists */
+/* Aktiver Verweis und Verweis mit Fokus in Navigationsleisten */
+ol#vertical li a:active,
+ol#vertical li a:focus {
+  background-color: #e7eaed;
+  color: #333333;
+  display: block;
+  margin: 0;
+  padding: 0 0 0 25px;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////			 Vertikal Ende 			////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////			 Horizontal Anfang 			////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* horizontal navigation-list */
+/* Liste fuer horizontale Navigationsleiste */
+ol#horizontal {
+  list-style: none;
+  margin: 0 0 0 6px;
+  padding: 0;
+  text-align: left;
+}
+
+/* item in the horizontal navigation-list */
+/* Einzelne Listenpunkte in der horizontalen Navigationsleiste */
+ol#horizontal li {
+  float: left;
+  margin: 0;
+}
+ol#horizontal li a {
+  padding:0 10px;
+  font-size: small;
+}
+/* active item in the horizontal navigation-list */
+/* Aktiver Listenpunkt in der horizontalen Navigationsleiste */
+ol#horizontal li strong.activated {
+  display: block;
+  margin: 0;
+}
+
+/* link general in navigation-lists */
+/* Verweis allgemein in Navigationsleisten */
+ol#horizontal li a:link {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* visited link in navigation-lists */
+/* Bereits besuchter Verweis in Navigationsleisten */
+ol#horizontal li a:visited {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* link on mouse-over in navigation-lists */
+/* Verweis bei Mouse-over in Navigationsleisten */
+ol#horizontal li a:hover {
+  background-color: #C2CBD0;
+  color: #333333;
+  display: block;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* active or focused link in navigation-lists */
+/* Aktiver Verweis und Verweis mit Fokus in Navigationsleisten */
+ol#horizontal li a:active,
+ol#horizontal li a:focus {
+  color: #333333;
+  display: block;
+  margin: 0;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////			 Horizontal Ende 			////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* inner-container */
+/* Allgemeiner Container */
+div.container p {}
+
+/* uppercase word */
+/* Text in Grossbuchstaben */
+.grossbuchstaben {
+  text-transform: uppercase;
+}
+
+/* copyright notice */
+/* Urheber-Hinweis */
+.copyright {
+  border-top: 1px solid #c2cbd0;
+  clear: both;
+  float: none;
+  font-size: 8pt;
+  margin: 0 6px;
+  padding: 0;
+  text-align: center;
+}
+
+/* HEADER ------------------------------------------------------ */
+
+/* Header-Container */
+/* Kopfbereich */
+#header {
+  clear: both;
+  float: none;
+  margin: 0;
+}
+
+/* MAIN -------------------------------------------------------- */
+
+/* Left Container */
+/* Container mit Navigation */
+#navigation {
+  float: left;
+  margin: 0 10px 0 6px;
+  width: 178px;
+  font-size: 80%;
+}
+
+/* Right Container */
+/* Container mit Inhalt */
+#content {
+  background-color: #e6eaed;
+  float: right;
+  margin: 0 5px 0 0;
+  padding: 10px;
+  width: 742px;
+}
+
+/* heading level 1 */
+/* Ueberschrift Ebene 1 */
+#content h1 {
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin: 0 .3em;
+  padding: .2em .3em;
+}
+
+/* heading level 2 */
+/* Ueberschrift Ebene 2 */
+#content h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin: .4em .4em 0 .4em;
+  padding: 0;
+}
+
+/* paragraph */
+/* Absatz */
+#content p {
+  margin: 0;
+}
+
+/* paragraph linking to the top of the site */
+/* Absatz mit Sprungmarke zum Seitenanfang */
+#content p.up {
+  border-top: 1px solid #c2cbd0;
+  font-size: .60em;
+  line-height: 1.3em;
+  margin: 2em 0;
+  padding: 0;
+  text-align: right;
+}
+
+/*
+-----------------------------------------------------------------------------
++ SETTINGS
+ + Anfang
+-----------------------------------------------------------------------------
+*/
+.setting_table			{font-size:9pt;border-collapse:collapse; border-spacing:0px;width:100%;}
+.setting_tr			{vertical-align: top;}
+.setting_td			{padding-left:10px;padding-top:10px;padding-bottom:10px;border-bottom:1px solid #cccccc;}
+.setting_tr_gruppe_1		{background-color:#cccccc;}
+.setting_tr_gruppe_2		{background-color:#E5E5E5;}
+.setting_td_gruppe		{font-weight:bold;font-size:10pt;border-top:2px solid #cccccc;}
+.setting_tr_gruppe_color	{color:#000000;}
+
+/*
+-----------------------------------------------------------------------------
++ SITZUNGSKALENDER
+ + Anfang
+-----------------------------------------------------------------------------
+*/
+.SKContainer			{border:0px solid black;width:auto;overflow:hidden;}
+.SKZeitraum 			{border:1px solid blue;margin:0px;padding:0px;}
+.SKMonat 			{border:0px solid red;}
+.SKUeberschrift 		{padding-top:5px;padding-bottom:5px;text-align:center;color:white;font-weight:bold;background-color:#2d4e84;}
+.SKMenuMainContainer		{border: 0px solid #cccccc;text-align:center;vertical-align:middle;width:100%;margin-top:8px;}
+.SKMenuButtons			{border: 0px solid #cccccc;height:20px;line-height:20px;vertical-align:middle;}
+.SKMenuData			{border: 1px solid #cccccc;border-bottom: none;height:15px;line-height:15px;vertical-align:middle; padding: 0 2px;}
+.SKMenuDataText			{font-size:11px;color:#333333;display:block;}
+.SKMenuDataTextSelected		{font-size:12px;color:#333333;text-decoration: underline;}
+.SKMenuHiddenInput              {display:none;}
+.SKMenuSubContainer		{}
+.table_sk			{color:black;font-size:12px;border-collapse:collapse; border-spacing:0px;width:100%;margin-top:10px;}
+.monat_tr			{background-color:#aaaaaa;color:white;font-size:17px;font-weight:bold;letter-spacing:2px;}
+.monat_td			{text-align:center;}
+#SK_Calendar.SKTag1_tr		{background-color:#ffffff;}
+#SK_Calendar.SKTag2_tr		{background-color:#eeeeee;}
+#SK_Calendar.SKTag3_tr		{background-color:#FFF2E5;}
+#SK_List.SKTag1_tr		{background-color:#FFFFFF;}
+#SK_List.SKTag2_tr		{background-color:#FFFFFF;}
+#SK_List.SKTag3_tr		{background-color:#edddbb;}
+.SKWochentag_td			{width:20px;}
+.SKTageszahl_td			{width:20px;}
+.SKTermin_tr			{}
+.SKTerminZeit_td		{width:100px;text-align:right;}
+.SKTerminLink_td		{width:30px;text-align:center;}
+.SKTerminTitel_td		{font-size:12px;color:black;}
+.SKTerminRaum_td		{}
+.SKTerminOutlook_td		{text-align:right;}
+.SKTermineFeiertag_tr		{background-color:#FFF0E9;color:#ff6666;}
+.SKTerminZeitF_td		{width:100px;text-align:right;}
+.SKTerminLinkF_td		{width:30px; text-align:center;}
+.SKTerminTitelF_td		{font-size:12px;font-weight:bold;}
+.SKTerminRaumF_td		{}
+.SKTerminOutlookF_td		{}
+.menue_td			{text-align:center;}
+.kalenderbutton			{border:0; background: transparent; cursor:pointer;font-size:8pt;text-decoration:underline;}
+.zeitraumauswahl		{width:200px; font-size:7pt; color:#151515; float:left; }
+.kalenderintervall		{width:300px; font-size:7pt; color:#151515; float:right; text-align:right; font-weight:normal;}
+
+/*
+-----------------------------------------------------------------------------
++ TREE VIEW
+ + Anfang
+-----------------------------------------------------------------------------
+*/
+.TreeZeile1			{background-color:#aaaaaa;width:300px;}
+.TreeZeile1:hover		{background-color:#cccccc;width:300px;}
+.TreeZeile2			{background-color:#cccccc;width:300px;}
+.TreeZeile2:hover		{background-color:#cccccc;width:300px;}
+.TreeViewValue1			{color:black;font-size:10pt;font-weight:bold;text-transform:uppercase;}
+.TreeViewValue1:hover		{color:black;font-size:10pt;font-weight:bold;text-transform:uppercase;}
+.TreeViewValue2			{color:black;font-size:10pt;font-weight:bold;}
+.TreeViewValue2:hover		{color:black;font-size:10pt;font-weight:bold;}
+.TreeViewValue3			{color:black;font-size:8pt;}
+.TreeViewValue3:hover		{color:black;font-size:8pt;}
+.TreeViewHead0			{text-align:left;width:1px;}
+.TreeViewHead1			{text-align:left;width:10px;}
+.TreeViewHead2			{text-align:left;width:10px;}
+.TreeViewHead3			{text-align:left;width:10px;}
+.TreeViewHead4			{text-align:left;width:10px;}
+
+/*
+-----------------------------------------------------------------------------
++ STARTSEITE (eingelogt)
+ + Anfang
+-----------------------------------------------------------------------------
+*/
+.BoxZu				{}
+.BoxZu:hover			{}
+.BoxAuf				{}
+.BoxAuf:hover			{}
+.PCContainer			{font-weight:bold;}
+.PCHeadTermine			{background-color:#f7f1e6;border:1px solid #cccccc;-moz-border-radius: 4px 4px 4px 4px;padding:3px;}
+.PCHeadUnterlagen		{background-color:#f7f1e6;border:1px solid #cccccc;-moz-border-radius: 4px 4px 4px 4px;padding:3px;}
+.PCHeadChronik			{background-color:#f7f1e6;border:1px solid #cccccc;-moz-border-radius: 4px 4px 4px 4px;padding:3px;}
+.PCTermine			{color:black;}
+.PCUnterlagen			{color:black;}
+#menu3				{border: 0px solid #ccc;margin: 10px;}
+#menu3 ul			{list-style: none;margin: 0;padding: 0;font-family: Verdana, Arial, Helvetica, sans-serif;margin: 0;font-size: 80%;font-weight: bold;}
+#menu3 li a 			{voice-family: "\"}\"";voice-family: inherit;text-decoration: none;}
+#menu3 li a:link, #menu3 li a:visited {color: #888;display: block;padding: 0 0 0 0;border: 1px solid #ccc;}
+#menu3 li a:hover, #menu3 li #current, #menu3 li a:active {color: #283A50;padding: 0 0 0 0;border: 1px solid #ccc;}
+
+/*
+-----------------------------------------------------------------------------
++ Allgemeine Klassen
+ + Anfang
+-----------------------------------------------------------------------------
+*/
+.Textverweis			{color:#000000; }
+.Kleine_Schrift			{font-size:8pt; }
+.Normale_Schrift		{font-size:9pt; }
+.Ungerade_Zeile			{font-size:9pt;color:#000000;background-color:#eeeeee;padding:3px; }
+.Gerade_Zeile			{font-size:9pt;background-color:#FFFFFF;padding:3px;}
+.Markierte_Zeile		{font-size:9pt;font-weight:normal;color:#000000;background-color:#66b0d7;padding:3px; }
+.Trennungs_Zeile		{font-size:9pt;font-weight:normal;color:#000000;background-color:#a1c8e7;padding:3px; }
+.Ueberschrift			{font-weight:bold;font-size:10pt; }
+.Suchueberschrift		{font-weight:bold;font-size:12pt;padding-left:0px;}
+.Zwischenueberschrift		{font-size:9pt;font-weight:bold;color:#000000; }
+.Seitenzahlen			{font-size:8pt;font-weight:normal;color:#000000; }
+.Kleine_Eingabezeile		{font-size:8pt;background-color:#EEEEEE;width:85px; }
+.Normale_Eingabezeile		{font-size:8pt;background-color:#EEEEEE; }
+.Ankreuzfeld			{font-size:8pt;background-color:#EEEEEE; }
+.Auswahlmenu			{font-size:8pt;background-color:#EEEEEE; }
+.Textfeld			{font-size:9pt;background-color:#EEEEEE; }
+.Knopf				{font-size:9pt;background-color:#EEEEEE; }
+.Trennlinie			{height:1px;color:#000000; }
+.datum				{line-height:0px; font-size:9pt;}
+.hr				{color:#eeeeee;margin-right:0px;}
+.clear				{clear:both;}
+.LinkLikeLupe			{font-size:9pt;color:black;}
+.LinkAufWeis			{color:#000000;font-size:12pt;}
+.LinkAufWeis:hover		{color:#cccccc;text-decoration:none;}
+.tabelle			{width:100%;}
+.tabellen_navi			{width:100%;}
+.tabelleninhalt			{border-collapse:collapse; border-spacing:0px; width:100%;}
+.tabellenrahmen			{border-collapse:collapse; border-spacing:0px; width:100%;}
+
+.User_pages			{}
+.User_pages.a			{color:black;text-decoration:none;font-size:11px;}
+.anmeldung			{margin:10px 0 0 0;background-color: #c2cbd0;padding:10px;}
+.aktualisierung			{margin:10px 0 0 0;background-color: #c2cbd0;padding:10px;}
+.counter			{margin:0px 0 0 0;background-color: #c2cbd0;padding:10px;}
+.version			{margin:0px 0 0 0;background-color: #c2cbd0;padding:10px;}
+
+.login_kennung_ueberschrift	{font-size:9pt;}
+.login_kennung_name		{font-size:9pt;float:left;}
+.login_kennung_eingabe		{float:right;}
+.login_passwort_name		{font-size:9pt;float:left;}
+.login_passwort_eingabe		{float:right;}
+.login_button			{text-align:right;clear:both;}
+
+.abmelde_button_normal		{background-color:#cccccc;color:#000000;font-size:0.75em;width:60px;padding-left:3px;cursor:pointer;height:15px;line-height:15px;border:1px outset white;}
+.abmelde_button_hover		{background-color:#cccccc;color:#000000;font-size:0.75em;width:60px;padding-left:3px;cursor:pointer;height:15px;line-height:15px;border:1px inset white;}
+
+#searchform {
+	height:180px;
+}
+img#button_sort{
+	background-image: url('../images/buttons/pfeil_off.gif');
+	background-repeat: no-repeat;
+	border: 0px;
+	padding-right: 3px;
+	text-align: left;
+}
+img#button_sort:HOVER{
+	background-image: url('../images/buttons/pfeil_on.gif');
+}
+
+/* KALENDER UND - BUTTONS */
+
+.kalenderbutton			{border:0; background: transparent; cursor:pointer;font-size:8pt;text-decoration:underline;}
+.zeitraumauswahl		{width:200px; font-size:7pt; color:#151515; float:left; }
+.kalenderintervall		{width:300px; font-size:7pt; color:#151515; float:right; text-align:right; font-weight:normal;}
+
+
+
+/* NEUE KLASSEN FÜR RIS 6.9+ */
+
+#searchform {
+    height:150px;
+}
+
+img#button_sort{
+	background-image: url('../images/buttons/pfeil_off.gif');
+	background-repeat: no-repeat;
+	border: 0px;
+	padding-right: 3px;
+	text-align: left;
+}
+img#button_sort:HOVER{
+	background-image: url('../images/buttons/pfeil_on.gif');
+}
+
+/* VIS-Anpassung */
+
+.InfoBlock {background-color:#eeeeee; padding-bottom:10px; }
+.Anlagen   {font-family:Arial,Helvetica,sans-serif; font-size:9pt; color:#3a3a3a; vertical-align:middle; }
+
+.clearfix:after {content:''; display:block; clear:both; }
+.clearfix {display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height:1%;}
+.clearfix {display:block; background-color:#e8f5fb; }
+/* End hide from IE-mac */
+
+.InfoBox {top:auto; clear:both; margin-left:150px; position:fixed; width:650px; height:500px; background-color:#ffffff; border:2px solid black; padding:25px; display:none;}
+
+.ImgSort ,
+.ImgSort:link ,
+.ImgSort:visited {background-image: url('../images/pfeil_off.gif'); text-decoration:none; background-repeat:no-repeat; padding-left: 15px; color: #3a3a3a; font-weight:bold;}
+.ImgSort:hover   {background-image: url('../images/pfeil_on.gif'); text-decoration:none; background-repeat:no-repeat; padding-left: 15px; color: #3a3a3a; font-weight:bold;}
+
+.LayoutInfosystem { background-color:white;}
+
+.Ungerade_Zeile_Tabelle		{font-size:8pt;color:#000000;background-color:#f4f4f4;padding:3px; border:1px solid #c2cbd0;}

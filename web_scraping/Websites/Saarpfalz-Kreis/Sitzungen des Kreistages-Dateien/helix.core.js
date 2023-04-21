@@ -1,0 +1,1 @@
+spnoConflict(function($){$('.sp-totop').on('click',function(){$('html, body').animate({scrollTop:$("body").offset().top},500);});$('.hasTip').tooltip({html:true})});

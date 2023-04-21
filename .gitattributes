@@ -1,0 +1,2 @@
+* !text !filter !merge !diff
+/text-mining/2023-04-03_gesamt_rhein_neckar.parquet filter=lfs diff=lfs merge=lfs -text

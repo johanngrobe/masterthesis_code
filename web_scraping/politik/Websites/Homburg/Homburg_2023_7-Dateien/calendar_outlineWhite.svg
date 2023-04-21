@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="26px"
+   height="26px"
+   viewBox="0 0 26 26"
+   enable-background="new 0 0 26 26"
+   xml:space="preserve"
+   sodipodi:docname="calender_outlineWhite.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"><metadata
+   id="metadata17"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs15" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1001"
+   id="namedview13"
+   showgrid="false"
+   inkscape:zoom="31.923077"
+   inkscape:cx="13"
+   inkscape:cy="13"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+
+<g
+   id="g4"
+   style="fill:#ffffff">
+	<path
+   fill="#000000"
+   d="M13.494,21.982h-3.467l3.781-7.672H9V12h7.984v1.545L13.494,21.982z"
+   id="path2"
+   style="fill:#ffffff" />
+</g>
+<path
+   fill="#000000"
+   d="M7,5C6.449,5,6,4.551,6,4V1c0-0.551,0.449-1,1-1l0,0c0.551,0,1,0.449,1,1v3C8,4.551,7.551,5,7,5L7,5z"
+   id="path6"
+   style="fill:#ffffff" />
+<path
+   fill="#000000"
+   d="M23,2h-2v2c0,1.104-0.896,2-2,2s-2-0.896-2-2V2H9v2c0,1.104-0.896,2-2,2S5,5.104,5,4V2H3  C1.344,2,0,3.344,0,5v18c0,1.656,1.344,3,3,3h20c1.656,0,3-1.344,3-3V5C26,3.344,24.656,2,23,2z M24,23c0,0.551-0.449,1-1,1H3  c-0.551,0-1-0.449-1-1V9h22V23z"
+   id="path8"
+   style="fill:#ffffff" />
+<path
+   fill="#000000"
+   d="M19,5c-0.551,0-1-0.449-1-1V1c0-0.551,0.449-1,1-1l0,0c0.551,0,1,0.449,1,1v3C20,4.551,19.551,5,19,5L19,5z"
+   id="path10"
+   style="fill:#ffffff" />
+</svg>

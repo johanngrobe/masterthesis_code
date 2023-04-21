@@ -1,0 +1,127 @@
+/*
+
+	styles.css		Default-Werte für neu eingeführte CSS-Styles
+	(conf/styles/defaults)
+
+	History
+	190709	3.9.4		Erstfassung
+
+
+*********************************************************************************************************************
+
+	!!! Bitte ändern Sie nichts in dieser Datei !!!
+	!!! Die Datei wird bei einem Update von ALLRIS net überschrieben !!!
+	
+	Wenn Sie Styles aus dieser Datei anpassen wollen, kopieren Sie den betreffenden Block ganz oder teilweise
+	in die Konfigurationsdatei con/_styles.css und nehmen sie die gewünschten Änderungen dort vor. Durch die
+	festgelegte Lade-Reihenfolge im <head>-Bereich der ALLRIS net-Seite überschreiben die so angepassten
+	Definitionen aus conf/_styles.css die Default-Werte aus der vorliegenden Datei conf/styles/defaults/styles.css.
+	
+*********************************************************************************************************************
+
+*/
+
+
+
+
+#rismain .roundedBorder {
+	border: thin solid #cccccc;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-khtml-border-radius: 1em;
+	border-radius: 1em;
+}
+
+#rismain .compBox {
+	max-width: 800px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px 10px 10px 10px;
+	line-height: 1.667em;
+}
+
+#rismain .compBoxNoBorder {
+	max-width: 820px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px 0px 10px 0px;
+	line-height: 1.667em;
+}
+
+#rismain .noPadding {
+	padding: 0px 0px 0px 0px;
+}
+
+#rismain .textCenter {
+	text-align: center;
+}
+
+#rismain .compRow {
+	overflow: hidden;
+	width: 100%;
+	display: inline-block;
+	margin: 4px 0;
+}
+
+#rismain .compColTitle, #rismain .compColEntry, #rismain .compColEntry2, #rismain .compColEntry3 {
+	float: left;
+}
+
+#rismain .compColTitle {
+	min-width: 18%;
+}
+
+#rismain .compColEntry {
+	min-width: 32%;
+	max-width: 32%;
+}
+
+#rismain .compColEntry2 {
+	width: 100%;
+}
+
+#rismain .compColEntry3 {
+	max-width: 82%;
+}
+
+#rismain .expcol img {
+	padding: 1px;
+	float: right;
+}
+
+#rismain legend {
+	color: #808080;
+	font-weight: bold;
+}
+
+#rismain .label {
+	vertical-align: top;
+	text-align: left;
+	font-weight: bold;
+}
+
+
+
+/**************** Prozentbalken *********************/
+#rismain .percentblock-on.nogfx {
+	line-height: 2em;
+	width: 2.5em;
+	text-align: center;
+	border: thin solid #729fcf;
+}
+
+#rismain .percentblock-on.nogfx .bg {
+	display: block;
+	margin-bottom: -2em;
+	background: #fff;
+}
+
+#rismain .percentblock-on.nogfx .bar {
+	display: block;
+	background: #ced1e4;
+	margin-bottom: -2em;
+}
+
+#rismain .percentblock-on.nogfx .value {
+	visibility: hidden;
+}
