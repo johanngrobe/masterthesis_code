@@ -7,7 +7,7 @@
 *.parquet
 /text-mining/*.parquet
 /text-mining/*.pkl
-# !/text-mining/2023-04-03_gesamt_rhein_neckar.parquet
+!/text-mining/2023-04-03_gesamt_rhein_neckar.parquet
 __pycache__
 /Lib
 /share
