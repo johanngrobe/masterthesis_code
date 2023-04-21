@@ -7,11 +7,13 @@ Titel: Anwendung und Erprobung von Text-Mining-Methodiken zur Analyse von kommun
 1. Web Scraping Scripte
 2. Text Mining Scripte
 
-## Mindestnutzungsvoraussetzungen
+## Verwendete Software für das Web Scraping
 - [Python 3.10](https://www.python.org/)
 - [Scrapy 2.8](https://scrapy.org/)
 - [Playwright 1.31](https://playwright.dev/python/)
 - [Scrapy-Playwright 0.0.28](https://github.com/scrapy-plugins/scrapy-playwright)
+- [Tesseract](https://github.com/tesseract-ocr/tesseract)
 
 Hinweis: Scrapy-Playwright kann unter Windows nur mit [WSL 2](https://learn.microsoft.com/de-de/windows/wsl/install) verwendet werden.
 
+Alle genutzen Python-Bibliotheken sind im requirements.txt zu finden.

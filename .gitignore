@@ -2,6 +2,7 @@
 *.csv
 *.CSV
 *.txt
+!requirements.txt
 *.xlsx
 *.parquet
 /text-mining/*.parquet
