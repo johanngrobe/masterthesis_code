@@ -5,9 +5,11 @@
 !requirements.txt
 *.xlsx
 *.parquet
+*.cfg
+*.pxd
+
 /text-mining/*.parquet
 /text-mining/*.pkl
-!/text-mining/2023-04-03_gesamt_rhein_neckar.parquet
 __pycache__
 /Lib
 /share
@@ -15,6 +17,8 @@ __pycache__
 /.vscode
 /etc
 /include
+/Include
+/src
 /Py-DS-ML-Bootcamp-master
 /Py-DS-ML-Bootcamp-master.zip
 /pyvenv.cfg
@@ -24,3 +28,12 @@ __pycache__
 /web_scraping/.ipynb_checkpoints
 /web_scraping/__pycache__
 /web_scraping/Dateien
+/text-mining/2023-05-22_gesamtdaten_bis_2022 
+/text-mining/.ipynb_checkpoints
+/text-mining/etc
+/text-mining/Include
+/text-mining/Lib
+/text-mining/Scripts
+/text-mining/share
+/text-mining/.env
+

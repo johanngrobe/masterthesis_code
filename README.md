@@ -1,19 +1,39 @@
 # Code zur Masterthesis
 
-Ersteller: Johann Grobe
-Titel: Anwendung und Erprobung von Text-Mining-Methodiken zur Analyse von kommunaler Verkehrspolitik- Am Beispiel von kleinen Mittelstädten innerhalb des Verkehrsverbunds Rhein-Neckar
+| Titel | Mobilitätspläne in der Praxis - Inhalt und Anwendung strategischer Verkehrsplanungsinstrumente in Mittelstädten   |
+|-------|-------------------|
+| Title | Mobility Plans in Practice - Content and Application of Strategic Transport Planning Tools in Medium-Sized Cities |
+| Autor    |   Johann Grobe        |
+| Institution   | Hochschule RheinMain      |
 
-## Inhalt
-1. Web Scraping Scripte
-2. Text Mining Scripte
 
-## Verwendete Software für das Web Scraping
+## Inhaltsverzeichnis
+1. Web Scraping
+2. Text Mining
+
+* * *
+
+## 1. Web Scraping
+
+### Beinhaltet:
+- Skripte
+
+### Verwendete Software:
 - [Python 3.10](https://www.python.org/)
-- [Scrapy 2.8](https://scrapy.org/)
-- [Playwright 1.31](https://playwright.dev/python/)
-- [Scrapy-Playwright 0.0.28](https://github.com/scrapy-plugins/scrapy-playwright)
 - [Tesseract](https://github.com/tesseract-ocr/tesseract)
+- verwendete Packages siehe `requirements.txt`
 
 Hinweis: Scrapy-Playwright kann unter Windows nur mit [WSL 2](https://learn.microsoft.com/de-de/windows/wsl/install) verwendet werden.
 
-Alle genutzen Python-Bibliotheken sind im requirements.txt zu finden.
+* * *
+
+## 2. Text Mining
+
+### Beinhalet:
+- Skripte
+- Plots (Abbildungen)
+- Tabellen
+
+### Verwendete Software:
+- [Python 3.10](https://www.python.org/)
+- verwendete Package siehes `environment.yml`
