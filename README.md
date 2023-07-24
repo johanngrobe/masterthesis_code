@@ -1,7 +1,7 @@
 # Code zur Masterthesis
 
 | Titel | Mobilitätspläne in der Praxis - Inhalt und Anwendung strategischer Verkehrsplanungsinstrumente in Mittelstädten   |
-|-------|-------------------|
+|-------|:-------------------|
 | Title | Mobility Plans in Practice - Content and Application of Strategic Transport Planning Tools in Medium-Sized Cities |
 | Autor    |   Johann Grobe        |
 | Institution   | Hochschule RheinMain      |
